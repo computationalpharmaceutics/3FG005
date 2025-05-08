@@ -1,0 +1,12509 @@
+[ bondedtypes ] 
+; Col 1: Type of bond 
+; Col 2: Type of angles 
+; Col 3: Type of proper dihedrals 
+; Col 4: Type of improper dihedrals 
+; Col 5: Generate all dihedrals if 1, only heavy atoms of 0. 
+; Col 6: Number of excluded neighbors for nonbonded interactions 
+; Col 7: Generate 1,4 interactions between pairs of hydrogens if 1 
+; Col 8: Remove propers over the same bond as an improper if it is 1 
+; bonds  angles  dihedrals  impropers all_dihedrals nrexcl HH14 RemoveDih 
+     1       5          9        2        1           3      1     0 
+
+[ ALA ]
+ [ atoms ]
+	N	NH1	-0.47	0
+	HN	H	0.31	1
+	CA	CT1	0.07	2
+	HA	HB	0.09	3
+	CB	CT3	-0.27	4
+	HB1	HA	0.09	5
+	HB2	HA	0.09	6
+	HB3	HA	0.09	7
+	C	C	0.51	8
+	O	O	-0.51	9
+ [ bonds ]
+	CB	CA
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	HB1
+	CB	HB2
+	CB	HB3
+	O	C
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ ARG ]
+ [ atoms ]
+	N	NH1	-0.47	0
+	HN	H	0.31	1
+	CA	CT1	0.07	2
+	HA	HB	0.09	3
+	CB	CT2	-0.18	4
+	HB1	HA	0.09	5
+	HB2	HA	0.09	6
+	CG	CT2	-0.18	7
+	HG1	HA	0.09	8
+	HG2	HA	0.09	9
+	CD	CT2	0.20	10
+	HD1	HA	0.09	11
+	HD2	HA	0.09	12
+	NE	NC2	-0.70	13
+	HE	HC	0.44	14
+	CZ	C	0.64	15
+	NH1	NC2	-0.80	16
+	HH11	HC	0.46	17
+	HH12	HC	0.46	18
+	NH2	NC2	-0.80	19
+	HH21	HC	0.46	20
+	HH22	HC	0.46	21
+	C	C	0.51	22
+	O	O	-0.51	23
+ [ bonds ]
+	CB	CA
+	CG	CB
+	CD	CG
+	NE	CD
+	CZ	NE
+	NH2	CZ
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	HB1
+	CB	HB2
+	CG	HG1
+	CG	HG2
+	CD	HD1
+	CD	HD2
+	NE	HE
+	NH1	HH11
+	NH1	HH12
+	NH2	HH21
+	NH2	HH22
+	O	C
+	CZ	NH1
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+	CZ	NH1	NH2	NE
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ ASN ]
+ [ atoms ]
+	N	NH1	-0.47	0
+	HN	H	0.31	1
+	CA	CT1	0.07	2
+	HA	HB	0.09	3
+	CB	CT2	-0.18	4
+	HB1	HA	0.09	5
+	HB2	HA	0.09	6
+	CG	CC	0.55	7
+	OD1	O	-0.55	8
+	ND2	NH2	-0.62	9
+	HD21	H	0.32	10
+	HD22	H	0.30	11
+	C	C	0.51	12
+	O	O	-0.51	13
+ [ bonds ]
+	CB	CA
+	CG	CB
+	ND2	CG
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	HB1
+	CB	HB2
+	ND2	HD21
+	ND2	HD22
+	C	O
+	CG	OD1
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+	CG	ND2	CB	OD1
+	CG	CB	ND2	OD1
+	ND2	CG	HD21	HD22
+	ND2	CG	HD22	HD21
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ ASP ]
+ [ atoms ]
+	N	NH1	-0.47	0
+	HN	H	0.31	1
+	CA	CT1	0.07	2
+	HA	HB	0.09	3
+	CB	CT2	-0.28	4
+	HB1	HA	0.09	5
+	HB2	HA	0.09	6
+	CG	CC	0.62	7
+	OD1	OC	-0.76	8
+	OD2	OC	-0.76	9
+	C	C	0.51	10
+	O	O	-0.51	11
+ [ bonds ]
+	CB	CA
+	CG	CB
+	OD2	CG
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	HB1
+	CB	HB2
+	O	C
+	CG	OD1
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+	CG	CB	OD2	OD1
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ ASPP ] ; protonated ASP
+ [ atoms ]
+        N       NH1     -0.47   0
+        HN      H       0.31    1
+        CA      CT1     0.07    2
+        HA      HB      0.09    3
+        CB      CT2    -0.21    4 ;
+        HB1     HA      0.09    5 ; HB1    OD1
+        HB2     HA      0.09    6 ;  |    //
+        CG      CD      0.75    7 ; -CB--CG
+        OD1     OB     -0.55    8 ;  |     \
+        OD2     OH1    -0.61    9 ; HB2     OD2-HD2
+        HD2     H       0.44    10;
+        C       C       0.51    11
+        O       O       -0.51   12
+ [ bonds ]
+        CB      CA
+        CG      CB
+        OD2     CG
+        OD2     HD2
+        N       HN
+        N       CA
+        C       CA
+        C       +N
+        CA      HA
+        CB      HB1
+        CB      HB2
+        O       C
+        CG      OD1
+ [ impropers ]
+        N       -C      CA      HN
+        C       CA      +N      O
+        CG      CB      OD2     OD1
+ [ cmap ]
+        -C      N       CA      C       +N
+
+[ CYS ]
+ [ atoms ]
+	N	NH1	-0.47	0
+	HN	H	0.31	1
+	CA	CT1	0.07	2
+	HA	HB	0.09	3
+	CB	CT2	-0.11	4
+	HB1	HA	0.09	5
+	HB2	HA	0.09	6
+	SG	S	-0.23	7
+	HG1	HS	0.16	8
+	C	C	0.51	9
+	O	O	-0.51	10
+ [ bonds ]
+	CB	CA
+	SG	CB
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	HB1
+	CB	HB2
+	SG	HG1
+	O	C
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ CYS2 ]  ; disulfide cystine
+ [ atoms ]
+        N       NH1     -0.47   0
+        HN      H       0.31    1
+        CA      CT1     0.07    2
+        HA      HB      0.09    3
+        CB      CT2     -0.10   4
+        HB1     HA      0.09    5
+        HB2     HA      0.09    6
+        SG      SM      -0.08   7
+        C       C       0.51    8
+        O       O       -0.51   9
+ [ bonds ]
+        CB      CA
+        SG      CB
+        N       HN
+        N       CA
+        C       CA
+        C       +N
+        CA      HA
+        CB      HB1
+        CB      HB2
+        O       C
+ [ impropers ]
+        N       -C      CA      HN
+        C       CA      +N      O
+[ cmap ]
+        -C      N       CA      C       +N
+
+[ CYS3 ]  ; cystein bound to CYT (Cys-mesitylene)
+ [ atoms ]
+        N       NH1     -0.47   0
+        HN      H       0.31    1
+        CA      CT1     0.07    2
+        HA      HB      0.09    3
+        CB      CT2     -0.14   4
+        HB1     HA      0.09    5
+        HB2     HA      0.09    6
+        SG      S       -0.08   7
+        C       C       0.51    8
+        O       O       -0.51   9
+ [ bonds ]
+        CB      CA
+        SG      CB
+        N       HN
+        N       CA
+        C       CA
+        C       +N
+        CA      HA
+        CB      HB1
+        CB      HB2
+        O       C
+ [ impropers ]
+        N       -C      CA      HN
+        C       CA      +N      O
+[ cmap ]
+        -C      N       CA      C       +N
+
+[ CYT ] ; Cys-mesitylene
+ [ atoms ]
+	N    	NH1    -0.47	0	
+	HN   	H       0.31	1
+	CA  	CT1     0.07	2
+	HA   	HB      0.09	3
+	CB   	CT2    -0.14	4
+	HB1  	HA      0.09	5	
+	HB2  	HA      0.09	6
+	SG   	S      -0.08	7
+	C21   	CT2    -0.14	8
+	H211  	HA      0.09	9
+	H212  	HA      0.09	10
+	C16   	CA      0.00	11
+	C69  	CA      -0.115	12
+	H69  	HP      0.115	13
+	C26  	CA      -0.115	14
+	H26  	HP      0.115	15
+	C9   	CA      0.00	16
+	C22  	CT3     -0.27	17
+	H221 	HA      0.09	18
+	H222 	HA      0.09	19
+	H223 	HA      0.09	20
+	C2   	CA      0.00	21
+	C23  	CT3     -0.27	22
+	H231 	HA      0.09	23
+	H232 	HA      0.09	24
+	H233 	HA      0.09	25
+	C29 	CA      -0.115	26
+	H29 	HP      0.115	27
+	C    	C       0.51	28
+	O    	O      -0.51	29
+ [ bonds ]
+        N       HN
+        N       CA
+        C       CA
+        C       +N
+        CA      HA
+	C16 	C21
+	C16  	C26
+	C16  	C69
+	C2   	C23
+	C2   	C26
+	C2   	C29
+ 	C21  	H211
+  	C21  	H212
+  	C21  	SG
+  	C22  	C9
+  	C22  	H221
+  	C22 	H222
+  	C22  	H223
+  	C23  	H231
+  	C23  	H232
+  	C23  	H233
+  	C26  	H26
+ 	C29  	C9
+  	C29  	H29
+  	C69  	C9
+  	C69  	H69
+  	CA   	CB
+  	CB   	HB1
+  	CB   	HB2
+  	CB   	SG
+	C	O
+ [ impropers ]
+        N       -C      CA      HN
+        C       CA      +N      O
+ [ cmap ]
+        -C      N       CA      C       +N
+
+
+[ CYT3 ] ; Cys-mesitylene bound to two CYS (CYS3)
+ [ atoms ]
+        N       NH1    -0.47    0
+        HN      H       0.31    1
+        CA      CT1     0.07    2
+        HA      HB      0.09    3
+        CB      CT2    -0.14    4
+        HB1     HA      0.09    5
+        HB2     HA      0.09    6
+        SG      S      -0.08    7
+        C21     CT2    -0.14    8
+        H211    HA      0.09    9
+        H212    HA      0.09    10
+        C16     CA      0.00    11
+        C69     CA      -0.115  12
+        H69     HP      0.115   13
+        C26     CA      -0.115  14
+        H26     HP      0.115   15
+        C9      CA      0.00    16
+        C22     CT2     -0.14   17
+        H221    HA      0.09    18
+        H222    HA      0.09    19
+        C2      CA      0.00    20
+        C23     CT2     -0.14   21
+        H231    HA      0.09    22
+        H232    HA      0.09    23
+        C29     CA      -0.115  24
+        H29     HP      0.115   25
+        C       C       0.51    26
+        O       O      -0.51    27
+ [ bonds ]
+        N       HN
+        N       CA
+        C       CA
+        C       +N
+        CA      HA
+        C16     C21
+        C16     C26
+        C16     C69
+        C2      C23
+        C2      C26
+        C2      C29
+        C21     H211
+        C21     H212
+        C21     SG
+        C22     C9
+        C22     H221
+        C22     H222
+        C23     H231
+        C23     H232
+        C26     H26
+        C29     C9
+        C29     H29
+        C69     C9
+        C69     H69
+        CA      CB
+        CB      HB1
+        CB      HB2
+        CB      SG
+        C       O
+ [ impropers ]
+        N       -C      CA      HN
+        C       CA      +N      O
+ [ cmap ]
+        -C      N       CA      C       +N
+
+[ GLN ]
+ [ atoms ]
+	N	NH1	-0.47	0
+	HN	H	0.31	1
+	CA	CT1	0.07	2
+	HA	HB	0.09	3
+	CB	CT2	-0.18	4
+	HB1	HA	0.09	5
+	HB2	HA	0.09	6
+	CG	CT2	-0.18	7
+	HG1	HA	0.09	8
+	HG2	HA	0.09	9
+	CD	CC	0.55	10
+	OE1	O	-0.55	11
+	NE2	NH2	-0.62	12
+	HE21	H	0.32	13
+	HE22	H	0.30	14
+	C	C	0.51	15
+	O	O	-0.51	16
+ [ bonds ]
+	CB	CA
+	CG	CB
+	CD	CG
+	NE2	CD
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	HB1
+	CB	HB2
+	CG	HG1
+	CG	HG2
+	NE2	HE21
+	NE2	HE22
+	O	C
+	CD	OE1
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+	CD	NE2	CG	OE1
+	CD	CG	NE2	OE1
+	NE2	CD	HE21	HE22
+	NE2	CD	HE22	HE21
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ GLU ]
+ [ atoms ]
+	N	NH1	-0.47	0
+	HN	H	0.31	1
+	CA	CT1	0.07	2
+	HA	HB	0.09	3
+	CB	CT2	-0.18	4
+	HB1	HA	0.09	5
+	HB2	HA	0.09	6
+	CG	CT2	-0.28	7
+	HG1	HA	0.09	8
+	HG2	HA	0.09	9
+	CD	CC	0.62	10
+	OE1	OC	-0.76	11
+	OE2	OC	-0.76	12
+	C	C	0.51	13
+	O	O	-0.51	14
+ [ bonds ]
+	CB	CA
+	CG	CB
+	CD	CG
+	OE2	CD
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	HB1
+	CB	HB2
+	CG	HG1
+	CG	HG2
+	O	C
+	CD	OE1
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+	CD	CG	OE2	OE1
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ GLUP ] ; protonated GLU
+ [ atoms ]
+        N       NH1     -0.47   0
+        HN      H       0.31    1
+        CA      CT1     0.07    2
+        HA      HB      0.09    3
+        CB      CT2     -0.18   4
+        HB1     HA      0.09    5
+        HB2     HA      0.09    6
+        CG      CT2    -0.21    7 ;
+        HG1     HA      0.09    8 ; HG1    OE1
+        HG2     HA      0.09    9 ;  |    //
+        CD      CD      0.75    10; -CG--CD
+        OE1     OB     -0.55    11;  |     \
+        OE2     OH1    -0.61    12; HG2     OE2-HE2
+        HE2     H       0.44    13;
+        C       C       0.51    14
+        O       O       -0.51   15
+ [ bonds ]
+        CB      CA
+        CG      CB
+        CD      CG
+        OE2     CD
+        OE2     HE2
+        N       HN
+        N       CA
+        C       CA
+        C       +N
+        CA      HA
+        CB      HB1
+        CB      HB2
+        CG      HG1
+        CG      HG2
+        O       C
+        CD      OE1
+ [ impropers ]
+        N       -C      CA      HN
+        C       CA      +N      O
+        CD      CG      OE2     OE1
+ [ cmap ]
+        -C      N       CA      C       +N
+
+[ GLY ]
+ [ atoms ]
+	N	NH1	-0.47	0
+	HN	H	0.31	1
+	CA	CT2	-0.02	2
+	HA1	HB	0.09	3
+	HA2	HB	0.09	4
+	C	C	0.51	5
+	O	O	-0.51	6
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA1
+	CA	HA2
+	O	C
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ HSD ]
+ [ atoms ]
+	N	NH1	-0.47	0
+	HN	H	0.31	1
+	CA	CT1	0.07	2
+	HA	HB	0.09	3
+	CB	CT2	-0.09	4
+	HB1	HA	0.09	5
+	HB2	HA	0.09	6
+	ND1	NR1	-0.36	7
+	HD1	H	0.32	8
+	CG	CPH1	-0.05	9
+	CE1	CPH2	0.25	10
+	HE1	HR1	0.13	11
+	NE2	NR2	-0.70	12
+	CD2	CPH1	0.22	13
+	HD2	HR3	0.10	14
+	C	C	0.51	15
+	O	O	-0.51	16
+ [ bonds ]
+	CB	CA
+	CG	CB
+	ND1	CG
+	CE1	ND1
+	NE2	CD2
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	HB1
+	CB	HB2
+	ND1	HD1
+	CD2	HD2
+	CE1	HE1
+	O	C
+	CG	CD2
+	CE1	NE2
+ [ impropers ]
+	ND1	CG	CE1	HD1
+	CD2	CG	NE2	HD2
+	CE1	ND1	NE2	HE1
+	ND1	CE1	CG	HD1
+	CD2	NE2	CG	HD2
+	CE1	NE2	ND1	HE1
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ HSE ]
+ [ atoms ]
+	N	NH1	-0.47	0
+	HN	H	0.31	1
+	CA	CT1	0.07	2
+	HA	HB	0.09	3
+	CB	CT2	-0.08	4
+	HB1	HA	0.09	5
+	HB2	HA	0.09	6
+	ND1	NR2	-0.70	7
+	CG	CPH1	0.22	8
+	CE1	CPH2	0.25	9
+	HE1	HR1	0.13	10
+	NE2	NR1	-0.36	11
+	HE2	H	0.32	12
+	CD2	CPH1	-0.05	13
+	HD2	HR3	0.09	14
+	C	C	0.51	15
+	O	O	-0.51	16
+ [ bonds ]
+	CB	CA
+	CG	CB
+	ND1	CG
+	NE2	CD2
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	NE2	CE1
+	CA	HA
+	CB	HB1
+	CB	HB2
+	NE2	HE2
+	CD2	HD2
+	CE1	HE1
+	O	C
+	CD2	CG
+	CE1	ND1
+ [ impropers ]
+	NE2	CD2	CE1	HE2
+	CD2	CG	NE2	HD2
+	CE1	ND1	NE2	HE1
+	NE2	CE1	CD2	HE2
+	CD2	NE2	CG	HD2
+	CE1	NE2	ND1	HE1
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ HSP ]
+ [ atoms ]
+	N	NH1	-0.47	0
+	HN	H	0.31	1
+	CA	CT1	0.07	2
+	HA	HB	0.09	3
+	CB	CT2	-0.05	4
+	HB1	HA	0.09	5
+	HB2	HA	0.09	6
+	CD2	CPH1	0.19	7
+	HD2	HR1	0.13	8
+	CG	CPH1	0.19	9
+	NE2	NR3	-0.51	10
+	HE2	H	0.44	11
+	ND1	NR3	-0.51	12
+	HD1	H	0.44	13
+	CE1	CPH2	0.32	14
+	HE1	HR2	0.18	15
+	C	C	0.51	16
+	O	O	-0.51	17
+ [ bonds ]
+	CB	CA
+	CG	CB
+	ND1	CG
+	CE1	ND1
+	NE2	CD2
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	HB1
+	CB	HB2
+	ND1	HD1
+	NE2	HE2
+	CD2	HD2
+	CE1	HE1
+	O	C
+	CD2	CG
+	NE2	CE1
+ [ impropers ]
+	ND1	CG	CE1	HD1
+	ND1	CE1	CG	HD1
+	NE2	CD2	CE1	HE2
+	NE2	CE1	CD2	HE2
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ ILE ]
+ [ atoms ]
+	N	NH1	-0.47	0
+	HN	H	0.31	1
+	CA	CT1	0.07	2
+	HA	HB	0.09	3
+	CB	CT1	-0.09	4
+	HB	HA	0.09	5
+	CG2	CT3	-0.27	6
+	HG21	HA	0.09	7
+	HG22	HA	0.09	8
+	HG23	HA	0.09	9
+	CG1	CT2	-0.18	10
+	HG11	HA	0.09	11
+	HG12	HA	0.09	12
+	CD	CT3	-0.27	13
+	HD1	HA	0.09	14
+	HD2	HA	0.09	15
+	HD3	HA	0.09	16
+	C	C	0.51	17
+	O	O	-0.51	18
+ [ bonds ]
+	CB	CA
+	CG1	CB
+	CG2	CB
+	CD	CG1
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	HB
+	CG1	HG11
+	CG1	HG12
+	CG2	HG21
+	CG2	HG22
+	CG2	HG23
+	CD	HD1
+	CD	HD2
+	CD	HD3
+	O	C
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ LEU ]
+ [ atoms ]
+	N	NH1	-0.47	0
+	HN	H	0.31	1
+	CA	CT1	0.07	2
+	HA	HB	0.09	3
+	CB	CT2	-0.18	4
+	HB1	HA	0.09	5
+	HB2	HA	0.09	6
+	CG	CT1	-0.09	7
+	HG	HA	0.09	8
+	CD1	CT3	-0.27	9
+	HD11	HA	0.09	10
+	HD12	HA	0.09	11
+	HD13	HA	0.09	12
+	CD2	CT3	-0.27	13
+	HD21	HA	0.09	14
+	HD22	HA	0.09	15
+	HD23	HA	0.09	16
+	C	C	0.51	17
+	O	O	-0.51	18
+ [ bonds ]
+	CB	CA
+	CG	CB
+	CD1	CG
+	CD2	CG
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	HB1
+	CB	HB2
+	CG	HG
+	CD1	HD11
+	CD1	HD12
+	CD1	HD13
+	CD2	HD21
+	CD2	HD22
+	CD2	HD23
+	O	C
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ LYS ]
+ [ atoms ]
+	N	NH1	-0.47	0
+	HN	H	0.31	1
+	CA	CT1	0.07	2
+	HA	HB	0.09	3
+	CB	CT2	-0.18	4
+	HB1	HA	0.09	5
+	HB2	HA	0.09	6
+	CG	CT2	-0.18	7
+	HG1	HA	0.09	8
+	HG2	HA	0.09	9
+	CD	CT2	-0.18	10
+	HD1	HA	0.09	11
+	HD2	HA	0.09	12
+	CE	CT2	0.21	13
+	HE1	HA	0.05	14
+	HE2	HA	0.05	15
+	NZ	NH3	-0.30	16
+	HZ1	HC	0.33	17
+	HZ2	HC	0.33	18
+	HZ3	HC	0.33	19
+	C	C	0.51	20
+	O	O	-0.51	21
+ [ bonds ]
+	CB	CA
+	CG	CB
+	CD	CG
+	CE	CD
+	NZ	CE
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	HB1
+	CB	HB2
+	CG	HG1
+	CG	HG2
+	CD	HD1
+	CD	HD2
+	CE	HE1
+	CE	HE2
+	O	C
+	NZ	HZ1
+	NZ	HZ2
+	NZ	HZ3
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ LSN ] ; neutral lysine residue
+ [ atoms ]
+        N       NH1     -0.47   0
+        HN      H       0.31    1
+        CA      CT1     0.07    2
+        HA      HB      0.09    3
+        CB      CT2     -0.18   4
+        HB1     HA      0.09    5
+        HB2     HA      0.09    6
+        CG      CT2     -0.18   7
+        HG1     HA      0.09    8
+        HG2     HA      0.09    9
+        CD      CT2     -0.18   10
+        HD1     HA      0.09    11
+        HD2     HA      0.09    12
+        CE      CT2     0.13    13
+        HE1     HA      0.075   14
+        HE2     HA      0.075   15
+        NZ      NH2     -0.96   16
+        HZ1     HC      0.34    17
+        HZ2     HC      0.34    18
+        C       C       0.51    19
+        O       O       -0.51   20
+ [ bonds ]
+        CB      CA
+        CG      CB
+        CD      CG
+        CE      CD
+        NZ      CE
+        N       HN
+        N       CA
+        C       CA
+        C       +N
+        CA      HA
+        CB      HB1
+        CB      HB2
+        CG      HG1
+        CG      HG2
+        CD      HD1
+        CD      HD2
+        CE      HE1
+        CE      HE2
+        O       C
+        NZ      HZ1
+        NZ      HZ2
+ [ impropers ]
+        N       -C      CA      HN
+        C       CA      +N      O
+[ cmap ]
+        -C      N       CA      C       +N
+
+[ MET ]
+ [ atoms ]
+	N	NH1	-0.47	0
+	HN	H	0.31	1
+	CA	CT1	0.07	2
+	HA	HB	0.09	3
+	CB	CT2	-0.18	4
+	HB1	HA	0.09	5
+	HB2	HA	0.09	6
+	CG	CT2	-0.14	7
+	HG1	HA	0.09	8
+	HG2	HA	0.09	9
+	SD	S	-0.09	10
+	CE	CT3	-0.22	11
+	HE1	HA	0.09	12
+	HE2	HA	0.09	13
+	HE3	HA	0.09	14
+	C	C	0.51	15
+	O	O	-0.51	16
+ [ bonds ]
+	CB	CA
+	CG	CB
+	SD	CG
+	CE	SD
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	HB1
+	CB	HB2
+	CG	HG1
+	CG	HG2
+	CE	HE1
+	CE	HE2
+	CE	HE3
+	O	C
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ PHE ]
+ [ atoms ]
+	N	NH1	-0.47	0
+	HN	H	0.31	1
+	CA	CT1	0.07	2
+	HA	HB	0.09	3
+	CB	CT2	-0.18	4
+	HB1	HA	0.09	5
+	HB2	HA	0.09	6
+	CG	CA	0.00	7
+	CD1	CA	-0.115	8
+	HD1	HP	0.115	9
+	CE1	CA	-0.115	10
+	HE1	HP	0.115	11
+	CZ	CA	-0.115	12
+	HZ	HP	0.115	13
+	CD2	CA	-0.115	14
+	HD2	HP	0.115	15
+	CE2	CA	-0.115	16
+	HE2	HP	0.115	17
+	C	C	0.51	18
+	O	O	-0.51	19
+ [ bonds ]
+	CB	CA
+	CG	CB
+	CD2	CG
+	CE1	CD1
+	CZ	CE2
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	HB1
+	CB	HB2
+	CD1	HD1
+	CD2	HD2
+	CE1	HE1
+	O	C
+	CD1	CG
+	CZ	CE1
+	CE2	CD2
+	CE2	HE2
+	CZ	HZ
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ PRO ]
+ [ atoms ]
+	N	N	-0.29	0
+	CD	CP3	0.00	1
+	HD1	HA	0.09	2
+	HD2	HA	0.09	3
+	CA	CP1	0.02	4
+	HA	HB	0.09	5
+	CB	CP2	-0.18	6
+	HB1	HA	0.09	7
+	HB2	HA	0.09	8
+	CG	CP2	-0.18	9
+	HG1	HA	0.09	10
+	HG2	HA	0.09	11
+	C	C	0.51	12
+	O	O	-0.51	13
+ [ bonds ]
+	C	CA
+	C	+N
+	N	CA
+	CA	CB
+	CB	CG
+	CG	CD
+	N	CD
+	HA	CA
+	HG1	CG
+	HG2	CG
+	HD1	CD
+	HD2	CD
+	HB1	CB
+	HB2	CB
+	O	C
+ [ impropers ]
+	N	-C	CA	CD
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ SER ]
+ [ atoms ]
+	N	NH1	-0.47	0
+	HN	H	0.31	1
+	CA	CT1	0.07	2
+	HA	HB	0.09	3
+	CB	CT2	0.05	4
+	HB1	HA	0.09	5
+	HB2	HA	0.09	6
+	OG	OH1	-0.66	7
+	HG1	H	0.43	8
+	C	C	0.51	9
+	O	O	-0.51	10
+ [ bonds ]
+	CB	CA
+	OG	CB
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	HB1
+	CB	HB2
+	OG	HG1
+	O	C
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ THR ]
+ [ atoms ]
+	N	NH1	-0.47	0
+	HN	H	0.31	1
+	CA	CT1	0.07	2
+	HA	HB	0.09	3
+	CB	CT1	0.14	4
+	HB	HA	0.09	5
+	OG1	OH1	-0.66	6
+	HG1	H	0.43	7
+	CG2	CT3	-0.27	8
+	HG21	HA	0.09	9
+	HG22	HA	0.09	10
+	HG23	HA	0.09	11
+	C	C	0.51	12
+	O	O	-0.51	13
+ [ bonds ]
+	CB	CA
+	OG1	CB
+	CG2	CB
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	HB
+	OG1	HG1
+	CG2	HG21
+	CG2	HG22
+	CG2	HG23
+	O	C
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ TRP ]
+ [ atoms ]
+	N	NH1	-0.47	0
+	HN	H	0.31	1
+	CA	CT1	0.07	2
+	HA	HB	0.09	3
+	CB	CT2	-0.18	4
+	HB1	HA	0.09	5
+	HB2	HA	0.09	6
+	CG	CY	-0.03	7
+	CD1	CA	0.035	8
+	HD1	HP	0.115	9
+	NE1	NY	-0.61	10
+	HE1	H	0.38	11
+	CE2	CPT	0.13	12
+	CD2	CPT	-0.02	13
+	CE3	CA	-0.115	14
+	HE3	HP	0.115	15
+	CZ3	CA	-0.115	16
+	HZ3	HP	0.115	17
+	CZ2	CA	-0.115	18
+	HZ2	HP	0.115	19
+	CH2	CA	-0.115	20
+	HH2	HP	0.115	21
+	C	C	0.51	22
+	O	O	-0.51	23
+ [ bonds ]
+	CB	CA
+	CG	CB
+	CD2	CG
+	NE1	CD1
+	CZ2	CE2
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CZ3	CH2
+	CD2	CE3
+	NE1	CE2
+	CA	HA
+	CB	HB1
+	CB	HB2
+	CD1	HD1
+	NE1	HE1
+	CE3	HE3
+	CZ2	HZ2
+	CZ3	HZ3
+	CH2	HH2
+	O	C
+	CD1	CG
+	CE2	CD2
+	CZ3	CE3
+	CH2	CZ2
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ TYR ]
+ [ atoms ]
+	N	NH1	-0.47	0
+	HN	H	0.31	1
+	CA	CT1	0.07	2
+	HA	HB	0.09	3
+	CB	CT2	-0.18	4
+	HB1	HA	0.09	5
+	HB2	HA	0.09	6
+	CG	CA	0.00	7
+	CD1	CA	-0.115	8
+	HD1	HP	0.115	9
+	CE1	CA	-0.115	10
+	HE1	HP	0.115	11
+	CZ	CA	0.11	12
+	OH	OH1	-0.54	13
+	HH	H	0.43	14
+	CD2	CA	-0.115	15
+	HD2	HP	0.115	16
+	CE2	CA	-0.115	17
+	HE2	HP	0.115	18
+	C	C	0.51	19
+	O	O	-0.51	20
+ [ bonds ]
+	CB	CA
+	CG	CB
+	CD2	CG
+	CE1	CD1
+	CZ	CE2
+	OH	CZ
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	HB1
+	CB	HB2
+	CD1	HD1
+	CD2	HD2
+	CE1	HE1
+	CE2	HE2
+	OH	HH
+	O	C
+	CD1	CG
+	CE1	CZ
+	CE2	CD2
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ VAL ]
+ [ atoms ]
+	N	NH1	-0.47	0
+	HN	H	0.31	1
+	CA	CT1	0.07	2
+	HA	HB	0.09	3
+	CB	CT1	-0.09	4
+	HB	HA	0.09	5
+	CG1	CT3	-0.27	6
+	HG11	HA	0.09	7
+	HG12	HA	0.09	8
+	HG13	HA	0.09	9
+	CG2	CT3	-0.27	10
+	HG21	HA	0.09	11
+	HG22	HA	0.09	12
+	HG23	HA	0.09	13
+	C	C	0.51	14
+	O	O	-0.51	15
+ [ bonds ]
+	CB	CA
+	CG1	CB
+	CG2	CB
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	HB
+	CG1	HG11
+	CG1	HG12
+	CG1	HG13
+	CG2	HG21
+	CG2	HG22
+	CG2	HG23
+	O	C
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ ALAD ] ; Alanine dipeptide
+ [ atoms ]
+	CL	CT3	-0.27	0
+	HL1	HA	0.09	1
+	HL2	HA	0.09	2
+	HL3	HA	0.09	3
+	CLP	C	0.51	4
+	OL	O	-0.51	5
+	NL	NH1	-0.47	6
+	HL	H	0.31	7
+	CA	CT1	0.07	8
+	HA	HB	0.09	9
+	CB	CT3	-0.27	10
+	HB1	HA	0.09	11
+	HB2	HA	0.09	12
+	HB3	HA	0.09	13
+	CRP	C	0.51	14
+	OR	O	-0.51	15
+	NR	NH1	-0.47	16
+	HR	H	0.31	17
+	CR	CT3	-0.11	18
+	HR1	HA	0.09	19
+	HR2	HA	0.09	20
+	HR3	HA	0.09	21
+ [ bonds ]
+	CL	CLP
+	CLP	NL
+	NL	CA
+	CA	CRP
+	CRP	NR
+	NR	CR
+	CLP	OL
+	CRP	OR
+	NL	HL
+	NR	HR
+	CA	HA
+	CA	CB
+	CL	HL1
+	CL	HL2
+	CL	HL3
+	CB	HB1
+	CB	HB2
+	CB	HB3
+	CR	HR1
+	CR	HR2
+	CR	HR3
+ [ impropers ]
+	CLP	CL	NL	OL
+	NL	CLP	CA	HL
+	CRP	CA	NR	OR
+	NR	CRP	CR	HR
+ [ cmap ]
+	CLP	NL	CA	CRP	NR
+
+[ HEME ]
+ [ atoms ]
+	FE	FE	 0.24	0
+	NA	NPH	-0.18	1
+	NB	NPH	-0.18	2
+	NC	NPH	-0.18	3
+	ND	NPH	-0.18	4
+	C1A	CPA	 0.12	5
+	C2A	CPB	-0.06	6
+	C3A	CPB	-0.06	7
+	C4A	CPA	 0.12	8
+	C1B	CPA	 0.12	9
+	C2B	CPB	-0.06	10
+	C3B	CPB	-0.06	11
+	C4B	CPA	 0.12	12
+	C1C	CPA	 0.12	13
+	C2C	CPB	-0.06	14
+	C3C	CPB	-0.06	15
+	C4C	CPA	 0.12	16
+	C1D	CPA	 0.12	17
+	C2D	CPB	-0.06	18
+	C3D	CPB	-0.06	19
+	C4D	CPA	 0.12	20
+	CHA	CPM	-0.10	21
+	HA	HA	 0.10	22
+	CHB	CPM	-0.10	23
+	HB	HA	 0.10	24
+	CHC	CPM	-0.10	25
+	HC	HA	 0.10	26
+	CHD	CPM	-0.10	27
+	HD	HA	 0.10	28
+	CMA	CT3	-0.27	29
+	HMA1	HA	 0.09	30
+	HMA2	HA	 0.09	31
+	HMA3	HA	 0.09	32
+	CAA	CT2	-0.18	33
+	HAA1	HA	 0.09	34
+	HAA2	HA	 0.09	35
+	CBA	CT2	-0.28	36
+	HBA1	HA	 0.09	37
+	HBA2	HA	 0.09	38
+	CGA	CC	 0.62	39
+	O1A	OC	-0.76	40
+	O2A	OC	-0.76	41
+	CMB	CT3	-0.27	42
+	HMB1	HA	 0.09	43
+	HMB2	HA	 0.09	44
+	HMB3	HA	 0.09	45
+	CAB	CE1	-0.15	46
+	HAB	HE1	 0.15	47
+	CBB	CE2	-0.42	48
+	HBB1	HE2	 0.21	49
+	HBB2	HE2	 0.21	50
+	CMC	CT3	-0.27	51
+	HMC1	HA	 0.09	52
+	HMC2	HA	 0.09	53
+	HMC3	HA	 0.09	54
+	CAC	CE1	-0.15	55
+	HAC	HE1	 0.15	56
+	CBC	CE2	-0.42	57
+	HBC1	HE2	 0.21	58
+	HBC2	HE2	 0.21	59
+	CMD	CT3	-0.27	60
+	HMD1	HA	 0.09	61
+	HMD2	HA	 0.09	62
+	HMD3	HA	 0.09	63
+	CAD	CT2	-0.18	64
+	HAD1	HA	 0.09	65
+	HAD2	HA	 0.09	66
+	CBD	CT2	-0.28	67
+	HBD1	HA	 0.09	68
+	HBD2	HA	 0.09	69
+	CGD	CC	 0.62	70
+	O1D	OC	-0.76	71
+	O2D	OC	-0.76	72
+ [ bonds ]
+	FE	NA
+	FE	NB
+	FE	NC
+	FE	ND
+	NA	C1A
+	C1A	C2A
+	C2A	C3A
+	C3A	C4A
+	NA	C4A
+	C2A	CAA
+	CAA	CBA
+	CBA	CGA
+	CGA	O1A
+	CGA	O2A
+	C3A	CMA
+	CHB	C4A
+	CHB	C1B
+	NB	C1B
+	C1B	C2B
+	C2B	C3B
+	C3B	C4B
+	NB	C4B
+	C2B	CMB
+	C3B	CAB
+	CAB	CBB
+	CHC	C4B
+	CHC	C1C
+	NC	C1C
+	C1C	C2C
+	C2C	C3C
+	C3C	C4C
+	NC	C4C
+	C2C	CMC
+	C3C	CAC
+	CAC	CBC
+	CHD	C4C
+	CHD	C1D
+	ND	C1D
+	C1D	C2D
+	C2D	C3D
+	C3D	C4D
+	ND	C4D
+	C2D	CMD
+	C3D	CAD
+	CAD	CBD
+	CBD	CGD
+	CGD	O1D
+	CGD	O2D
+	CHA	C4D
+	CHA	C1A
+	CHA	HA
+	CHB	HB
+	CHC	HC
+	CHD	HD
+	CAA	HAA1
+	CAA	HAA2
+	CBA	HBA1
+	CBA	HBA2
+	CMA	HMA1
+	CMA	HMA2
+	CMA	HMA3
+	CMB	HMB1
+	CMB	HMB2
+	CMB	HMB3
+	CAB	HAB
+	CBB	HBB1
+	CBB	HBB2
+	CMC	HMC1
+	CMC	HMC2
+	CMC	HMC3
+	CAC	HAC
+	CBC	HBC1
+	CBC	HBC2
+	CMD	HMD1
+	CMD	HMD2
+	CMD	HMD3
+	CAD	HAD1
+	CAD	HAD2
+	CBD	HBD1
+	CBD	HBD2 
+ [ angles ]
+	;  ai    aj    ak   th0     cth     ub0	    cub  
+	   NA    FE    NC   180.0   0.0     0.0	    0.0
+	   NB    FE    ND   180.0   0.0     0.0	    0.0
+ [ impropers ]
+	C2A	C1A	C3A	CAA
+	C3A	C2A	C4A	CMA
+	C2B	C1B	C3B	CMB
+	C3B	C2B	C4B	CAB
+	C2C	C1C	C3C	CMC
+	C3C	C2C	C4C	CAC
+	C2D	C1D	C3D	CMD
+	C3D	C2D	C4D	CAD
+	CGA	CBA	O2A	O1A
+	CGD	CBD	O2D	O1D
+	C4A	NA	C1A	C2A
+	C1A	NA	C4A	C3A
+	C4B	NB	C1B	C2B
+	C1B	NB	C4B	C3B
+	C4C	NC	C1C	C2C
+	C1C	NC	C4C	C3C
+	C4D	ND	C1D	C2D
+	C1D	ND	C4D	C3D
+	NA	C1A	C2A	C3A
+	NA	C4A	C3A	C2A
+	NB	C1B	C2B	C3B
+	NB	C4B	C3B	C2B
+	NC	C1C	C2C	C3C
+	NC	C4C	C3C	C2C
+	ND	C1D	C2D	C3D
+	ND	C4D	C3D	C2D
+	NA	C1A	CHA	C4D
+	NA	C4A	CHB	C1B
+	NB	C1B	CHB	C4A
+	NB	C4B	CHC	C1C
+	NC	C1C	CHC	C4B
+	NC	C4C	CHD	C1D
+	ND	C1D	CHD	C4C
+	ND	C4D	CHA	C1A
+	CHA	C1A	C4D	HA
+	CHB	C1B	C4A	HB
+	CHC	C1C	C4B	HC
+	CHD	C1D	C4C	HD
+	C1A	C2A	CHA	NA
+	C4A	C3A	CHB	NA
+	C1B	C2B	CHB	NB
+	C4B	C3B	CHC	NB
+	C1C	C2C	CHC	NC
+	C4C	C3C	CHD	NC
+	C1D	C2D	CHD	ND
+	C4D	C3D	CHA	ND
+	NA	C1A	C4A	FE
+	NB	C1B	C4B	FE
+	NC	C1C	C4C	FE
+	ND	C1D	C4D	FE
+
+[ HEO2 ]
+ [ atoms ]
+	FE	FE	 0.24	0
+	NA	NPH	-0.18	1
+	NB	NPH	-0.18	2
+	NC	NPH	-0.18	3
+	ND	NPH	-0.18	4
+	C1A	CPA	 0.12	5
+	C2A	CPB	-0.06	6
+	C3A	CPB	-0.06	7
+	C4A	CPA	 0.12	8
+	C1B	CPA	 0.12	9
+	C2B	CPB	-0.06	10
+	C3B	CPB	-0.06	11
+	C4B	CPA	 0.12	12
+	C1C	CPA	 0.12	13
+	C2C	CPB	-0.06	14
+	C3C	CPB	-0.06	15
+	C4C	CPA	 0.12	16
+	C1D	CPA	 0.12	17
+	C2D	CPB	-0.06	18
+	C3D	CPB	-0.06	19
+	C4D	CPA	 0.12	20
+	CHA	CPM	-0.10	21
+	HA	HA	 0.10	22
+	CHB	CPM	-0.10	23
+	HB	HA	 0.10	24
+	CHC	CPM	-0.10	25
+	HC	HA	 0.10	26
+	CHD	CPM	-0.10	27
+	HD	HA	 0.10	28
+	CMA	CT3	-0.27	29
+	HMA1	HA	 0.09	30
+	HMA2	HA	 0.09	31
+	HMA3	HA	 0.09	32
+	CAA	CT2	-0.18	33
+	HAA1	HA	 0.09	34
+	HAA2	HA	 0.09	35
+	CBA	CT2	-0.28	36
+	HBA1	HA	 0.09	37
+	HBA2	HA	 0.09	38
+	CGA	CC	 0.62	39
+	O1A	OC	-0.76	40
+	O2A	OC	-0.76	41
+	CMB	CT3	-0.27	42
+	HMB1	HA	 0.09	43
+	HMB2	HA	 0.09	44
+	HMB3	HA	 0.09	45
+	CAB	CE1	-0.15	46
+	HAB	HE1	 0.15	47
+	CBB	CE2	-0.42	48
+	HBB1	HE2	 0.21	49
+	HBB2	HE2	 0.21	50
+	CMC	CT3	-0.27	51
+	HMC1	HA	 0.09	52
+	HMC2	HA	 0.09	53
+	HMC3	HA	 0.09	54
+	CAC	CE1	-0.15	55
+	HAC	HE1	 0.15	56
+	CBC	CE2	-0.42	57
+	HBC1	HE2	 0.21	58
+	HBC2	HE2	 0.21	59
+	CMD	CT3	-0.27	60
+	HMD1	HA	 0.09	61
+	HMD2	HA	 0.09	62
+	HMD3	HA	 0.09	63
+	CAD	CT2	-0.18	64
+	HAD1	HA	 0.09	65
+	HAD2	HA	 0.09	66
+	CBD	CT2	-0.28	67
+	HBD1	HA	 0.09	68
+	HBD2	HA	 0.09	69
+	CGD	CC	 0.62	70
+	O1D	OC	-0.76	71
+	O2D	OC	-0.76	72
+	O1      OM      0.021   73
+	O2      OM     -0.021   74
+ [ bonds ]
+	FE	NA
+	FE	NB
+	FE	NC
+	FE	ND
+	NA	C1A
+	C1A	C2A
+	C2A	C3A
+	C3A	C4A
+	NA	C4A
+	C2A	CAA
+	CAA	CBA
+	CBA	CGA
+	CGA	O1A
+	CGA	O2A
+	C3A	CMA
+	CHB	C4A
+	CHB	C1B
+	NB	C1B
+	C1B	C2B
+	C2B	C3B
+	C3B	C4B
+	NB	C4B
+	C2B	CMB
+	C3B	CAB
+	CAB	CBB
+	CHC	C4B
+	CHC	C1C
+	NC	C1C
+	C1C	C2C
+	C2C	C3C
+	C3C	C4C
+	NC	C4C
+	C2C	CMC
+	C3C	CAC
+	CAC	CBC
+	CHD	C4C
+	CHD	C1D
+	ND	C1D
+	C1D	C2D
+	C2D	C3D
+	C3D	C4D
+	ND	C4D
+	C2D	CMD
+	C3D	CAD
+	CAD	CBD
+	CBD	CGD
+	CGD	O1D
+	CGD	O2D
+	CHA	C4D
+	CHA	C1A
+	CHA	HA
+	CHB	HB
+	CHC	HC
+	CHD	HD
+	CAA	HAA1
+	CAA	HAA2
+	CBA	HBA1
+	CBA	HBA2
+	CMA	HMA1
+	CMA	HMA2
+	CMA	HMA3
+	CMB	HMB1
+	CMB	HMB2
+	CMB	HMB3
+	CAB	HAB
+	CBB	HBB1
+	CBB	HBB2
+	CMC	HMC1
+	CMC	HMC2
+	CMC	HMC3
+	CAC	HAC
+	CBC	HBC1
+	CBC	HBC2
+	CMD	HMD1
+	CMD	HMD2
+	CMD	HMD3
+	CAD	HAD1
+	CAD	HAD2
+	CBD	HBD1
+	CBD	HBD2 
+	O1      O2
+	O1      FE
+ [ angles ]
+	;  ai    aj    ak   th0     cth     ub0	    cub  
+	   NA    FE    NC   180.0   0.0     0.0	    0.0
+	   NB    FE    ND   180.0   0.0     0.0	    0.0
+	   FE    O1    O2   122.0   50.00   0.0     0.0
+ [ impropers ]
+	C2A	C1A	C3A	CAA
+	C3A	C2A	C4A	CMA
+	C2B	C1B	C3B	CMB
+	C3B	C2B	C4B	CAB
+	C2C	C1C	C3C	CMC
+	C3C	C2C	C4C	CAC
+	C2D	C1D	C3D	CMD
+	C3D	C2D	C4D	CAD
+	CGA	CBA	O2A	O1A
+	CGD	CBD	O2D	O1D
+	C4A	NA	C1A	C2A
+	C1A	NA	C4A	C3A
+	C4B	NB	C1B	C2B
+	C1B	NB	C4B	C3B
+	C4C	NC	C1C	C2C
+	C1C	NC	C4C	C3C
+	C4D	ND	C1D	C2D
+	C1D	ND	C4D	C3D
+	NA	C1A	C2A	C3A
+	NA	C4A	C3A	C2A
+	NB	C1B	C2B	C3B
+	NB	C4B	C3B	C2B
+	NC	C1C	C2C	C3C
+	NC	C4C	C3C	C2C
+	ND	C1D	C2D	C3D
+	ND	C4D	C3D	C2D
+	NA	C1A	CHA	C4D
+	NA	C4A	CHB	C1B
+	NB	C1B	CHB	C4A
+	NB	C4B	CHC	C1C
+	NC	C1C	CHC	C4B
+	NC	C4C	CHD	C1D
+	ND	C1D	CHD	C4C
+	ND	C4D	CHA	C1A
+	CHA	C1A	C4D	HA
+	CHB	C1B	C4A	HB
+	CHC	C1C	C4B	HC
+	CHD	C1D	C4C	HD
+	C1A	C2A	CHA	NA
+	C4A	C3A	CHB	NA
+	C1B	C2B	CHB	NB
+	C4B	C3B	CHC	NB
+	C1C	C2C	CHC	NC
+	C4C	C3C	CHD	NC
+	C1D	C2D	CHD	ND
+	C4D	C3D	CHA	ND
+	NA	C1A	C4A	FE
+	NB	C1B	C4B	FE
+	NC	C1C	C4C	FE
+	ND	C1D	C4D	FE
+
+[ O2 ] ; O2 ligand for HEME
+ [ atoms ]
+	O1      OM      0.021   0
+	O2      OM     -0.021   1
+ [ bonds ]
+	O1 O2
+
+[ CO ] ; CO ligand for HEME
+ [ atoms ]
+	C       CM      0.021   0
+	O       OM     -0.021   1
+ [ bonds ]
+	C O
+
+[ HOH ]
+ [ atoms ]
+        OW      OT      -0.834  0
+        HW1     HT      0.417   1
+        HW2     HT      0.417   2
+ [ bonds ]
+        OW      HW1
+        OW      HW2
+        HW1     HW2
+
+[ TIP3 ]
+ [ atoms ]
+	OH2	OT	-0.834	0
+	H1	HT	0.417	1
+	H2	HT	0.417	2
+ [ bonds ]
+	OH2	H1
+	OH2	H2
+	H1	H2
+
+[ TP3M ]
+ [ atoms ]
+	OH2	OT	-0.834	0
+	H1	HT	0.417	1
+	H2	HT	0.417	2
+ [ bonds ]
+	OH2	H1
+	OH2	H2
+
+[ SOD ]
+ [ atoms ]
+	SOD	SOD	1.00	0
+
+[ MG ]
+ [ atoms ]
+	MG	MG	2.00	0
+
+[ POT ]
+ [ atoms ]
+	POT	POT	1.00	0
+
+[ CES ]
+ [ atoms ]
+	CES	CES	1.00	0
+
+[ CAL ]
+ [ atoms ]
+	CAL	CAL	2.00	0
+
+[ CLA ]
+ [ atoms ]
+	CLA	CLA	-1.00	0
+
+[ ZN2 ]
+ [ atoms ]
+	ZN	ZN	2.00	0
+; Non-natural sidechains in http://www.swisssidechain.ch
+
+[ 004 ] ; Phenylglycine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CA	0.0000	4
+	CG1	CA	-0.1150	5
+	HG1	HP	0.1150	6
+	CG2	CA	-0.1150	7
+	HG2	HP	0.1150	8
+	CD1	CA	-0.1150	9
+	HD1	HP	0.1150	10
+	CD2	CA	-0.1150	11
+	HD2	HP	0.1150	12
+	CE	CA	-0.1150	13
+	HE	HP	0.1150	14
+	C	C	0.5100	15
+	O	O	-0.5100	16
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG1	CB
+	CG2	CB
+	CD1	CG1
+	CE	CD1
+	CD2	CE
+	CG2	CD2
+	CG1	HG1
+	CD1	HD1
+	CE	HE
+	CD2	HD2
+	CG2	HG2
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ 0A1  ] ; 4-methoxy-beta-Phe
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CA	0.0000	7
+	CD1	CA	-0.1150	8
+	HD1	HP	0.1150	9
+	CD2	CA	-0.1150	10
+	HD2	HP	0.1150	11
+	CE1	CA	-0.1150	12
+	HE1	HP	0.1150	13
+	CE2	CA	-0.1150	14
+	HE2	HP	0.1150	15
+	CZ	CA	0.0800	16
+	OH	OCC	-0.3600	17
+	CH	CT3	0.0100	18
+	HH1	HA	0.0900	19
+	HH2	HA	0.0900	20
+	HH3	HA	0.0900	21
+	C	C	0.5100	22
+	O	O	-0.5100	23
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	CE1	CD1
+	CG	CD1
+	CE2	CD2
+	CG	CD2
+	CZ	CE1
+	CZ	CE2
+	OH	CH
+	OH	CZ
+	CB	HB1
+	CB	HB2
+	CD1	HD1
+	CD2	HD2
+	CE2	HE2
+	CE1	HE1
+	CH	HH1
+	CH	HH2
+	CH	HH3
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ 0AF ] ; 7-hydroxy-l-tryptophan 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CY	-0.0300	7
+	CD1	CA	0.0350	8
+	HD1	HP	0.1150	9
+	CD2	CPT	-0.0200	10
+	NE1	NY	-0.6100	11
+	HE1	H	0.3800	12
+	CE2	CPT	0.1300	13
+	CZ2	CA	0.1100	14
+	OZ2	OH1	-0.5400	15
+	HZ2	H	0.4300	16
+	CE3	CA	-0.1150	17
+	HE3	HP	0.1150	18
+	CZ3	CA	-0.1150	19
+	HZ3	HP	0.1150	20
+	CH2	CA	-0.1150	21
+	HH2	HP	0.1150	22
+	C	C	0.5100	23
+	O	O	-0.5100	24
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CG	CD1
+	HD1	CD1
+	NE1	CD1
+	CE2	CD2
+	CE3	CD2
+	CG	CD2
+	CZ2	CE2
+	NE1	CE2
+	CZ3	CE3
+	HE3	CE3
+	CZ2	CH2
+	CZ3	CH2
+	HH2	CH2
+	OZ2	CZ2
+	HZ3	CZ3
+	OZ2	HZ2
+	NE1	HE1
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ 0BN ] ; 4-carbamimidoyl-l-phenylalanine 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CA	0.0000	7
+	CD1	CA	-0.1150	8
+	HD1	HP	0.1150	9
+	CD2	CA	-0.1150	10
+	HD2	HP	0.1150	11
+	CE1	CA	-0.1150	12
+	HE1	HP	0.1150	13
+	CE2	CA	-0.1150	14
+	HE2	HP	0.1150	15
+	CZ	CA	-0.0300	16
+	CH	C	0.7300	17
+	NJ1	NCN	-0.7500	18
+	HJ11	HNCN	0.4500	19
+	HJ12	HNCN	0.4500	20
+	NJ2	NCN	-0.7500	21
+	HJ22	HNCN	0.4500	22
+	HJ21	HNCN	0.4500	23
+	C	C	0.5100	24
+	O	O	-0.5100	25
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CB	HB1
+	CB	HB2
+	CD1	HD1
+	CG	CB
+	CG	CD1
+	CE1	CD1
+	CD2	CG
+	CE1	HE1
+	CZ	CE1
+	HD2	CD2
+	CE2	CD2
+	NJ1	HJ11
+	CE2	CZ
+	CH	CZ
+	HE2	CE2
+	CH	NJ1
+	HJ12	NJ1
+	NJ2	CH
+	HJ22	NJ2
+	HJ21	NJ2
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+	CH	NJ1	NJ2	CZ	
+	NJ1	HJ11	HJ12	CH
+	NJ2	HJ21	HJ22	CH	
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ 200 ] ; 4-chloro-Phenylalanine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CA	0.0000	7
+	CD1	CA	-0.1150	8
+	HD1	HP	0.1150	9
+	CD2	CA	-0.1150	10
+	HD2	HP	0.1150	11
+	CE1	CA	-0.1150	12
+	HE1	HP	0.1150	13
+	CE2	CA	-0.1150	14
+	HE2	HP	0.1150	15
+	CZ	CA	0.1700	16
+	CLZ	CLAL	-0.1700	17
+	C	C	0.5100	18
+	O	O	-0.5100	19
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CE1	CD1
+	CG	CD1
+	HD1	CD1
+	CE2	CD2
+	CG	CD2
+	HD2	CD2
+	CZ	CE1
+	HE1	CE1
+	CZ	CE2
+	HE2	CE2
+	CZ	CLZ
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ 26P ] ; 2-amino-6-oxopimelic acid 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB2	HA	0.0900	5
+	HB1	HA	0.0900	6
+	CG	CT2	-0.1800	7
+	HG2	HA	0.0900	8
+	HG1	HA	0.0900	9
+	CD	CT2	-0.1200	10
+	HD2	HA	0.0900	11
+	HD1	HA	0.0900	12
+	CE	CC	0.3600	13
+	OE	O	-0.5700	14
+	CZ	CC	0.6700	15
+	OZ1	OC	-0.7600	16
+	OZ2	OC	-0.7600	17
+	C	C	0.5100	18
+	O	O	-0.5100	19
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	OZ1	CZ
+	OZ2	CZ
+	CD	HD2
+	CB	HB2
+	CG	HG2
+	CE	CZ
+	CD	CE
+	OE	CE
+	CG	CD
+	HD1	CD
+	CB	CG
+	HG1	CG
+	HB1	CB
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+	CE	OE	CZ	CD
+	CZ	OZ1	OZ2	CE
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ 2AG ] ; 2-Allyl-glycine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CE1	-0.1500	7
+	HG	HE1	0.1500	8
+	CD	CE2	-0.3000	9
+	HD1	HE2	0.1500	10
+	HD2	HE2	0.1500	11
+	C	C	0.5100	12
+	O	O	-0.5100	13
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	CD	CG
+	CB	HB1
+	CB	HB2
+	CG	HG
+	CD	HD1
+	CD	HD2
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+	CG	HG	CD	CB
+	CD	HD1	HD2	CG
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ 2AS ] ; 3-methyl-aspartic acid 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT1	-0.1900	4
+	HB2	HA	0.0900	5
+	CG1	CC	0.6200	6
+	CG2	CT3	-0.2700	7
+	HG21	HA	0.0900	8
+	HG22	HA	0.0900	9
+	HG23	HA	0.0900	10
+	OD1	OC	-0.7600	11
+	OD2	OC	-0.7600	12
+	C	C	0.5100	13
+	O	O	-0.5100	14
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	OD1	CG1
+	OD2	CG1
+	CB	HB2
+	CB	CG1
+	CG2	CB
+	HG21	CG2
+	HG22	CG2
+	HG23	CG2
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+	CG1	OD1	OD2	CB
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ 2FM ] ; s-(difluoromethyl)homocysteine 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CT2	-0.1400	7
+	HG1	HA	0.0900	8
+	HG2	HA	0.0900	9
+	SD	S	-0.0900	10
+	CE	CT1	0.6400	11
+	HE	HA	0.0900	12
+	FZ1	F2	-0.3400	13
+	FZ2	F2	-0.3400	14
+	C	C	0.5100	15
+	O	O	-0.5100	16
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	SD	CE
+	FZ1	CE
+	FZ2	CE
+	HE	CE
+	SD	CG
+	HG1	CG
+	HG2	CG
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ 2HF ] ; 2-fluoro-l-histidine (NE2-ND1)
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.0500	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CPH1	0.1900	7
+	ND1	NR3	-0.5100	8
+	HD1	H	0.4400	9
+	CD2	CPH1	0.1900	10
+	HD2	HR1	0.1300	11
+	CE1	CPH2	0.6700	12
+	NE2	NR3	-0.5100	13
+	HE2	H	0.4400	14
+	F1	F1	-0.1700	15
+	C	C	0.5100	16
+	O	O	-0.5100	17
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	ND1	CG
+	CE1	ND1
+	CD2	CG
+	NE2	CD2
+	NE2	CE1
+	CG	CB
+	HB1	CB
+	HB2	CB
+	HD2	CD2
+	F1	CE1
+	ND1	HD1
+	NE2	HE2
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+        ND1     CG      CE1     HD1
+        ND1     CE1     CG      HD1
+        NE2     CD2     CE1     HE2
+        NE2     CE1     CD2     HE2
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ 2HF1 ] ; 2-fluoro-l-histidine (ND1)
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.0900	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	C5A	-0.0500	7
+	CD2	C5B	0.2200	8
+	HD2	HP	0.1000	9
+	ND1	NY	-0.3600	10
+	HD1	H	0.3200	11
+	NE2	N5B	-0.5600	12
+	CE1	C5A	0.3700	13
+	F1	F1	-0.1300	14
+	C	C	0.5100	15
+	O	O	-0.5100	16
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CG	CD2
+	HD2	CD2
+	NE2	CD2
+	F1	CE1
+	ND1	CE1
+	NE2	CE1
+	ND1	CG
+	ND1	HD1
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+        ND1     CG      CE1     HD1
+        CD2     CG      NE2     HD2
+        CE1     ND1     NE2     F1
+        ND1     CE1     CG      HD1
+        CD2     NE2     CG      HD2
+        CE1     NE2     ND1     F1 
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ 2HF2 ] ; 2-fluoro-l-histidine (NE2)
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.0800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	C5B	0.2200	7
+	CD2	C5A	-0.0500	8
+	HD2	HP	0.0900	9
+	ND1	N5B	-0.5600	10
+	NE2	NY	-0.3600	11
+	HE2	H	0.3200	12
+	CE1	C5A	0.3700	13
+	F1	F1	-0.1300	14
+	C	C	0.5100	15
+	O	O	-0.5100	16
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CG	CD2
+	HD2	CD2
+	NE2	CD2
+	F1	CE1
+	ND1	CE1
+	NE2	CE1
+	ND1	CG
+	NE2	HE2
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+        NE2     CD2     CE1     HE2
+        CD2     CG      NE2     HD2
+        CE1     ND1     NE2     F1
+        NE2     CE1     CD2     HE2
+        CD2     NE2     CG      HD2
+        CE1     NE2     ND1     F1
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ 2NP ] ; l-2-amino-6-methylene-pimelic acid 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB2	HA	0.0900	5
+	HB1	HA	0.0900	6
+	CG	CT2	-0.1800	7
+	HG1	HA	0.0900	8
+	HG2	HA	0.0900	9
+	CD	CT2	-0.1800	10
+	HD2	HA	0.0900	11
+	HD1	HA	0.0900	12
+	CE	C=C	-0.3800	13
+	CZ1	CC	0.9000	14
+	CZ2	CE2	-0.3000	15
+	HZ22	HE2	0.1500	16
+	HZ21	HE2	0.1500	17
+	OJ1	OC	-0.7600	18
+	OJ2	OC	-0.7600	19
+	C	C	0.5100	20
+	O	O	-0.5100	21
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	OJ1	CZ1
+	OJ2	CZ1
+	CB	HB2
+	CB	HB1
+	CD	HD2
+	CG	CB
+	CD	HD1
+	CG	CD
+	CE	CD
+	HG1	CG
+	HG2	CG
+	CZ1	CE
+	CZ2	CE
+	CZ2	HZ22
+	HZ21	CZ2
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+	CE	CD	CZ1	CZ2
+	CZ1	CE	OJ1	OJ2
+	CZ2	CE	HZ21	HZ22
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ 32T ] ; (s)-2-amino-3-(4h-thieno[3,2-b]-pyrrol-6-yl)-propionic acid 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CY	-0.0300	7
+	CD1	CA	0.0350	8
+	HD1	HP	0.1150	9
+	CD2	CPT	0.0200	10
+	NE1	NY	-0.6100	11
+	HE1	H	0.3800	12
+	CE2	CPT	0.1300	13
+	SUL	STHI	-0.1100	14
+	CZ2	C5B	-0.1600	15
+	HZ2	HP	0.1500	16
+	CZ3	C5A	-0.0700	17
+	HZ3	HP	0.1500	18
+	C	C	0.5100	19
+	O	O	-0.5100	20
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	HB1	CB
+	HB2	CB
+	CG	CB
+	HD1	CD1
+	CG	CD1
+	NE1	CD1
+	CG	CD2
+	CE2	CD2
+	SUL	CD2
+	CZ2	CE2
+	NE1	CE2
+	HZ2	CZ2
+	CZ3	CZ2
+	HZ3	CZ3
+	SUL	CZ3
+	NE1	HE1
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ 3CF ] ; 3-cyano-phenylalanine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CA	0.0000	7
+	CD1	CA	-0.1150	8
+	HD1	HP	0.1150	9
+	CD2	CA	-0.1150	10
+	HD2	HP	0.1150	11
+	CE1	CA	0.0700	12
+	CH	CN	0.4800	13
+	NJ	NC	-0.5500	14
+	CE2	CA	-0.1150	15
+	HE2	HP	0.1150	16
+	CZ	CA	-0.1150	17
+	HZ	HP	0.1150	18
+	C	C	0.5100	19
+	O	O	-0.5100	20
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CE1	CD1
+	CG	CD1
+	HD1	CD1
+	CE2	CD2
+	CG	CD2
+	HD2	CD2
+	CE1	CH
+	NJ	CH
+	CZ	CE1
+	CZ	CE2
+	HE2	CE2
+	HZ	CZ
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ 3FG ] ; (2s)-amino(3,5-dihydroxyphenyl)ethanoic acid 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CA	0.0000	4
+	CG1	CA	-0.1150	5
+	HG1	HP	0.1150	6
+	CG2	CA	-0.1150	7
+	HG2	HP	0.1150	8
+	CZ	CA	-0.1150	9
+	HZ	HP	0.1150	10
+	CD1	CA	0.1100	11
+	OD1	OH1	-0.5400	12
+	HD1	H	0.4300	13
+	CD2	CA	0.1100	14
+	OD2	OH1	-0.5400	15
+	HD2	H	0.4300	16
+	C	C	0.5100	17
+	O	O	-0.5100	18
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG1	CB
+	CG2	CB
+	CG1	CD1
+	CZ	CD1
+	OD1	CD1
+	CG2	CD2
+	CZ	CD2
+	OD2	CD2
+	HG1	CG1
+	HG2	CG2
+	HZ	CZ
+	OD1	HD1
+	OD2	HD2
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ 3GL ] ; 4-hydroxy-glutamic-acid 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB2	HA	0.0900	5
+	HB1	HA	0.0900	6
+	CG	CT1	0.0400	7
+	HG	HA	0.0900	8
+	OH	OH1	-0.6600	9
+	HH	H	0.4300	10
+	CD	CC	0.6200	11
+	OE1	OC	-0.7600	12
+	OE2	OC	-0.7600	13
+	C	C	0.5100	14
+	O	O	-0.5100	15
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	OE1	CD
+	OE2	CD
+	OH	HH
+	CB	HB2
+	CG	OH
+	CG	CB
+	HB1	CB
+	CD	CG
+	HG	CG
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+	CD	CG	OE1	OE2
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ 3MY ] ; 3-Chloro-tyrosine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CA	0.0000	7
+	CD1	CA	-0.1150	8
+	HD1	HP	0.1150	9
+	CD2	CA	-0.1150	10
+	HD2	HP	0.1150	11
+	CE1	CA	-0.1150	12
+	HE1	HP	0.1150	13
+	CE2	CA	0.1700	14
+	CLE	CLAL	-0.1700	15
+	CZ	CA	0.1100	16
+	OH	OH1	-0.5400	17
+	HH	H	0.4300	18
+	C	C	0.5100	19
+	O	O	-0.5100	20
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CE1	CD1
+	CG	CD1
+	HD1	CD1
+	CE2	CD2
+	CG	CD2
+	HD2	CD2
+	CZ	CE1
+	HE1	CE1
+	CLE	CE2
+	CZ	CE2
+	OH	CZ
+	OH	HH
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ 4BF ] ; 4-Bromo-phenylalanine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CA	0.0000	7
+	CD1	CA	-0.1150	8
+	HD1	HP	0.1150	9
+	CD2	CA	-0.1150	10
+	HD2	HP	0.1150	11
+	CE1	CA	-0.1150	12
+	HE1	HP	0.1150	13
+	CE2	CA	-0.1150	14
+	HE2	HP	0.1150	15
+	CZ	CA	0.1100	16
+	BRZ	BR	-0.1100	17
+	C	C	0.5100	18
+	O	O	-0.5100	19
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CZ	BRZ
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CE1	CD1
+	CG	CD1
+	HD1	CD1
+	CE2	CD2
+	CG	CD2
+	HD2	CD2
+	CZ	CE1
+	CZ	CE2
+	CE1	HE1
+	CE2	HE2
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ 4CF ] ; 4-cyano-phenylalanine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CA	0.0000	7
+	CD1	CA	-0.1150	8
+	HD1	HP	0.1150	9
+	CD2	CA	-0.1150	10
+	HD2	HP	0.1150	11
+	CE1	CA	-0.1150	12
+	HE1	HP	0.1150	13
+	CE2	CA	-0.1150	14
+	HE2	HP	0.1150	15
+	CZ	CA	0.0700	16
+	CH	CN	0.4800	17
+	NJ	NC	-0.5500	18
+	C	C	0.5100	19
+	O	O	-0.5100	20
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CE1	CD1
+	CG	CD1
+	HD1	CD1
+	CE2	CD2
+	CG	CD2
+	HD2	CD2
+	CZ	CE1
+	HE1	CE1
+	CZ	CE2
+	HE2	CE2
+	CZ	CH
+	NJ	CH
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ 4CY ] ; nitrilo-l-methionine 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CT2	0.0500	7
+	HG1	HA	0.0900	8
+	HG2	HA	0.0900	9
+	SD	S	-0.2700	10
+	CE	CN	0.5900	11
+	NZ	NC	-0.5500	12
+	C	C	0.5100	13
+	O	O	-0.5100	14
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	NZ	CE
+	SD	CE
+	HG1	CG
+	HG2	CG
+	SD	CG
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ 4FW ] ; 4-fluorotryptophane 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CY	-0.0300	7
+	CD1	CA	0.0350	8
+	HD1	HP	0.1150	9
+	CD2	CPT	-0.0200	10
+	NE1	NY	-0.6100	11
+	HE1	H	0.3800	12
+	CE2	CPT	0.1300	13
+	CE3	CA	0.1900	14
+	FE3	F1	-0.1900	15
+	CZ2	CA	-0.1150	16
+	HZ2	HP	0.1150	17
+	CZ3	CA	-0.1150	18
+	HZ3	HP	0.1150	19
+	CH2	CA	-0.1150	20
+	HH2	HP	0.1150	21
+	C	C	0.5100	22
+	O	O	-0.5100	23
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CD1	HD1
+	NE1	HE1
+	CB	HB1
+	NE1	CD1
+	CG	CD1
+	CE2	NE1
+	CB	CG
+	CD2	CG
+	HB2	CB
+	CD2	CE2
+	CZ2	CE2
+	CZ2	HZ2
+	CE3	CD2
+	CH2	CZ2
+	FE3	CE3
+	CZ3	CE3
+	HH2	CH2
+	CZ3	CH2
+	HZ3	CZ3
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ 4HMP ] ; 4-(Hydroxymethyl)-phenylalanine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CA	0.0000	7
+	CD1	CA	-0.1150	8
+	HD1	HP	0.1150	9
+	CD2	CA	-0.1150	10
+	HD2	HP	0.1150	11
+	CE1	CA	-0.1150	12
+	HE1	HP	0.1150	13
+	CE2	CA	-0.1150	14
+	HE2	HP	0.1150	15
+	CZ	CA	0.0000	16
+	CH	CT2	0.0500	17
+	HH1	HA	0.0900	18
+	HH2	HA	0.0900	19
+	OJ	OH1	-0.6600	20
+	HJ	H	0.4300	21
+	C	C	0.5100	22
+	O	O	-0.5100	23
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	CE1	CD1
+	CG	CD1
+	CE2	CD2
+	CG	CD2
+	CZ	CE1
+	CZ	CE2
+	CZ	CH
+	OJ	CH
+	CB	HB1
+	CB	HB2
+	CD1	HD1
+	CD2	HD2
+	CE2	HE2
+	CE1	HE1
+	CH	HH1
+	CH	HH2
+	OJ	HJ
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ 4HT ] ; 4-hydroxytryptophan 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB2	HA	0.0900	5
+	HB1	HA	0.0900	6
+	CG	CY	-0.0300	7
+	CD1	CA	0.0350	8
+	HD1	HP	0.1150	9
+	CD2	CPT	-0.0200	10
+	NE1	NY	-0.6100	11
+	HE1	H	0.3800	12
+	CE2	CPT	0.1300	13
+	CZ2	CA	-0.1150	14
+	HZ2	HP	0.1150	15
+	CE3	CA	0.1100	16
+	OE3	OH1	-0.5400	17
+	HE3	H	0.4300	18
+	CZ3	CA	-0.1150	19
+	HZ3	HP	0.1150	20
+	CH2	CA	-0.1150	21
+	HH2	HP	0.1150	22
+	C	C	0.5100	23
+	O	O	-0.5100	24
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	HB2	CB
+	CG	CB
+	HB1	CB
+	HD1	CD1
+	CG	CD1
+	NE1	CD1
+	CG	CD2
+	CE2	CD2
+	CE3	CD2
+	NE1	CE2
+	CZ2	CE2
+	OE3	CE3
+	CZ3	CE3
+	HH2	CH2
+	CZ3	CH2
+	CZ2	CH2
+	HZ2	CZ2
+	HZ3	CZ3
+	NE1	HE1
+	OE3	HE3
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ 4IN ] ; 4-amino-l-tryptophan 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CY	-0.0300	7
+	CD1	CA	0.0350	8
+	HD1	HP	0.1150	9
+	CD2	CPT	-0.0200	10
+	NE1	NY	-0.6100	11
+	HE1	H	0.3800	12
+	CE2	CPT	0.1300	13
+	CZ2	CA	-0.1150	14
+	HZ2	HP	0.1150	15
+	CZ3	CA	-0.1150	16
+	HZ3	HP	0.1150	17
+	CE3	CA	0.1000	18
+	NZ1	NH2	-0.9000	19
+	HZ11	H	0.4000	20
+	HZ12	H	0.4000	21
+	CH2	CA	-0.1150	22
+	HH2	HP	0.1150	23
+	C	C	0.5100	24
+	O	O	-0.5100	25
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CG	CD1
+	HD1	CD1
+	NE1	CD1
+	CE2	CD2
+	CE3	CD2
+	CG	CD2
+	CZ2	CE2
+	NE1	CE2
+	CZ3	CE3
+	NZ1	CE3
+	CZ2	CH2
+	CZ3	CH2
+	HH2	CH2
+	HZ2	CZ2
+	HZ3	CZ3
+	NE1	HE1
+	NZ1	HZ11
+	NZ1	HZ12
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ 4PH ] ; 4-Methyl-phenylalanine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CA	0.0000	7
+	CD1	CA	-0.1150	8
+	HD1	HP	0.1150	9
+	CD2	CA	-0.1150	10
+	HD2	HP	0.1150	11
+	CE1	CA	-0.1150	12
+	HE1	HP	0.1150	13
+	CE2	CA	-0.1150	14
+	HE2	HP	0.1150	15
+	CZ	CA	0.0000	16
+	CH	CT3	-0.2700	17
+	HH1	HA	0.0900	18
+	HH2	HA	0.0900	19
+	HH3	HA	0.0900	20
+	C	C	0.5100	21
+	O	O	-0.5100	22
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CD1	CG
+	CD2	CG
+	CE1	CD1
+	HD1	CD1
+	CE2	CD2
+	HD2	CD2
+	CZ	CE1
+	CZ	CE2
+	CH	CZ
+	HH1	CH
+	HH2	CH
+	HH3	CH
+	CE1	HE1
+	CE2	HE2
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ 6CL ] ; 6-carboxylysine 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB2	HA	0.0900	5
+	HB1	HA	0.0900	6
+	CG	CT2	-0.1800	7
+	HG2	HA	0.0900	8
+	HG1	HA	0.0900	9
+	CD	CT2	-0.1800	10
+	HD1	HA	0.0900	11
+	HD2	HA	0.0900	12
+	CE	CT1	0.2100	13
+	HE	HA	0.1000	14
+	CZ	CC	0.3400	15
+	NZ	NH3	-0.3000	16
+	HZ1	HC	0.3300	17
+	HZ3	HC	0.3300	18
+	HZ2	HC	0.3300	19
+	OH1	OC	-0.6700	20
+	OH2	OC	-0.6700	21
+	C	C	0.5100	22
+	O	O	-0.5100	23
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	OH1	CZ
+	OH2	CZ
+	CE	CZ
+	CD	HD1
+	CE	HE
+	CD	CE
+	NZ	CE
+	HD2	CD
+	CG	CD
+	CG	HG2
+	CB	HB2
+	NZ	HZ1
+	CB	CG
+	HG1	CG
+	HZ3	NZ
+	HZ2	NZ
+	HB1	CB
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+	CZ	CE	OH1	OH2
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ 6CW ] ; 6-chloro-l-tryptophan 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CY	-0.0300	7
+	CD1	CA	0.0350	8
+	HD1	HP	0.1150	9
+	CD2	CPT	-0.0200	10
+	NE1	NY	-0.6100	11
+	HE1	H	0.3800	12
+	CE2	CPT	0.1300	13
+	CE3	CA	-0.1150	14
+	HE3	HP	0.1150	15
+	CZ3	CA	-0.1150	16
+	HZ3	HP	0.1150	17
+	CZ2	CA	-0.1150	18
+	HZ2	HP	0.1150	19
+	CH2	CA	0.1700	20
+	CLL	CLAL	-0.1700	21
+	C	C	0.5100	22
+	O	O	-0.5100	23
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	HB1	CB
+	HB2	CB
+	CG	CB
+	HD1	CD1
+	CG	CD1
+	NE1	CD1
+	CG	CD2
+	CE3	CD2
+	CE2	CD2
+	CZ2	CE2
+	NE1	CE2
+	HE3	CE3
+	CZ3	CE3
+	CZ2	CH2
+	CLL	CH2
+	CZ3	CH2
+	HZ2	CZ2
+	HZ3	CZ3
+	NE1	HE1
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ AA4 ] ; 2-amino-5-hydroxypentanoic acid 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CT2	-0.1800	7
+	HG1	HA	0.0900	8
+	HG2	HA	0.0900	9
+	CD	CT2	0.0500	10
+	HD2	HA	0.0900	11
+	HD1	HA	0.0900	12
+	OE	OH1	-0.6600	13
+	HE	H	0.4300	14
+	C	C	0.5100	15
+	O	O	-0.5100	16
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CG	CD
+	OE	CD
+	HD2	CD
+	HD1	CD
+	HG1	CG
+	HG2	CG
+	OE	HE
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ ABA ] ; 2-Aminobutyric acid 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CT3	-0.2700	7
+	HG1	HA	0.0900	8
+	HG2	HA	0.0900	9
+	HG3	HA	0.0900	10
+	C	C	0.5100	11
+	O	O	-0.5100	12
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	CB	HB1
+	CB	HB2
+	CG	HG1
+	CG	HG2
+	CG	HG3
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ ACZ ] ; cis-amiclenomycin 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CT2	-0.1800	7
+	HG1	HA	0.0900	8
+	HG2	HA	0.0900	9
+	CD	CT1	0.1900	10
+	HD	HA	0.0900	11
+	CE1	CE1	-0.2900	12
+	HE11	HE1	0.1500	13
+	CE2	CE1	-0.2900	14
+	HE22	HE1	0.1500	15
+	CZ1	CE1	-0.2900	16
+	HZ11	HE1	0.1500	17
+	CZ2	CE1	-0.2900	18
+	HZ22	HE1	0.1500	19
+	CH	CT1	0.6900	20
+	HH	HA	0.0900	21
+	NJ	NH3	-0.8500	22
+	HJ1	HC	0.4500	23
+	HJ2	HC	0.4500	24
+	HJ3	HC	0.4500	25
+	C	C	0.5100	26
+	O	O	-0.5100	27
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CE1	CD
+	CE2	CD
+	CG	CD
+	HD	CD
+	CZ1	CE1
+	HE11	CE1
+	CZ2	CE2
+	HE22	CE2
+	HG1	CG
+	HG2	CG
+	CZ1	CH
+	CZ2	CH
+	HH	CH
+	NJ	CH
+	HZ11	CZ1
+	HZ22	CZ2
+	NJ	HJ1
+	NJ	HJ2
+	NJ	HJ3
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+	CE1	CD	CZ1	HE11
+	CE2     CD      CZ2     HE22
+	CZ1     CH      CE1     HZ11
+	CZ2     CH      CE2     HZ22
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ ADAM] ; Adamanthane
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CT0	0.0000	7
+	CD1	CT2	-0.1800	8
+	HD11	HA	0.0900	9
+	HD12	HA	0.0900	10
+	CD2	CT2	-0.1800	11
+	HD21	HA	0.0900	12
+	HD22	HA	0.0900	13
+	CD3	CT2	-0.1800	14
+	HD31	HA	0.0900	15
+	HD32	HA	0.0900	16
+	CE1	CT1	-0.0900	17
+	HE1	HA	0.0900	18
+	CE2	CT1	-0.0900	19
+	HE2	HA	0.0900	20
+	CE3	CT1	-0.0900	21
+	HE3	HA	0.0900	22
+	CZ1	CT2	-0.1800	23
+	HZ11	HA	0.0900	24
+	HZ12	HA	0.0900	25
+	CZ3	CT2	-0.1800	26
+	HZ31	HA	0.0900	27
+	HZ32	HA	0.0900	28
+	CZ2	CT2	-0.1800	29
+	HZ21	HA	0.0900	30
+	HZ22	HA	0.0900	31
+	C	C	0.5100	32
+	O	O	-0.5100	33
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CE1	CD1
+	CG	CD1
+	CE2	CD2
+	CG	CD2
+	CE3	CD3
+	CG	CD3
+	CZ1	CE1
+	CZ3	CE1
+	CZ1	CE2
+	CZ2	CE2
+	CZ2	CE3
+	CZ3	CE3
+	CD1	HD11
+	CD1	HD12
+	CD2	HD21
+	CD2	HD22
+	CD3	HD31
+	CD3	HD32
+	CE1	HE1
+	CE2	HE2
+	CE3	HE3
+	CZ1	HZ11
+	CZ1	HZ12
+	CZ2	HZ21
+	CZ2	HZ22
+	CZ3	HZ31
+	CZ3	HZ32
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ AGM ] ; 5-methyl-arginine 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB2	HA	0.0900	5
+	HB1	HA	0.0900	6
+	CG	CT2	-0.1800	7
+	HG1	HA	0.0900	8
+	HG2	HA	0.0900	9
+	CD	CT1	0.2900	10
+	HD	HA	0.0900	11
+	NE1	NC2	-0.7000	12
+	HE1	HC	0.4400	13
+	CE2	CT3	-0.2700	14
+	HE21	HA	0.0900	15
+	HE22	HA	0.0900	16
+	HE23	HA	0.0900	17
+	CZ	C	0.6400	18
+	NH2	NC2	-0.8000	19
+	HH22	HC	0.4600	20
+	HH21	HC	0.4600	21
+	NH1	NC2	-0.8000	22
+	HH12	HC	0.4600	23
+	HH11	HC	0.4600	24
+	C	C	0.5100	25
+	O	O	-0.5100	26
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	NH2	HH22
+	NH1	HH12
+	HH21	NH2
+	CZ	NH2
+	CZ	NH1
+	HH11	NH1
+	NE1	CZ
+	HE1	NE1
+	CD	NE1
+	CE2	HE21
+	CD	HD
+	CE2	CD
+	CG	CD
+	HE22	CE2
+	HE23	CE2
+	CB	HB2
+	CB	HB1
+	CG	CB
+	HG1	CG
+	HG2	CG
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+	CZ      NH1     NH2     NE1
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ AHB ] ; beta-hydroxyasparagine 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT1	0.1400	4
+	HB	HA	0.0900	5
+	OB	OH1	-0.6600	6
+	HOB	H	0.4300	7
+	CG	CC	0.5500	8
+	OD1	O	-0.5500	9
+	ND2	NH2	-0.6200	10
+	HD21	H	0.3200	11
+	HD22	H	0.3000	12
+	C	C	0.5100	13
+	O	O	-0.5100	14
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	OB	CB
+	CG	CB
+	HB	CB
+	OD1	CG
+	ND2	CG
+	ND2	HD21
+	ND2	HD22
+	OB	HOB
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+        CG      ND2     CB      OD1
+        CG      CB      ND2     OD1
+        ND2     CG      HD21    HD22
+        ND2     CG      HD22    HD21
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ AHP ] ; 2-Aminoheptanoic acid
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CT2	-0.1800	7
+	HG1	HA	0.0900	8
+	HG2	HA	0.0900	9
+	CD	CT2	-0.1800	10
+	HD1	HA	0.0900	11
+	HD2	HA	0.0900	12
+	CE	CT2	-0.1800	13
+	HE1	HA	0.0900	14
+	HE2	HA	0.0900	15
+	CZ	CT3	-0.2700	16
+	HZ1	HA	0.0900	17
+	HZ2	HA	0.0900	18
+	HZ3	HA	0.0900	19
+	C	C	0.5100	20
+	O	O	-0.5100	21
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CE	CD
+	CG	CD
+	HD1	CD
+	HD2	CD
+	CZ	CE
+	HE1	CE
+	HE2	CE
+	HG1	CG
+	HG2	CG
+	HZ1	CZ
+	HZ2	CZ
+	HZ3	CZ
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ ALC ] ; 3-cyclohexyl-alanine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CT1	-0.0900	7
+	HG	HA	0.0900	8
+	CD1	CT2	-0.1800	9
+	HD11	HA	0.0900	10
+	HD12	HA	0.0900	11
+	CD2	CT2	-0.1800	12
+	HD21	HA	0.0900	13
+	HD22	HA	0.0900	14
+	CE1	CT2	-0.1800	15
+	HE11	HA	0.0900	16
+	HE12	HA	0.0900	17
+	CE2	CT2	-0.1800	18
+	HE21	HA	0.0900	19
+	HE22	HA	0.0900	20
+	CZ	CT2	-0.1800	21
+	HZ1	HA	0.0900	22
+	HZ2	HA	0.0900	23
+	C	C	0.5100	24
+	O	O	-0.5100	25
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CE1	CD1
+	CG	CD1
+	CE2	CD2
+	CG	CD2
+	CZ	CE1
+	CZ	CE2
+	CG	HG
+	CD1	HD11
+	CD1	HD12
+	CE1	HE11
+	CE1	HE12
+	CZ	HZ1
+	CZ	HZ2
+	CE2	HE21
+	CE2	HE22
+	CD2	HD21
+	CD2	HD22
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ ALN ] ; 1-Naphtalene
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CA	0.0000	7
+	CD1	CA	0.0000	8
+	CD2	CA	-0.1150	9
+	HD2	HP	0.1150	10
+	CE1	CA	0.0000	11
+	CH1	CA	-0.1150	12
+	HH1	HP	0.1150	13
+	CE2	CA	-0.1150	14
+	HE2	HP	0.1150	15
+	CH2	CA	-0.1150	16
+	HH2	HP	0.1150	17
+	CZ	CA	-0.1150	18
+	HZ	HP	0.1150	19
+	CJ1	CA	-0.1150	20
+	HJ1	HP	0.1150	21
+	CJ2	CA	-0.1150	22
+	HJ2	HP	0.1150	23
+	C	C	0.5100	24
+	O	O	-0.5100	25
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	CE1	CD1
+	CH1	CD1
+	CG	CD1
+	CE2	CD2
+	CG	CD2
+	CH2	CE1
+	CZ	CE1
+	CZ	CE2
+	CJ1	CH1
+	CJ2	CH2
+	CJ2	CJ1
+	CB	HB1
+	CB	HB2
+	CD2	HD2
+	CE2	HE2
+	CZ	HZ
+	CJ1	HJ1
+	CJ2	HJ2
+	CH1	HH1
+	CH2	HH2
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ ALO ] ; Allo-threonine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT1	0.1400	4
+	HB	HA	0.0900	5
+	OG1	OH1	-0.6600	6
+	HG1	H	0.4300	7
+	CG2	CT3	-0.2700	8
+	HG21	HA	0.0900	9
+	HG22	HA	0.0900	10
+	HG23	HA	0.0900	11
+	C	C	0.5100	12
+	O	O	-0.5100	13
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG2	CB
+	HB	CB
+	OG1	CB
+	HG21	CG2
+	HG22	CG2
+	HG23	CG2
+	OG1	HG1
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ ANTH ] ; 3-(9-anthryl)-alanine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CA	0.0000	7
+	CD1	CA	0.0000	8
+	CD2	CA	0.0000	9
+	CE1	CA	0.0000	10
+	CF1	CA	-0.1150	11
+	HF1	HP	0.1150	12
+	CE2	CA	0.0000	13
+	CH1	CA	-0.1150	14
+	HH1	HP	0.1150	15
+	CF2	CA	-0.1150	16
+	HF2	HP	0.1150	17
+	CZ	CA	-0.1150	18
+	HZ	HP	0.1150	19
+	CJ1	CA	-0.1150	20
+	HJ1	HP	0.1150	21
+	CH2	CA	-0.1150	22
+	HH2	HP	0.1150	23
+	CM1	CA	-0.1150	24
+	HM1	HP	0.1150	25
+	CJ2	CA	-0.1150	26
+	HJ2	HP	0.1150	27
+	CM2	CA	-0.1150	28
+	HM2	HP	0.1150	29
+	C	C	0.5100	30
+	O	O	-0.5100	31
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CE1	CD1
+	CF1	CD1
+	CG	CD1
+	CE2	CD2
+	CG	CD2
+	CH1	CD2
+	CF2	CE1
+	CZ	CE1
+	CH2	CE2
+	CZ	CE2
+	CJ1	CF1
+	CJ2	CF2
+	CM1	CH1
+	CM2	CH2
+	CJ2	CJ1
+	CM2	CM1
+	CF1	HF1
+	CJ1	HJ1
+	CJ2	HJ2
+	CF2	HF2
+	CZ	HZ
+	CH1	HH1
+	CH2	HH2
+	CM2	HM2
+	CM1	HM1
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ APD ] ; 3-Methyl-phenylalanine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CA	0.0000	7
+	CD2	CA	-0.1150	8
+	HD2	HP	0.1150	9
+	CD1	CA	-0.1150	10
+	HD1	HP	0.1150	11
+	CE2	CA	-0.1150	12
+	HE2	HP	0.1150	13
+	CE1	CA	0.0000	14
+	CZ	CA	-0.1150	15
+	HZ	HP	0.1150	16
+	CH	CT3	-0.2700	17
+	HH1	HA	0.0900	18
+	HH2	HA	0.0900	19
+	HH3	HA	0.0900	20
+	C	C	0.5100	21
+	O	O	-0.5100	22
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CD2	CG
+	CD1	CG
+	CE2	CD2
+	HD2	CD2
+	CE1	CD1
+	HD1	CD1
+	CZ	CE2
+	CZ	CE1
+	CH	CE1
+	HZ	CZ
+	HH1	CH
+	HH2	CH
+	HH3	CH
+	CE2	HE2
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ APM ] ; m-amidinophenyl-3-alanine 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB2	HA	0.0900	5
+	HB1	HA	0.0900	6
+	CG	CA	0.0000	7
+	CD1	CA	-0.1150	8
+	HD1	HP	0.1150	9
+	CD2	CA	-0.1150	10
+	HD2	HP	0.1150	11
+	CZ	CA	-0.1150	12
+	HZ	HP	0.1150	13
+	CE2	CA	-0.1150	14
+	HE2	HP	0.1150	15
+	CE1	CA	-0.0300	16
+	CH	C	0.7300	17
+	NJ1	NCN	-0.7500	18
+	HJ12	HNCN	0.4500	19
+	HJ11	HNCN	0.4500	20
+	NJ2	NCN	-0.7500	21
+	HJ21	HNCN	0.4500	22
+	HJ22	HNCN	0.4500	23
+	C	C	0.5100	24
+	O	O	-0.5100	25
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	NJ1	HJ12
+	NJ1	HJ11
+	CH	NJ1
+	CD1	HD1
+	NJ2	HJ21
+	CB	HB2
+	NJ2	CH
+	CE1	CH
+	HJ22	NJ2
+	CE1	CD1
+	CG	CD1
+	CZ	CE1
+	HB1	CB
+	CG	CB
+	CD2	CG
+	HZ	CZ
+	CE2	CZ
+	CE2	CD2
+	HD2	CD2
+	HE2	CE2
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+	CH	CE1	NJ1	NJ2
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ ARO ] ; c-gamma-hydroxy arginine 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CT1	0.1400	7
+	HG	HA	0.0900	8
+	OH	OH1	-0.6600	9
+	HH	H	0.4300	10
+	CD	CT2	0.2000	11
+	HD1	HA	0.0900	12
+	HD2	HA	0.0900	13
+	NE	NC2	-0.7000	14
+	HE	HC	0.4400	15
+	CZ	C	0.6400	16
+	NH1	NC2	-0.8000	17
+	HH11	HC	0.4600	18
+	HH12	HC	0.4600	19
+	NH2	NC2	-0.8000	20
+	HH21	HC	0.4600	21
+	HH22	HC	0.4600	22
+	C	C	0.5100	23
+	O	O	-0.5100	24
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CB	HB1
+	CD	HD1
+	NH1	HH11
+	CB	HB2
+	CG	CB
+	OH	HH
+	NH1	HH12
+	CZ	NH1
+	CD	HD2
+	CG	CD
+	NE	CD
+	OH	CG
+	HG	CG
+	NE	CZ
+	NH2	CZ
+	HE	NE
+	NH2	HH21
+	HH22	NH2
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+	CZ      NH1     NH2     NE
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ AS2 ] ; (2r)-2-amino-4-oxobutanoic acid 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	C	0.5100	7
+	HG	HCO	0.0600	8
+	OG	O	-0.5700	9
+	C	C	0.5100	10
+	O	O	-0.5100	11
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	HG	CG
+	OG	CG
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+	CG	CB	OG	HG
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ AZDA ] ; azido-alanine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	0.0700	4
+	HB2	HA	0.0900	5
+	HB1	HA	0.0900	6
+	NG	N=C	-0.5600	7
+	ND	=N=	0.6800	8
+	NE	NAZT	-0.3700	9
+	C	C	0.5100	10
+	O	O	-0.5100	11
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CB	HB2
+	ND	NE
+	NG	ND
+	CB	HB1
+	NG	CB
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ BB8 ] ; Phenylserine
+ [ atoms ]
+        N       NH1     -0.4700   0
+        HN      H       0.3100    1
+        CA      CT1     0.0700    2
+        HA      HB      0.0900    3
+	CB	CT1	0.1400    4
+	HB	HA	0.0900	5
+	OG2	OH1	-0.6600	6
+	HG2	H	0.4300	7
+	CG1	CA	0.0000	8
+	CD2	CA	-0.1150	9
+	HD2	HP	0.1150	10
+	CD1	CA	-0.1150	11
+	HD1	HP	0.1150	12
+	CE2	CA	-0.1150	13
+	HE2	HP	0.1150	14
+	CE1	CA	-0.1150	15
+	HE1	HP	0.1150	16
+	CZ	CA	-0.1150	17
+	HZ	HP	0.1150	18
+	C	C	0.5100	19
+	O	O	-0.5100	20
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CE2	HE2
+	CD2	HD2
+	CD2	CE2
+	CZ	CE2
+	CG1	CD2
+	CB	HB
+	CZ	HZ
+	CE1	CZ
+	CB	CG1
+	CD1	CG1
+	OG2	CB
+	CD1	CE1
+	HE1	CE1
+	HD1	CD1
+	HG2	OG2
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ BCS ] ; benzylcysteine 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1400	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	SG	S	-0.0900	7
+	CD	CT2	-0.1300	8
+	HD1	HA	0.0900	9
+	HD2	HA	0.0900	10
+	CE	CA	0.0000	11
+	CZ1	CA	-0.1150	12
+	HZ1	HP	0.1150	13
+	CZ2	CA	-0.1150	14
+	HZ2	HP	0.1150	15
+	CH1	CA	-0.1150	16
+	HH1	HP	0.1150	17
+	CH2	CA	-0.1150	18
+	HH2	HP	0.1150	19
+	CJ	CA	-0.1150	20
+	HJ	HP	0.1150	21
+	C	C	0.5100	22
+	O	O	-0.5100	23
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	SG	CB
+	HB1	CB
+	HB2	CB
+	SG	CD
+	CE	CD
+	HD1	CD
+	HD2	CD
+	CZ1	CE
+	CZ2	CE
+	CH1	CJ
+	CH2	CJ
+	HJ	CJ
+	CZ1	CH1
+	HH1	CH1
+	CZ2	CH2
+	HH2	CH2
+	HZ1	CZ1
+	HZ2	CZ2
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ BHD ] ; beta-hydroxyaspartic acid 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT1	0.0400	4
+	HB	HA	0.0900	5
+	CG	CC	0.6200	6
+	OB	OH1	-0.6600	7
+	HOB	H	0.4300	8
+	OD1	OC	-0.7600	9
+	OD2	OC	-0.7600	10
+	C	C	0.5100	11
+	O	O	-0.5100	12
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	OD1	CG
+	OD2	CG
+	CB	HB
+	CG	CB
+	OB	CB
+	HOB	OB
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+	CG	CB	OD1	OD2
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ BIF ] ; biphenylalanine
+ [ atoms ]
+        N       NH1     -0.4700   0
+        HN      H       0.3100    1
+        CA      CT1     0.0700    2
+        HA      HB      0.0900    3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CA	0.0000	7
+	CD1	CA	-0.1150	8
+	HD1	HP	0.1150	9
+	CD2	CA	-0.1150	10
+	HD2	HP	0.1150	11
+	CE1	CA	-0.1150	12
+	HE1	HP	0.1150	13
+	CE2	CA	-0.1150	14
+	HE2	HP	0.1150	15
+	CZ	CA	0.0000	16
+	C12	CA	0.0000	17
+	C11	CA	-0.1150	18
+	H11	HP	0.1150	19
+	C13	CA	-0.1150	20
+	H13	HP	0.1150	21
+	C10	CA	-0.1150	22
+	H10	HP	0.1150	23
+	C8	CA	-0.1150	24
+	H8	HP	0.1150	25
+	C9	CA	-0.1150	26
+	H9	HP	0.1150	27
+	C	C	0.5100	28
+	O	O	-0.5100	29
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	C11	C10
+	C9	C10
+	C12	C11
+	C13	C12
+	CZ	C12
+	C8	C13
+	C9	C8
+	CG	CB
+	CE1	CD1
+	CG	CD1
+	CE2	CD2
+	CG	CD2
+	CZ	CE1
+	CZ	CE2
+	CB	HB1
+	CB	HB2
+	CE1	HE1
+	CD1	HD1
+	CD2	HD2
+	CE2	HE2
+	C10	H10
+	C11	H11
+	C13	H13
+	C8	H8
+	C9	H9
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ BIU ] ; 5-bromo-l-isoleucine 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT1	-0.0900	4
+	HB	HA	0.0900	5
+	CG2	CT3	-0.2700	6
+	HG21	HA	0.0900	7
+	HG22	HA	0.0900	8
+	HG23	HA	0.0900	9
+	CG1	CT2	-0.1800	10
+	HG12	HA	0.0900	11
+	HG11	HA	0.0900	12
+	CD	CT2	0.0500	13
+	HD1	HA	0.0900	14
+	HD2	HA	0.0900	15
+	BR	BR	-0.2300	16
+	C	C	0.5100	17
+	O	O	-0.5100	18
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CD	BR
+	CG2	CB
+	CG1	CB
+	HB	CB
+	CG1	CD
+	HD1	CD
+	HD2	CD
+	HG12	CG1
+	HG11	CG1
+	HG21	CG2
+	HG22	CG2
+	HG23	CG2
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ BTH3 ] ; 3-(3-benzothienyl)-alanine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB2	HA	0.0900	5
+	HB1	HA	0.0900	6
+	CG	CY	-0.0300	7
+	CD2	CPT	-0.0200	8
+	CD1	CA	-0.0900	9
+	HD1	HP	0.1500	10
+	CE3	CA	-0.1150	11
+	HE3	HP	0.1150	12
+	CE2	CPT	0.0700	13
+	SE1	STHI	-0.0800	14
+	CZ3	CA	-0.1150	15
+	HZ3	HP	0.1150	16
+	CZ2	CA	-0.1150	17
+	HZ2	HP	0.1150	18
+	CH2	CA	-0.1150	19
+	HH2	HP	0.1150	20
+	C	C	0.5100	21
+	O	O	-0.5100	22
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CZ3	HZ3
+	CH2	HH2
+	CH2	CZ3
+	CE3	CZ3
+	CZ2	CH2
+	CE3	HE3
+	CD2	CE3
+	HZ2	CZ2
+	CE2	CZ2
+	CE2	CD2
+	CG	CD2
+	SE1	CE2
+	CB	HB2
+	CB	CG
+	CD1	CG
+	HB1	CB
+	CD1	SE1
+	HD1	CD1
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ BTR ] ; 6-bromo-tryptophan 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CY	-0.0300	7
+	CD1	CA	0.0350	8
+	HD1	HP	0.1150	9
+	CD2	CPT	-0.0200	10
+	NE1	NY	-0.6100	11
+	HE1	H	0.3800	12
+	CE2	CPT	0.1300	13
+	CE3	CA	-0.1150	14
+	HE3	HP	0.1150	15
+	CZ2	CA	-0.1150	16
+	HZ2	HP	0.1150	17
+	CZ3	CA	-0.1150	18
+	HZ3	HP	0.1150	19
+	CH2	CA	0.1100	20
+	BR2	BR	-0.1100	21
+	C	C	0.5100	22
+	O	O	-0.5100	23
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CH2	BR2
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CG	CD1
+	NE1	CD1
+	HD1	CD1
+	CE2	CD2
+	CG	CD2
+	CE3	CD2
+	NE1	CE2
+	CZ2	CE2
+	CZ3	CE3
+	HE3	CE3
+	CZ3	CH2
+	CZ2	CH2
+	HZ2	CZ2
+	HZ3	CZ3
+	NE1	HE1
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ BUG ] ; Tertleucine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT0	0.0000	4
+	CG1	CT3	-0.2700	5
+	HG11	HA	0.0900	6
+	HG12	HA	0.0900	7
+	HG13	HA	0.0900	8
+	CG2	CT3	-0.2700	9
+	HG21	HA	0.0900	10
+	HG22	HA	0.0900	11
+	HG23	HA	0.0900	12
+	CG3	CT3	-0.2700	13
+	HG31	HA	0.0900	14
+	HG32	HA	0.0900	15
+	HG33	HA	0.0900	16
+	C	C	0.5100	17
+	O	O	-0.5100	18
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG1	CB
+	CG2	CB
+	CG3	CB
+	CG1	HG11
+	CG1	HG12
+	CG1	HG13
+	CG2	HG21
+	CG2	HG22
+	CG2	HG23
+	CG3	HG31
+	CG3	HG32
+	CG3	HG33
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ C2N ] ; 3-chloro-d-alanine 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	0.1100	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CL	CLAL	-0.2900	7
+	C	C	0.5100	8
+	O	O	-0.5100	9
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CB	CL
+	HB1	CB
+	HB2	CB
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ CAN ] ; canaline 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CT2	0.1000	7
+	HG1	HA	0.0900	8
+	HG2	HA	0.0900	9
+	OD	OCC	-0.1800	10
+	NE	NR	-0.8200	11
+	HE1	HNR	0.3600	12
+	HE2	HNR	0.3600	13
+	C	C	0.5100	14
+	O	O	-0.5100	15
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	OD	CG
+	HG1	CG
+	HG2	CG
+	NE	HE1
+	NE	HE2
+	OD	NE
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ CCS ] ; carboxymethylated cysteine 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1400	4
+	HB2	HA	0.0900	5
+	HB1	HA	0.0900	6
+	SG	S	-0.0900	7
+	CD	CT2	-0.2300	8
+	HD2	HA	0.0900	9
+	HD1	HA	0.0900	10
+	CE	CC	0.6200	11
+	OZ1	OC	-0.7600	12
+	OZ2	OC	-0.7600	13
+	C	C	0.5100	14
+	O	O	-0.5100	15
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	OZ1	CE
+	OZ2	CE
+	CD	HD2
+	CB	HB2
+	CD	HD1
+	CE	CD
+	SG	CD
+	CB	HB1
+	SG	CB
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+	CE	CD	OZ1	OZ2
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ CHG ] ; Cyclohexylglycine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT1	-0.0900	4
+	HB	HA	0.0900	5
+	CG1	CT2	-0.1800	6
+	HG11	HA	0.0900	7
+	HG12	HA	0.0900	8
+	CG2	CT2	-0.1800	9
+	HG21	HA	0.0900	10
+	HG22	HA	0.0900	11
+	CD1	CT2	-0.1800	12
+	HD11	HA	0.0900	13
+	HD12	HA	0.0900	14
+	CD2	CT2	-0.1800	15
+	HD21	HA	0.0900	16
+	HD22	HA	0.0900	17
+	CE	CT2	-0.1800	18
+	HE1	HA	0.0900	19
+	HE2	HA	0.0900	20
+	C	C	0.5100	21
+	O	O	-0.5100	22
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG1	CB
+	CG2	CB
+	CD1	CG1
+	CE	CD1
+	CD2	CE
+	CG2	CD2
+	CB	HB
+	CG1	HG11
+	CG1	HG12
+	CD1	HD11
+	CD1	HD12
+	CE	HE1
+	CE	HE2
+	CD2	HD21
+	CD2	HD22
+	CG2	HG21
+	CG2	HG22
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ CHP ] ; 3-chloro-4-hydroxyphenylglycine 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CA	0.0000	4
+	CG1	CA	-0.1150	5
+	HG1	HP	0.1150	6
+	CG2	CA	-0.1150	7
+	HG2	HP	0.1150	8
+	CD2	CA	-0.1150	9
+	HD2	HP	0.1150	10
+	CD1	CA	0.1700	11
+	CLD	CLAL	-0.1700	12
+	CE	CA	0.1100	13
+	OE	OH1	-0.5400	14
+	HE	H	0.4300	15
+	C	C	0.5100	16
+	O	O	-0.5100	17
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG1	CB
+	CG2	CB
+	CD1	CG1
+	HG1	CG1
+	CE	CD1
+	CLD	CD1
+	OE	CE
+	CD2	CE
+	CG2	CD2
+	HD2	CD2
+	HG2	CG2
+	OE	HE
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ CIR ] ; Citrulline
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CT2	-0.1800	7
+	HG2	HA	0.0900	8
+	HG1	HA	0.0900	9
+	CD	CT2	0.1200	10
+	HD1	HA	0.0900	11
+	HD2	HA	0.0900	12
+	NE	NH1	-0.7300	13
+	HE	H	0.3700	14
+	CZ	CC	0.6300	15
+	OH	O	-0.5700	16
+	NH	NH2	-0.6200	17
+	HH1	H	0.3000	18
+	HH2	H	0.3200	19
+	C	C	0.5100	20
+	O	O	-0.5100	21
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CB	HB1
+	HB2	CB
+	CG	CB
+	CG	HG2
+	HG1	CG
+	CD	CG
+	CD	HD1
+	HD2	CD
+	NE	CD
+	NE	HE
+	CZ	NE
+	NH	HH1
+	NH	CZ
+	OH	CZ
+	HH2	NH
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+	NE	HE	CZ	CD
+	CZ	NH	OH	NE
+	NH	HH1	HH2	CZ
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ CNP2 ] ; 2-cyano-phenylalanine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CA	0.0000	7
+	CD1	CA	0.0700	8
+	CH	CN	0.4800	9
+	NJ	NC	-0.5500	10
+	CD2	CA	-0.1150	11
+	HD2	HP	0.1150	12
+	CE1	CA	-0.1150	13
+	HE1	HP	0.1150	14
+	CE2	CA	-0.1150	15
+	HE2	HP	0.1150	16
+	CZ	CA	-0.1150	17
+	HZ	HP	0.1150	18
+	C	C	0.5100	19
+	O	O	-0.5100	20
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CE1	CD1
+	CH	CD1
+	CG	CD1
+	CE2	CD2
+	CG	CD2
+	HD2	CD2
+	CZ	CE1
+	HE1	CE1
+	CZ	CE2
+	HE2	CE2
+	NJ	CH
+	HZ	CZ
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ CP24 ] ; 2,4-chloro-phenylalanine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CA	0.0000	7
+	CD1	CA	0.1700	8
+	CLD	CLAL	-0.1700	9
+	CD2	CA	-0.1150	10
+	HD2	HP	0.1150	11
+	CE1	CA	-0.1150	12
+	HE1	HP	0.1150	13
+	CE2	CA	-0.1150	14
+	HE2	HP	0.1150	15
+	CZ	CA	0.1700	16
+	CLZ	CLAL	-0.1700	17
+	C	C	0.5100	18
+	O	O	-0.5100	19
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CE1	CD1
+	CG	CD1
+	CLD	CD1
+	CE2	CD2
+	CG	CD2
+	HD2	CD2
+	CZ	CE1
+	HE1	CE1
+	CZ	CE2
+	HE2	CE2
+	CZ	CLZ
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ CP34 ] ; 3,4-chloro-phenylalanine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CA	0.0000	7
+	CD1	CA	-0.1150	8
+	HD1	HP	0.1150	9
+	CD2	CA	-0.1150	10
+	HD2	HP	0.1150	11
+	CE1	CA	0.1700	12
+	CLE	CLAL	-0.1700	13
+	CE2	CA	-0.1150	14
+	HE2	HP	0.1150	15
+	CZ	CA	0.1700	16
+	CLZ	CLAL	-0.1700	17
+	C	C	0.5100	18
+	O	O	-0.5100	19
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CE1	CD1
+	CG	CD1
+	HD1	CD1
+	CE2	CD2
+	CG	CD2
+	HD2	CD2
+	CLE	CE1
+	CZ	CE1
+	CZ	CE2
+	HE2	CE2
+	CZ	CLZ
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ CPA3 ] ; 3-Cyclopentyl-alanine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CT1	-0.0900	7
+	HG	HA	0.0900	8
+	CD1	CT2	-0.1800	9
+	HD11	HA	0.0900	10
+	HD12	HA	0.0900	11
+	CD2	CT2	-0.1800	12
+	HD21	HA	0.0900	13
+	HD22	HA	0.0900	14
+	CE1	CT2	-0.1800	15
+	HE11	HA	0.0900	16
+	HE12	HA	0.0900	17
+	CE2	CT2	-0.1800	18
+	HE21	HA	0.0900	19
+	HE22	HA	0.0900	20
+	C	C	0.5100	21
+	O	O	-0.5100	22
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	CD1	CG
+	CD2	CG
+	CE1	CD1
+	CE2	CD2
+	CE2	CE1
+	CB	HB1
+	CB	HB2
+	CG	HG
+	CD1	HD11
+	CD1	HD12
+	CD2	HD21
+	CD2	HD22
+	CE1	HE11
+	CE1	HE12
+	CE2	HE21
+	CE2	HE22
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ CPG2 ] ; 2-Chlorophenylglycine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CA	0.0000	4
+	CG1	CA	-0.1150	5
+	HG1	HP	0.1150	6
+	CG2	CA	0.1700	7
+	CLG	CLAL	-0.1700	8
+	CD1	CA	-0.1150	9
+	HD1	HP	0.1150	10
+	CD2	CA	-0.1150	11
+	HD2	HP	0.1150	12
+	CE	CA	-0.1150	13
+	HE	HP	0.1150	14
+	C	C	0.5100	15
+	O	O	-0.5100	16
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG1	CB
+	CG2	CB
+	CD1	CG1
+	HG1	CG1
+	CD2	CG2
+	CLG	CG2
+	CE	CD1
+	HD1	CD1
+	CE	CD2
+	HE	CE
+	CD2	HD2
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ CPG3 ] ; 3-Chlorophenylglycine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CA	0.0000	4
+	CG1	CA	-0.1150	5
+	HG1	HP	0.1150	6
+	CG2	CA	-0.1150	7
+	HG2	HP	0.1150	8
+	CD1	CA	-0.1150	9
+	HD1	HP	0.1150	10
+	CD2	CA	0.1700	11
+	CLD	CLAL	-0.1700	12
+	CE	CA	-0.1150	13
+	HE	HP	0.1150	14
+	C	C	0.5100	15
+	O	O	-0.5100	16
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG1	CB
+	CG2	CB
+	CE	CD1
+	CG1	CD1
+	HD1	CD1
+	CE	CD2
+	CG2	CD2
+	CLD	CD2
+	HG1	CG1
+	HG2	CG2
+	CE	HE
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ CPG4 ] ; 4-Chlorophenylglycine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CA	0.0000	4
+	CG1	CA	-0.1150	5
+	HG1	HP	0.1150	6
+	CG2	CA	-0.1150	7
+	HG2	HP	0.1150	8
+	CD1	CA	-0.1150	9
+	HD1	HP	0.1150	10
+	CD2	CA	-0.1150	11
+	HD2	HP	0.1150	12
+	CE	CA	0.1700	13
+	CLE	CLAL	-0.1700	14
+	C	C	0.5100	15
+	O	O	-0.5100	16
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG1	CB
+	CG2	CB
+	CE	CD1
+	CG1	CD1
+	HD1	CD1
+	CE	CD2
+	CG2	CD2
+	HD2	CD2
+	CLE	CE
+	HG1	CG1
+	HG2	CG2
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ CPH2 ] ; 2-chloro-Phenylalanine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CA	0.0000	7
+	CD1	CA	0.1700	8
+	CLD	CLAL	-0.1700	9
+	CD2	CA	-0.1150	10
+	HD2	HP	0.1150	11
+	CE1	CA	-0.1150	12
+	HE1	HP	0.1150	13
+	CE2	CA	-0.1150	14
+	HE2	HP	0.1150	15
+	CZ	CA	-0.1150	16
+	HZ	HP	0.1150	17
+	C	C	0.5100	18
+	O	O	-0.5100	19
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CE1	CD1
+	CG	CD1
+	CLD	CD1
+	CE2	CD2
+	CG	CD2
+	HD2	CD2
+	CZ	CE1
+	HE1	CE1
+	CZ	CE2
+	HE2	CE2
+	HZ	CZ
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ CSA ] ; s-acetonylcysteine 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1400	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	SG	S	-0.0900	7
+	CD	CT2	-0.1300	8
+	HD2	HA	0.0900	9
+	HD1	HA	0.0900	10
+	CE	CC	0.5500	11
+	OE	O	-0.5500	12
+	CZ	CT3	-0.2700	13
+	HZ1	HA	0.0900	14
+	HZ2	HA	0.0900	15
+	HZ3	HA	0.0900	16
+	C	C	0.5100	17
+	O	O	-0.5100	18
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CE	CZ
+	HZ1	CZ
+	HZ2	CZ
+	HZ3	CZ
+	CD	CE
+	OE	CE
+	SG	CD
+	HD2	CD
+	HD1	CD
+	SG	CB
+	HB1	CB
+	HB2	CB
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+	CE	CD	OE	CZ
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ CTE ] ; 7-chlorotryptophan 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CY	-0.0300	7
+	CD1	CA	0.0350	8
+	HD1	HP	0.1150	9
+	CD2	CPT	-0.0200	10
+	NE1	NY	-0.6100	11
+	HE1	H	0.3800	12
+	CE2	CPT	0.1300	13
+	CE3	CA	-0.1150	14
+	HE3	HP	0.1150	15
+	CZ2	CA	0.1700	16
+	CL	CLAL	-0.1700	17
+	CZ3	CA	-0.1150	18
+	HZ3	HP	0.1150	19
+	CH2	CA	-0.1150	20
+	HH2	HP	0.1150	21
+	C	C	0.5100	22
+	O	O	-0.5100	23
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CG	CD1
+	NE1	CD1
+	HD1	CD1
+	CE2	CD2
+	CG	CD2
+	CE3	CD2
+	NE1	CE2
+	CZ2	CE2
+	CZ3	CE3
+	HE3	CE3
+	CZ3	CH2
+	CZ2	CH2
+	HH2	CH2
+	CZ2	CL
+	HZ3	CZ3
+	NE1	HE1
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ CTH ] ; 4-chlorothreonine 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT1	0.1400	4
+	HB	HA	0.0900	5
+	OG1	OH1	-0.6600	6
+	HG1	H	0.4300	7
+	CG2	CT2	0.1100	8
+	HG21	HA	0.0900	9
+	HG22	HA	0.0900	10
+	CL2	CLAL	-0.2900	11
+	C	C	0.5100	12
+	O	O	-0.5100	13
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG2	CB
+	OG1	CB
+	HB	CB
+	CL2	CG2
+	HG21	CG2
+	HG22	CG2
+	OG1	HG1
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ D4P ] ; 4-Hydroxy-phenylglycine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CA	0.0000	4
+	CG1	CA	-0.1150	5
+	HG1	HP	0.1150	6
+	CG2	CA	-0.1150	7
+	HG2	HP	0.1150	8
+	CD1	CA	-0.1150	9
+	HD1	HP	0.1150	10
+	CD2	CA	-0.1150	11
+	HD2	HP	0.1150	12
+	CE	CA	0.1100	13
+	OE	OH1	-0.5400	14
+	HE	H	0.4300	15
+	C	C	0.5100	16
+	O	O	-0.5100	17
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG1	CB
+	CG2	CB
+	CE	CD1
+	CG1	CD1
+	HD1	CD1
+	CE	CD2
+	CG2	CD2
+	HD2	CD2
+	OE	CE
+	HG1	CG1
+	HG2	CG2
+	OE	HE
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ DAB ] ; Diaminobutyric acid 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CT2	0.2100	7
+	HG1	HA	0.0500	8
+	HG2	HA	0.0500	9
+	ND	NH3	-0.3000	10
+	HD1	HC	0.3300	11
+	HD2	HC	0.3300	12
+	HD3	HC	0.3300	13
+	C	C	0.5100	14
+	O	O	-0.5100	15
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	ND	CG
+	CB	HB1
+	CB	HB2
+	CG	HG1
+	CG	HG2
+	ND	HD1
+	ND	HD2
+	ND	HD3
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ DAH ] ; 3,4-Dihydroxy-phenylalanine 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CA	0.0000	7
+	CD2	CA	-0.1150	8
+	HD2	HP	0.1150	9
+	CD1	CA	-0.1150	10
+	HD1	HP	0.1150	11
+	CE2	CA	-0.1150	12
+	HE2	HP	0.1150	13
+	CE1	CA	0.1100	14
+	OE1	OH1	-0.5400	15
+	HE1	H	0.4300	16
+	CZ	CA	0.1100	17
+	OZ	OH1	-0.5400	18
+	HZ	H	0.4300	19
+	C	C	0.5100	20
+	O	O	-0.5100	21
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CD2	CG
+	CD1	CG
+	CE2	CD2
+	HD2	CD2
+	CE1	CD1
+	HD1	CD1
+	CZ	CE2
+	HE2	CE2
+	OE1	CE1
+	CZ	CE1
+	HE1	OE1
+	OZ	CZ
+	HZ	OZ
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ DBY ] ; 3,5 dibromotyrosine 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CA	0.0000	7
+	CD1	CA	-0.1150	8
+	HD1	HP	0.1150	9
+	CD2	CA	-0.1150	10
+	HD2	HP	0.1150	11
+	CE1	CA	0.1100	12
+	BR1	BR	-0.1100	13
+	CE2	CA	0.1100	14
+	BR2	BR	-0.1100	15
+	CZ	CA	0.1100	16
+	OH	OH1	-0.5400	17
+	HH	H	0.4300	18
+	C	C	0.5100	19
+	O	O	-0.5100	20
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CE1	BR1
+	CE2	BR2
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CG	CD1
+	CE1	CD1
+	HD1	CD1
+	CE2	CD2
+	CG	CD2
+	HD2	CD2
+	CZ	CE1
+	CZ	CE2
+	OH	CZ
+	OH	HH
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ DDZ ] ; 3,3-dihydroxy l-alanine 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT1	0.3700	4
+	HB	HA	0.0900	5
+	OG1	OH1	-0.6600	6
+	HG1	H	0.4300	7
+	OG2	OH1	-0.6600	8
+	HG2	H	0.4300	9
+	C	C	0.5100	10
+	O	O	-0.5100	11
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	OG1	CB
+	OG2	CB
+	HB	CB
+	OG1	HG1
+	OG2	HG2
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ DILE ] ; Diethylalanine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT1	-0.0900	4
+	HB	HA	0.0900	5
+	CG1	CT2	-0.1800	6
+	HG11	HA	0.0900	7
+	HG12	HA	0.0900	8
+	CG2	CT2	-0.1800	9
+	HG21	HA	0.0900	10
+	HG22	HA	0.0900	11
+	CD1	CT3	-0.2700	12
+	HD11	HA	0.0900	13
+	HD12	HA	0.0900	14
+	HD13	HA	0.0900	15
+	CD2	CT3	-0.2700	16
+	HD21	HA	0.0900	17
+	HD22	HA	0.0900	18
+	HD23	HA	0.0900	19
+	C	C	0.5100	20
+	O	O	-0.5100	21
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG1	CB
+	CG2	CB
+	HB	CB
+	CG1	CD1
+	HD11	CD1
+	HD12	CD1
+	HD13	CD1
+	CG2	CD2
+	HD21	CD2
+	HD22	CD2
+	HD23	CD2
+	HG11	CG1
+	HG12	CG1
+	HG21	CG2
+	HG22	CG2
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ DIPH ] ; di-phenylalanine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT1	-0.0900	4
+	HB	HA	0.0900	5
+	CG3	CA	0.0000	6
+	CG1	CA	0.0000	7
+	CD3	CA	-0.1150	8
+	HD3	HP	0.1150	9
+	CD4	CA	-0.1150	10
+	HD4	HP	0.1150	11
+	CD1	CA	-0.1150	12
+	HD1	HP	0.1150	13
+	CD2	CA	-0.1150	14
+	HD2	HP	0.1150	15
+	CE3	CA	-0.1150	16
+	HE3	HP	0.1150	17
+	CE4	CA	-0.1150	18
+	HE4	HP	0.1150	19
+	CE1	CA	-0.1150	20
+	HE1	HP	0.1150	21
+	CE2	CA	-0.1150	22
+	HE2	HP	0.1150	23
+	CZ3	CA	-0.1150	24
+	HZ3	HP	0.1150	25
+	CZ1	CA	-0.1150	26
+	HZ1	HP	0.1150	27
+	C	C	0.5100	28
+	O	O	-0.5100	29
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	HB	CB
+	CB	CG3
+	CD3	CG3
+	HD3	CD3
+	CE3	CD3
+	HE3	CE3
+	CE3	CZ3
+	HZ3	CZ3
+	CE4	CZ3
+	HE4	CE4
+	CD4	CE4
+	HD4	CD4
+	CG3	CD4
+	CB	CG1
+	CD1	CG1
+	HD1	CD1
+	CE1	CD1
+	HE1	CE1
+	CZ1	CE1
+	HZ1	CZ1
+	CZ1	CE2
+	HE2	CE2
+	CD2	CE2
+	HD2	CD2
+	CG1	CD2
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ DMK ] ; 3,3-dimethyl aspartic acid 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT0	-0.1000	4
+	CG1	CC	0.6200	5
+	OD1	OC	-0.7600	6
+	OD2	OC	-0.7600	7
+	CG3	CT3	-0.2700	8
+	HG33	HA	0.0900	9
+	HG31	HA	0.0900	10
+	HG32	HA	0.0900	11
+	CG2	CT3	-0.2700	12
+	HG22	HA	0.0900	13
+	HG23	HA	0.0900	14
+	HG21	HA	0.0900	15
+	C	C	0.5100	16
+	O	O	-0.5100	17
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	OD1	CG1
+	OD2	CG1
+	CG3	HG33
+	CG3	HG31
+	HG32	CG3
+	CB	CG3
+	CG2	HG22
+	CG2	CB
+	CG1	CB
+	HG23	CG2
+	HG21	CG2
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+	CG1	CB	OD1	OD2
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ DMP3 ] ; Dimethyl-phenylalanine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CA	0.0000	7
+	CD1	CA	-0.1150	8
+	HD1	HP	0.1150	9
+	CD2	CA	-0.1150	10
+	HD2	HP	0.1150	11
+	CE1	CA	-0.1150	12
+	HE1	HP	0.1150	13
+	CE2	CA	0.0000	14
+	CZ	CA	-0.1150	15
+	HZ	HP	0.1150	16
+	CH	CT2	-0.1800	17
+	HH1	HA	0.0900	18
+	HH2	HA	0.0900	19
+	CJ	CT3	-0.2700	20
+	HJ1	HA	0.0900	21
+	HJ2	HA	0.0900	22
+	HJ3	HA	0.0900	23
+	C	C	0.5100	24
+	O	O	-0.5100	25
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	CE1	CD1
+	CG	CD1
+	CE2	CD2
+	CG	CD2
+	CZ	CE1
+	CH	CE2
+	CZ	CE2
+	CJ	CH
+	CB	HB1
+	CB	HB2
+	CD1	HD1
+	CD2	HD2
+	CE1	HE1
+	CZ	HZ
+	CH	HH1
+	CH	HH2
+	CJ	HJ1
+	CJ	HJ2
+	CJ	HJ3
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ DPP ] ; 2,3-Diaminopropanoic acid
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	0.2100	4
+	HB1	HA	0.0500	5
+	HB2	HA	0.0500	6
+	NG	NH3	-0.3000	7
+	HG2	HC	0.3300	8
+	HG3	HC	0.3300	9
+	HG1	HC	0.3300	10
+	C	C	0.5100	11
+	O	O	-0.5100	12
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	NG	HG2
+	CB	HB1
+	CB	NG
+	HG3	NG
+	HG1	NG
+	HB2	CB
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ ESC ] ; 2-amino-4-ethyl sulfanyl butyric acid 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CT2	-0.1400	7
+	HG1	HA	0.0900	8
+	HG2	HA	0.0900	9
+	SD	S	-0.0900	10
+	CE	CT2	-0.1300	11
+	HE2	HA	0.0900	12
+	HE1	HA	0.0900	13
+	CZ	CT3	-0.2700	14
+	HZ1	HA	0.0900	15
+	HZ2	HA	0.0900	16
+	HZ3	HA	0.0900	17
+	C	C	0.5100	18
+	O	O	-0.5100	19
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CZ	CE
+	HE1	CE
+	HE2	CE
+	SD	CE
+	HZ1	CZ
+	HZ2	CZ
+	HZ3	CZ
+	HG1	CG
+	HG2	CG
+	SD	CG
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ F2F ] ; 3,4-Difluoro-phenylalanine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CA	0.0000	7
+	CD1	CA	-0.1150	8
+	HD1	HP	0.1150	9
+	CD2	CA	-0.1150	10
+	HD2	HP	0.1150	11
+	CE1	CA	0.1900	12
+	FE1	F1	-0.1900	13
+	CE2	CA	-0.1150	14
+	HE2	HP	0.1150	15
+	CZ	CA	0.1900	16
+	FZ	F1	-0.1900	17
+	C	C	0.5100	18
+	O	O	-0.5100	19
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CE1	CD1
+	CG	CD1
+	HD1	CD1
+	CE2	CD2
+	CG	CD2
+	HD2	CD2
+	CZ	CE1
+	FE1	CE1
+	CZ	CE2
+	HE2	CE2
+	FZ	CZ
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ FCL ] ; 3-chloro-Phenylalanine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CA	0.0000	7
+	CD1	CA	-0.1150	8
+	HD1	HP	0.1150	9
+	CD2	CA	-0.1150	10
+	HD2	HP	0.1150	11
+	CE1	CA	0.1700	12
+	CLE	CLAL	-0.1700	13
+	CE2	CA	-0.1150	14
+	HE2	HP	0.1150	15
+	CZ	CA	-0.1150	16
+	HZ	HP	0.1150	17
+	C	C	0.5100	18
+	O	O	-0.5100	19
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CE1	CD1
+	CG	CD1
+	HD1	CD1
+	CE2	CD2
+	CG	CD2
+	HD2	CD2
+	CLE	CE1
+	CZ	CE1
+	CZ	CE2
+	HE2	CE2
+	HZ	CZ
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ FGA4 ] ; 4-Fluoro-glutamic acid
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CT1	0.1500	7
+	HG	HA	0.0900	8
+	CD	CC	0.6200	9
+	FG	F1	-0.3400	10
+	OE1	OC	-0.7600	11
+	OE2	OC	-0.7600	12
+	C	C	0.5100	13
+	O	O	-0.5100	14
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	OE1	CD
+	OE2	CD
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CG	CD
+	FG	CG
+	HG	CG
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+	CD	CG	OE1	OE2
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ FGL ] ; 2-aminopropanedioic acid 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CC	0.5200	4
+	OG1	OC	-0.7600	5
+	OG2	OC	-0.7600	6
+	C	C	0.5100	7
+	O	O	-0.5100	8
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CB	OG1
+	CB	OG2
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ FLA ] ; Trifluoro-alanine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT0	1.0200	4
+	FG1	F3	-0.3400	5
+	FG2	F3	-0.3400	6
+	FG3	F3	-0.3400	7
+	C	C	0.5100	8
+	O	O	-0.5100	9
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	FG1	CB
+	FG2	CB
+	FG3	CB
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ FPG2 ] ; 2-Fluoro-phenylglycine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CA	0.0000	4
+	CG1	CA	-0.1150	5
+	HG1	HP	0.1150	6
+	CG2	CA	0.1900	7
+	FG2	F1	-0.1900	8
+	CD1	CA	-0.1150	9
+	HD1	HP	0.1150	10
+	CD2	CA	-0.1150	11
+	HD2	HP	0.1150	12
+	CE	CA	-0.1150	13
+	HE	HP	0.1150	14
+	C	C	0.5100	15
+	O	O	-0.5100	16
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG1	CB
+	CG2	CB
+	CE	CD1
+	CG1	CD1
+	HD1	CD1
+	CE	CD2
+	CG2	CD2
+	HD2	CD2
+	HE	CE
+	HG1	CG1
+	FG2	CG2
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ FPG3 ] ; 3-Fluoro-phenylglycine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CA	0.0000	4
+	CG2	CA	-0.1150	5
+	HG2	HP	0.1150	6
+	CG1	CA	-0.1150	7
+	HG1	HP	0.1150	8
+	CD2	CA	-0.1150	9
+	HD2	HP	0.1150	10
+	CD1	CA	0.1900	11
+	FD1	F1	-0.1900	12
+	CE	CA	-0.1150	13
+	HE	HP	0.1150	14
+	C	C	0.5100	15
+	O	O	-0.5100	16
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG2	CB
+	CG1	CB
+	CG2	CD2
+	CE	CD2
+	HD2	CD2
+	CG1	CD1
+	CE	CD1
+	FD1	CD1
+	HE	CE
+	HG2	CG2
+	HG1	CG1
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ FPG4 ] ; 4-Fluoro-phenylglycine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CA	0.0000	4
+	CG1	CA	-0.1150	5
+	HG1	HP	0.1150	6
+	CG2	CA	-0.1150	7
+	HG2	HP	0.1150	8
+	CD1	CA	-0.1150	9
+	HD1	HP	0.1150	10
+	CD2	CA	-0.1150	11
+	HD2	HP	0.1150	12
+	CE	CA	0.1900	13
+	FE	F1	-0.1900	14
+	C	C	0.5100	15
+	O	O	-0.5100	16
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG1	CB
+	CG2	CB
+	CE	CD1
+	CG1	CD1
+	HD1	CD1
+	CE	CD2
+	CG2	CD2
+	HD2	CD2
+	FE	CE
+	HG1	CG1
+	HG2	CG2
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ FPH2 ] ; 2-Fluoro-Phenylalanine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CA	0.0000	7
+	CD1	CA	0.1900	8
+	FD1	F1	-0.1900	9
+	CD2	CA	-0.1150	10
+	HD2	HP	0.1150	11
+	CE1	CA	-0.1150	12
+	HE1	HP	0.1150	13
+	CE2	CA	-0.1150	14
+	HE2	HP	0.1150	15
+	CZ	CA	-0.1150	16
+	HZ	HP	0.1150	17
+	C	C	0.5100	18
+	O	O	-0.5100	19
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CE1	CD1
+	CG	CD1
+	FD1	CD1
+	CE2	CD2
+	CG	CD2
+	HD2	CD2
+	CZ	CE1
+	HE1	CE1
+	CZ	CE2
+	HE2	CE2
+	HZ	CZ
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ FPH3 ] ; 3-Fluoro-Phenylalanine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CA	0.0000	7
+	CD1	CA	-0.1150	8
+	HD1	HP	0.1150	9
+	CD2	CA	-0.1150	10
+	HD2	HP	0.1150	11
+	CE1	CA	0.1900	12
+	FE1	F1	-0.1900	13
+	CE2	CA	-0.1150	14
+	HE2	HP	0.1150	15
+	CZ	CA	-0.1150	16
+	HZ	HP	0.1150	17
+	C	C	0.5100	18
+	O	O	-0.5100	19
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CE1	CD1
+	CG	CD1
+	HD1	CD1
+	CE2	CD2
+	CG	CD2
+	HD2	CD2
+	CZ	CE1
+	FE1	CE1
+	CZ	CE2
+	HE2	CE2
+	HZ	CZ
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ FT6 ] ; 6-fluoro-l-tryptophan 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CY	-0.0300	7
+	CD1	CA	0.0350	8
+	HD1	HP	0.1150	9
+	CD2	CPT	-0.0200	10
+	NE1	NY	-0.6100	11
+	HE1	H	0.3800	12
+	CE2	CPT	0.1300	13
+	CE3	CA	-0.1150	14
+	HE3	HP	0.1150	15
+	CZ2	CA	-0.1150	16
+	HZ2	HP	0.1150	17
+	CZ3	CA	-0.1150	18
+	HZ3	HP	0.1150	19
+	CH2	CA	0.1900	20
+	FAP	F1	-0.1900	21
+	C	C	0.5100	22
+	O	O	-0.5100	23
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	HB1	CB
+	CG	CB
+	HB2	CB
+	CG	CD1
+	NE1	CD1
+	HD1	CD1
+	CE2	CD2
+	CG	CD2
+	CE3	CD2
+	NE1	CE2
+	CZ2	CE2
+	CZ3	CE3
+	HE3	CE3
+	CZ2	CH2
+	FAP	CH2
+	CZ3	CH2
+	HZ2	CZ2
+	HZ3	CZ3
+	NE1	HE1
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ FTR ] ; 5-Fluoro-tryptophan
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CY	-0.0300	7
+	CD1	CA	0.0350	8
+	HD1	HP	0.1150	9
+	CD2	CPT	-0.0200	10
+	NE1	NY	-0.6100	11
+	HE1	H	0.3800	12
+	CE2	CPT	0.1300	13
+	CE3	CA	-0.1150	14
+	HE3	HP	0.1150	15
+	CZ2	CA	-0.1150	16
+	HZ2	HP	0.1150	17
+	CZ3	CA	0.1900	18
+	FZ3	F1	-0.1900	19
+	CH2	CA	-0.1150	20
+	HH2	HP	0.1150	21
+	C	C	0.5100	22
+	O	O	-0.5100	23
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CG	CD1
+	NE1	CD1
+	CE2	CD2
+	CE3	CD2
+	CG	CD2
+	CZ2	CE2
+	NE1	CE2
+	CZ3	CE3
+	CZ2	CH2
+	CZ3	CH2
+	FZ3	CZ3
+	CD1	HD1
+	CE3	HE3
+	CZ2	HZ2
+	CH2	HH2
+	NE1	HE1
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ FUA2 ] ; (2-furyl)-alanine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.0000	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	C5A	-0.0400	7
+	CD2	C5B	-0.1500	8
+	HD2	HP	0.1500	9
+	OD1	OFUR	-0.2800	10
+	CE2	C5B	-0.1500	11
+	HE2	HP	0.1500	12
+	CE1	C5A	-0.0100	13
+	HE1	HP	0.1500	14
+	C	C	0.5100	15
+	O	O	-0.5100	16
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	CG	CD2
+	OD1	CG
+	CE2	CE1
+	CD2	CE2
+	OD1	CE1
+	CB	HB1
+	CB	HB2
+	CE1	HE1
+	CE2	HE2
+	CD2	HD2
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+        CE2     CD2     CE1     HE2
+        CD2     CG      CE2     HD2
+        CE1     OD1     CE2     HE1
+        CE2     CE1     CD2     HE2
+        CD2     CE2     CG      HD2
+        CE1     CE2     OD1     HE1
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ FVAL ] ; 3-Fluoro-valine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT0	0.3400	4
+	FG3	F1	-0.3400	5
+	CG1	CT3	-0.2700	6
+	HG11	HA	0.0900	7
+	HG12	HA	0.0900	8
+	HG13	HA	0.0900	9
+	CG2	CT3	-0.2700	10
+	HG21	HA	0.0900	11
+	HG22	HA	0.0900	12
+	HG23	HA	0.0900	13
+	C	C	0.5100	14
+	O	O	-0.5100	15
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG1	CB
+	CG2	CB
+	FG3	CB
+	HG11	CG1
+	HG12	CG1
+	HG13	CG1
+	HG21	CG2
+	HG22	CG2
+	HG23	CG2
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ GBUT ] ; Guanidinobutryric
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CT2	0.2000	7
+	HG1	HA	0.0900	8
+	HG2	HA	0.0900	9
+	ND	NC2	-0.7000	10
+	HD	HC	0.4400	11
+	CE	C	0.6400	12
+	NZ2	NC2	-0.8000	13
+	HZ22	HC	0.4600	14
+	HZ21	HC	0.4600	15
+	NZ1	NC2	-0.8000	16
+	HZ12	HC	0.4600	17
+	HZ11	HC	0.4600	18
+	C	C	0.5100	19
+	O	O	-0.5100	20
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CB	HB1
+	HB2	CB
+	CG	CB
+	CG	HG1
+	ND	HD
+	ND	CG
+	HG2	CG
+	CE	ND
+	NZ2	HZ22
+	NZ2	CE
+	NZ1	CE
+	HZ21	NZ2
+	NZ1	HZ12
+	HZ11	NZ1
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+	CE	ND	NZ1	NZ2
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ GDPR ] ; 2-Amino-3-guanidinopropionic acid
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	0.2000	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	NG	NC2	-0.7000	7
+	HG	HC	0.4400	8
+	CD	C	0.6400	9
+	NE1	NC2	-0.8000	10
+	HE11	HC	0.4600	11
+	HE12	HC	0.4600	12
+	NE2	NC2	-0.8000	13
+	HE22	HC	0.4600	14
+	HE21	HC	0.4600	15
+	C	C	0.5100	16
+	O	O	-0.5100	17
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CB	HB1
+	NE1	HE11
+	HB2	CB
+	NG	CB
+	HE12	NE1
+	CD	NE1
+	CD	NG
+	HG	NG
+	NE2	CD
+	HE22	NE2
+	HE21	NE2
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+	CD	NE1	NE2	NG
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ GGB ] ; Canavanine
+ [ atoms ]
+        N       NH1     -0.4700   0
+        HN      H       0.3100    1
+        CA      CT1     0.0700    2
+        HA      HB      0.0900    3
+	CB	CT2	-0.1800	4
+	HB2	HA	0.0900	5
+	HB1	HA	0.0900	6
+	CG	CT2	0.1000	7
+	HG1	HA	0.0900	8
+	HG2	HA	0.0900	9
+	OD	OCC	-0.2170	10
+	NE	N=C	-0.5130	11
+	CZ	CC	0.5500	12
+	NH2	NH2	-0.8500	13
+	HH21	H	0.4000	14
+	HH22	H	0.4000	15
+	NH1	NH2	-0.8500	16
+	HH12	H	0.4000	17
+	HH11	H	0.4000	18
+	C	C	0.5100	19
+	O	O	-0.5100	20
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	NH2	HH21
+	HH22	NH2
+	CZ	NH2
+	NH1	HH12
+	CZ	NH1
+	HH11	NH1
+	NE	CZ
+	OD	NE
+	CG	OD
+	CG	HG1
+	CG	HG2
+	CB	CG
+	HB2	CB
+	HB1	CB
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+	CZ	NH1	NH2	NE
+	NH1	HH11	HH12	CZ
+	NH2	HH21	HH22	CZ
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ GHG ] ; (2s,4s)-2,5-diamino-4-hydroxy-5-oxopentanoic acid 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CT1	0.1400	7
+	HG	HA	0.0900	8
+	OG1	OH1	-0.6600	9
+	HG1	H	0.4300	10
+	CD	CC	0.5500	11
+	OE1	O	-0.5500	12
+	NE2	NH2	-0.6200	13
+	HE21	H	0.3200	14
+	HE22	H	0.3000	15
+	C	C	0.5100	16
+	O	O	-0.5100	17
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	NE2	CD
+	CG	CD
+	OE1	CD
+	OG1	CG
+	HG	CG
+	NE2	HE21
+	NE2	HE22
+	OG1	HG1
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+	CD	CG	OE1	NE2
+	NE2	CD	HE21	HE22
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ GME ] ; 5-o-methyl-glutamic acid 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CT2	-0.1200	7
+	HG1	HA	0.0900	8
+	HG2	HA	0.0900	9
+	CD	CC	0.6600	10
+	OE2	OCC	-0.4300	11
+	OE1	O	-0.5700	12
+	CZ	CT3	0.0100	13
+	HZ2	HA	0.0900	14
+	HZ1	HA	0.0900	15
+	HZ3	HA	0.0900	16
+	C	C	0.5100	17
+	O	O	-0.5100	18
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	OE2	CD
+	CG	CD
+	OE1	CD
+	HG1	CG
+	HG2	CG
+	OE2	CZ
+	HZ2	CZ
+	HZ1	CZ
+	HZ3	CZ
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+	CD	CG	OE1	OE2
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ HCS ] ; homocysteine 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CT2	-0.1100	7
+	HG1	HA	0.0900	8
+	HG2	HA	0.0900	9
+	SD	S	-0.2300	10
+	HD	HS	0.1600	11
+	C	C	0.5100	12
+	O	O	-0.5100	13
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	SD	CG
+	HG1	CG
+	HG2	CG
+	SD	HD
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ HGA ] ; glutamine hydroxamate 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CT2	-0.1200	7
+	HG2	HA	0.0900	8
+	HG1	HA	0.0900	9
+	CD	CC	0.5700	10
+	OE1	O	-0.5700	11
+	NE2	NH1	-0.4000	12
+	HE	H	0.3700	13
+	OZ	OH1	-0.4300	14
+	HZ	H	0.4000	15
+	C	C	0.5100	16
+	O	O	-0.5100	17
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CG	CD
+	OE1	CD
+	NE2	CD
+	HG2	CG
+	HG1	CG
+	NE2	HE
+	OZ	HZ
+	OZ	NE2
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+	CD	CG	OE1	NE2
+	NE2	CD	HE	OZ
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ HHK ] ; (2s)-2,8-diaminooctanoic acid 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CT2	-0.1800	7
+	HG2	HA	0.0900	8
+	HG1	HA	0.0900	9
+	CD	CT2	-0.1800	10
+	HD1	HA	0.0900	11
+	HD2	HA	0.0900	12
+	CE	CT2	-0.1800	13
+	HE2	HA	0.0900	14
+	HE1	HA	0.0900	15
+	CZ	CT2	-0.1800	16
+	HZ1	HA	0.0900	17
+	HZ2	HA	0.0900	18
+	CH	CT2	0.2100	19
+	HH1	HA	0.0500	20
+	HH2	HA	0.0500	21
+	NJ	NH3	-0.3000	22
+	HJ1	HC	0.3300	23
+	HJ2	HC	0.3300	24
+	HJ3	HC	0.3300	25
+	C	C	0.5100	26
+	O	O	-0.5100	27
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CG	CD
+	CE	CD
+	HD1	CD
+	HD2	CD
+	CZ	CE
+	HE2	CE
+	HE1	CE
+	HG2	CG
+	HG1	CG
+	CZ	CH
+	NJ	CH
+	HH1	CH
+	HH2	CH
+	HZ1	CZ
+	HZ2	CZ
+	NJ	HJ1
+	NJ	HJ2
+	NJ	HJ3
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ HIL4 ] ; 4-Hydroxy-L-isoleucine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT1	-0.0900	4
+	HB1	HA	0.0900	5
+	CG1	CT1	0.1400	6
+	HG11	HA	0.0900	7
+	OD1	OH1	-0.6600	8
+	HD11	H	0.4300	9
+	CG2	CT3	-0.2700	10
+	HG21	HA	0.0900	11
+	HG22	HA	0.0900	12
+	HG23	HA	0.0900	13
+	CD2	CT3	-0.2700	14
+	HD21	HA	0.0900	15
+	HD22	HA	0.0900	16
+	HD23	HA	0.0900	17
+	C	C	0.5100	18
+	O	O	-0.5100	19
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG1	CB
+	CG2	CB
+	HB1	CB
+	CG1	CD2
+	HD21	CD2
+	HD22	CD2
+	HD23	CD2
+	HG11	CG1
+	OD1	CG1
+	HG21	CG2
+	HG22	CG2
+	HG23	CG2
+	OD1	HD11
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ HL2 ] ; (2s,3r)-2-amino-3-hydroxy-4-methylpentanoic acid 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT1	0.1400	4
+	HB	HA	0.0900	5
+	OH	OH1	-0.6600	6
+	HH	H	0.4300	7
+	CG	CT1	-0.0900	8
+	HG	HA	0.0900	9
+	CD1	CT3	-0.2700	10
+	HD11	HA	0.0900	11
+	HD12	HA	0.0900	12
+	HD13	HA	0.0900	13
+	CD2	CT3	-0.2700	14
+	HD21	HA	0.0900	15
+	HD22	HA	0.0900	16
+	HD23	HA	0.0900	17
+	C	C	0.5100	18
+	O	O	-0.5100	19
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CD2	HD21
+	CD2	HD22
+	HD23	CD2
+	CG	CD2
+	CG	HG
+	CB	CG
+	CD1	CG
+	CB	HB
+	CD1	HD13
+	OH	CB
+	HD11	CD1
+	HD12	CD1
+	OH	HH
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ HLEU ] ; Homoleucine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CT2	-0.1800	7
+	HG1	HA	0.0900	8
+	HG2	HA	0.0900	9
+	CD	CT1	-0.0900	10
+	HD	HA	0.0900	11
+	CE1	CT3	-0.2700	12
+	HE11	HA	0.0900	13
+	HE12	HA	0.0900	14
+	HE13	HA	0.0900	15
+	CE2	CT3	-0.2700	16
+	HE21	HA	0.0900	17
+	HE22	HA	0.0900	18
+	HE23	HA	0.0900	19
+	C	C	0.5100	20
+	O	O	-0.5100	21
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CG	CD
+	CE1	CD
+	CE2	CD
+	HD	CD
+	HG1	CG
+	HG2	CG
+	HE11	CE1
+	HE12	CE1
+	HE13	CE1
+	HE21	CE2
+	HE22	CE2
+	HE23	CE2
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ HLU ] ; 2s,3s)-2-amino-3-hydroxy-4-methylpentanoic acid 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT1	0.1400	4
+	HB	HA	0.0900	5
+	OH	OH1	-0.6600	6
+	HH	H	0.4300	7
+	CG	CT1	-0.0900	8
+	HG	HA	0.0900	9
+	CD1	CT3	-0.2700	10
+	HD11	HA	0.0900	11
+	HD12	HA	0.0900	12
+	HD13	HA	0.0900	13
+	CD2	CT3	-0.2700	14
+	HD21	HA	0.0900	15
+	HD22	HA	0.0900	16
+	HD23	HA	0.0900	17
+	C	C	0.5100	18
+	O	O	-0.5100	19
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	OH	CB
+	CD1	CG
+	CD2	CG
+	CB	HB
+	CG	HG
+	CD1	HD11
+	CD1	HD12
+	CD1	HD13
+	OH	HH
+	CD2	HD21
+	CD2	HD22
+	CD2	HD23
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ HOX ] ; 4-amino-L-phenylalanine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CA	0.0000	7
+	CD1	CA	-0.1150	8
+	HD1	HP	0.1150	9
+	CD2	CA	-0.1150	10
+	HD2	HP	0.1150	11
+	CE1	CA	-0.1150	12
+	HE1	HP	0.1150	13
+	CE2	CA	-0.1150	14
+	HE2	HP	0.1150	15
+	CZ	CA	0.1000	16
+	NH	NH2	-0.9000	17
+	HH1	H	0.4000	18
+	HH2	H	0.4000	19
+	C	C	0.5100	20
+	O	O	-0.5100	21
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CE1	CD1
+	CG	CD1
+	HD1	CD1
+	CE2	CD2
+	CG	CD2
+	HD2	CD2
+	CZ	CE1
+	HE1	CE1
+	CZ	CE2
+	HE2	CE2
+	NH	CZ
+	NH	HH1
+	NH	HH2
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+	NH	CZ	HH1	HH2
+	NH	CZ	HH2	HH1
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ HPE ] ; Homophenylalanine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CT2	-0.1800	7
+	HG2	HA	0.0900	8
+	HG1	HA	0.0900	9
+	CD	CA	0.0000	10
+	CE2	CA	-0.1150	11
+	HE2	HP	0.1150	12
+	CE1	CA	-0.1150	13
+	HE1	HP	0.1150	14
+	CZ2	CA	-0.1150	15
+	HZ2	HP	0.1150	16
+	CZ1	CA	-0.1150	17
+	HZ1	HP	0.1150	18
+	CH	CA	-0.1150	19
+	HH	HP	0.1150	20
+	C	C	0.5100	21
+	O	O	-0.5100	22
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CB	HB1
+	CE2	HE2
+	CZ2	HZ2
+	HB2	CB
+	CG	CB
+	CZ2	CE2
+	CD	CE2
+	CH	CZ2
+	CG	HG2
+	CD	CG
+	HG1	CG
+	CE1	CD
+	HH	CH
+	CZ1	CH
+	CZ1	CE1
+	HE1	CE1
+	HZ1	CZ1
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ HQA ] ; 3-(8-hydroxyquinolin-3-yl)-l-alanine 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CA	0.0000	7
+	CD1	CA	0.1600	8
+	HD1	HP	0.1500	9
+	NE1	NPYD	-0.6200	10
+	CZ1	CA	0.3100	11
+	CD2	CA	-0.1150	12
+	HD2	HP	0.1150	13
+	CE2	CA	0.0000	14
+	CZ2	CA	-0.1150	15
+	HZ2	HP	0.1150	16
+	CH1	CA	0.1100	17
+	OH1	OH1	-0.5400	18
+	HH1	H	0.4300	19
+	CH2	CA	-0.1150	20
+	HH2	HP	0.1150	21
+	CJ	CA	-0.1150	22
+	HJ	HP	0.1150	23
+	C	C	0.5100	24
+	O	O	-0.5100	25
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CG	CD1
+	HD1	CD1
+	NE1	CD1
+	CE2	CD2
+	CG	CD2
+	HD2	CD2
+	CZ1	CE2
+	CZ2	CE2
+	CJ	CH1
+	CZ1	CH1
+	OH1	CH1
+	CJ	CH2
+	CZ2	CH2
+	HH2	CH2
+	HJ	CJ
+	NE1	CZ1
+	HZ2	CZ2
+	OH1	HH1
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ HRG ] ; homoarginine 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CT2	-0.1800	7
+	HG2	HA	0.0900	8
+	HG1	HA	0.0900	9
+	CD	CT2	-0.1800	10
+	HD1	HA	0.0900	11
+	HD2	HA	0.0900	12
+	CE	CT2	0.2000	13
+	HE2	HA	0.0900	14
+	HE1	HA	0.0900	15
+	NZ	NC2	-0.7000	16
+	HZ	HC	0.4400	17
+	CH	C	0.6400	18
+	NJ1	NC2	-0.8000	19
+	HJ11	HC	0.4600	20
+	HJ12	HC	0.4600	21
+	NJ2	NC2	-0.8000	22
+	HJ21	HC	0.4600	23
+	HJ22	HC	0.4600	24
+	C	C	0.5100	25
+	O	O	-0.5100	26
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	NJ1	HJ11
+	NJ1	HJ12
+	CH	NJ1
+	CD	HD1
+	NZ	HZ
+	NZ	CH
+	NJ2	CH
+	CE	NZ
+	CE	HE2
+	CB	HB1
+	NJ2	HJ21
+	HJ22	NJ2
+	CE	CD
+	HD2	CD
+	CG	CD
+	CG	HG2
+	HE1	CE
+	CG	CB
+	HB2	CB
+	HG1	CG
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+	CH	NJ1	NJ2	NZ
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ HRP ] ; 5-Hydroxy-tryptophan
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CY	-0.0300	7
+	CD1	CA	0.0350	8
+	HD1	HP	0.1150	9
+	CD2	CPT	-0.0200	10
+	NE1	NY	-0.6100	11
+	HE1	H	0.3800	12
+	CE2	CPT	0.1300	13
+	CE3	CA	-0.1150	14
+	HE3	HP	0.1150	15
+	CZ2	CA	-0.1150	16
+	HZ2	HP	0.1150	17
+	CZ3	CA	0.1100	18
+	OZ3	OH1	-0.5400	19
+	HZ3	H	0.4300	20
+	CH2	CA	-0.1150	21
+	HH2	HP	0.1150	22
+	C	C	0.5100	23
+	O	O	-0.5100	24
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CG	CD1
+	HD1	CD1
+	NE1	CD1
+	CE2	CD2
+	CE3	CD2
+	CG	CD2
+	CZ2	CE2
+	NE1	CE2
+	CZ3	CE3
+	HE3	CE3
+	CZ2	CH2
+	CZ3	CH2
+	HH2	CH2
+	HZ2	CZ2
+	OZ3	CZ3
+	NE1	HE1
+	OZ3	HZ3
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ HSER ] ; homoserine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CT2	0.0500	7
+	HG1	HA	0.0900	8
+	HG2	HA	0.0900	9
+	OD	OH1	-0.6600	10
+	HD	H	0.4300	11
+	C	C	0.5100	12
+	O	O	-0.5100	13
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	OD	CG
+	HG1	CG
+	HG2	CG
+	OD	HD
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ HTR ] ; beta-hydroxytryptophane 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT1	0.1400	4
+	HB	HA	0.0900	5
+	OH	OH1	-0.6600	6
+	HH	H	0.4300	7
+	CG	CY	-0.0300	8
+	CD1	CA	0.0350	9
+	HD1	HP	0.1150	10
+	CD2	CPT	-0.0200	11
+	NE1	NY	-0.6100	12
+	HE1	H	0.3800	13
+	CE2	CPT	0.1300	14
+	CE3	CA	-0.1150	15
+	HE3	HP	0.1150	16
+	CZ2	CA	-0.1150	17
+	HZ2	HP	0.1150	18
+	CZ3	CA	-0.1150	19
+	HZ3	HP	0.1150	20
+	CH2	CA	-0.1150	21
+	HH2	HP	0.1150	22
+	C	C	0.5100	23
+	O	O	-0.5100	24
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	OH	CB
+	CG	CB
+	HB	CB
+	HH	OH
+	CD1	CG
+	CD2	CG
+	NE1	CD1
+	HD1	CD1
+	CE2	NE1
+	HE1	NE1
+	CZ2	CE2
+	CD2	CE2
+	CH2	CZ2
+	HZ2	CZ2
+	CZ3	CH2
+	HH2	CH2
+	CE3	CZ3
+	HZ3	CZ3
+	CD2	CE3
+	HE3	CE3
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ HVA ] ; 3-hydroxy-l-valine 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT0	0.2300	4
+	OG3	OH1	-0.6600	5
+	HG3	H	0.4300	6
+	CG1	CT3	-0.2700	7
+	HG11	HA	0.0900	8
+	HG12	HA	0.0900	9
+	HG13	HA	0.0900	10
+	CG2	CT3	-0.2700	11
+	HG21	HA	0.0900	12
+	HG22	HA	0.0900	13
+	HG23	HA	0.0900	14
+	C	C	0.5100	15
+	O	O	-0.5100	16
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG1	CB
+	CG2	CB
+	OG3	CB
+	HG11	CG1
+	HG12	CG1
+	HG13	CG1
+	HG21	CG2
+	HG22	CG2
+	HG23	CG2
+	HG3	OG3
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ I2M ] ; 3-methyl-l-alloisoleucine 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT0	0.0000	4
+	CG3	CT3	-0.2700	5
+	HG31	HA	0.0900	6
+	HG32	HA	0.0900	7
+	HG33	HA	0.0900	8
+	CG2	CT3	-0.2700	9
+	HG22	HA	0.0900	10
+	HG21	HA	0.0900	11
+	HG23	HA	0.0900	12
+	CG1	CT2	-0.1800	13
+	HG11	HA	0.0900	14
+	HG12	HA	0.0900	15
+	CD1	CT3	-0.2700	16
+	HD11	HA	0.0900	17
+	HD12	HA	0.0900	18
+	HD13	HA	0.0900	19
+	C	C	0.5100	20
+	O	O	-0.5100	21
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG3	CB
+	CG2	CB
+	CG1	CB
+	CG1	CD1
+	HD11	CD1
+	HD12	CD1
+	HD13	CD1
+	HG11	CG1
+	HG12	CG1
+	HG22	CG2
+	HG21	CG2
+	HG23	CG2
+	HG31	CG3
+	HG32	CG3
+	HG33	CG3
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ IGL ] ; 3-methyl-l-alloisoleucine 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT1	-0.0900	4
+	HB	HA	0.0900	5
+	CG1	CT2	-0.1800	6
+	HG11	HA	0.0900	7
+	HG12	HA	0.0900	8
+	CG2	CT2	-0.1800	9
+	HG21	HA	0.0900	10
+	HG22	HA	0.0900	11
+	CD1	CA	0.0000	12
+	CD2	CA	0.0000	13
+	CE1	CA	-0.1150	14
+	HE1	HP	0.1150	15
+	CE2	CA	-0.1150	16
+	HE2	HP	0.1150	17
+	CH1	CA	-0.1150	18
+	HH1	HP	0.1150	19
+	CH2	CA	-0.1150	20
+	HH2	HP	0.1150	21
+	C	C	0.5100	22
+	O	O	-0.5100	23
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG1	CB
+	CG2	CB
+	HB	CB
+	CE1	CD1
+	CG1	CD1
+	CD2	CD1
+	CG2	CD2
+	CE2	CD2
+	CH1	CE1
+	HE1	CE1
+	CH2	CE2
+	HE2	CE2
+	HG11	CG1
+	HG12	CG1
+	HG21	CG2
+	HG22	CG2
+	CH2	CH1
+	HH1	CH1
+	HH2	CH2
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ IIL ] ; Allo-Isoleucine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT1	-0.0900	4
+	HB	HA	0.0900	5
+	CG1	CT2	-0.1800	6
+	HG11	HA	0.0900	7
+	HG12	HA	0.0900	8
+	CG2	CT3	-0.2700	9
+	HG21	HA	0.0900	10
+	HG22	HA	0.0900	11
+	HG23	HA	0.0900	12
+	CD1	CT3	-0.2700	13
+	HD11	HA	0.0900	14
+	HD12	HA	0.0900	15
+	HD13	HA	0.0900	16
+	C	C	0.5100	17
+	O	O	-0.5100	18
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG1	CB
+	CG2	CB
+	HB	CB
+	CG1	CD1
+	HD11	CD1
+	HD12	CD1
+	HD13	CD1
+	HG11	CG1
+	HG12	CG1
+	HG21	CG2
+	HG22	CG2
+	HG23	CG2
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ ILX ] ; 4,5-dihydroxyisoleucine 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT1	-0.0900	4
+	HB	HA	0.0900	5
+	CG1	CT1	0.1400	6
+	HG1	HA	0.0900	7
+	OG1	OH1	-0.6600	8
+	HOG1	H	0.4300	9
+	CG2	CT3	-0.2700	10
+	HG21	HA	0.0900	11
+	HG22	HA	0.0900	12
+	HG23	HA	0.0900	13
+	CD1	CT2	0.0500	14
+	HD11	HA	0.0900	15
+	HD12	HA	0.0900	16
+	OD1	OH1	-0.6600	17
+	HOD1	H	0.4300	18
+	C	C	0.5100	19
+	O	O	-0.5100	20
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG1	CB
+	CG2	CB
+	OG1	CG1
+	CD1	CG1
+	OD1	CD1
+	CB	HB
+	CG1	HG1
+	CD1	HD11
+	CD1	HD12
+	OG1	HOG1
+	OD1	HOD1
+	CG2	HG21
+	CG2	HG22
+	CG2	HG23
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ IYR ] ; 3-iodo-tyrosine 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CA	0.0000	7
+	CD1	CA	-0.1150	8
+	HD1	HP	0.1150	9
+	CD2	CA	-0.1150	10
+	HD2	HP	0.1150	11
+	CE1	CA	0.0800	12
+	IE1	I	-0.0800	13
+	CE2	CA	-0.1150	14
+	HE2	HP	0.1150	15
+	CZ	CA	0.1100	16
+	OZ	OH1	-0.5400	17
+	HZ	H	0.4300	18
+	C	C	0.5100	19
+	O	O	-0.5100	20
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CD1	CG
+	CD2	CG
+	CE1	CD1
+	HD1	CD1
+	IE1	CE1
+	CZ	CE1
+	OZ	CZ
+	CE2	CZ
+	CD2	CE2
+	HE2	CE2
+	HD2	CD2
+	OZ	HZ
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ KYN ] ; kynurenine 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CC	0.5500	7
+	OG	O	-0.5500	8
+	CD	CA	0.0000	9
+	CE2	CA	0.1000	10
+	NE2	NH2	-0.9000	11
+	HE21	H	0.4000	12
+	HE22	H	0.4000	13
+	CE1	CA	-0.1150	14
+	HE1	HP	0.1150	15
+	CZ2	CA	-0.1150	16
+	HZ2	HP	0.1150	17
+	CZ1	CA	-0.1150	18
+	HZ1	HP	0.1150	19
+	CH	CA	-0.1150	20
+	HH	HP	0.1150	21
+	C	C	0.5100	22
+	O	O	-0.5100	23
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CD	CG
+	CB	CG
+	OG	CG
+	HB1	CB
+	HB2	CB
+	CE2	CZ2
+	CH	CZ2
+	HZ2	CZ2
+	CE2	CD
+	CE1	CD
+	CZ1	CH
+	HH	CH
+	CZ1	CE1
+	HE1	CE1
+	NE2	CE2
+	HZ1	CZ1
+	NE2	HE21
+	NE2	HE22
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+	CG	CB	OG	CD
+	NE2	CE2	HE21	HE22
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ LDO ] ; 6-hydroxy-l-norleucine 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CT2	-0.1800	7
+	HG1	HA	0.0900	8
+	HG2	HA	0.0900	9
+	CD	CT2	-0.1800	10
+	HD1	HA	0.0900	11
+	HD2	HA	0.0900	12
+	CE	CT2	0.0500	13
+	HE1	HA	0.0900	14
+	HE2	HA	0.0900	15
+	OZ	OH1	-0.6600	16
+	HOZ	H	0.4300	17
+	C	C	0.5100	18
+	O	O	-0.5100	19
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CD	CG
+	HG1	CG
+	HG2	CG
+	CE	CD
+	HD1	CD
+	HD2	CD
+	OZ	CE
+	HE1	CE
+	HE2	CE
+	HOZ	OZ
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ LE1 ] ; Penicillamine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT0	0.0700	4
+	SG3	S	-0.2300	5
+	HG3	HS	0.1600	6
+	CG2	CT3	-0.2700	7
+	HG23	HA	0.0900	8
+	HG21	HA	0.0900	9
+	HG22	HA	0.0900	10
+	CG1	CT3	-0.2700	11
+	HG11	HA	0.0900	12
+	HG12	HA	0.0900	13
+	HG13	HA	0.0900	14
+	C	C	0.5100	15
+	O	O	-0.5100	16
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CB	CG2
+	HG23	CG2
+	HG21	CG2
+	HG22	CG2
+	CB	CG1
+	HG11	CG1
+	HG12	CG1
+	HG13	CG1
+	SG3	CB
+	SG3	HG3
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ LED ] ; (4r)-5-oxo-l-leucine 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CT1	-0.0900	7
+	HG	HA	0.0900	8
+	CD1	CT3	-0.2700	9
+	HD11	HA	0.0900	10
+	HD12	HA	0.0900	11
+	HD13	HA	0.0900	12
+	CD2	C	0.5100	13
+	HD2	HCO	0.0600	14
+	OE	O	-0.5700	15
+	C	C	0.5100	16
+	O	O	-0.5100	17
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CG	CD1
+	HD11	CD1
+	HD12	CD1
+	HD13	CD1
+	CG	CD2
+	OE	CD2
+	HD2	CD2
+	HG	CG
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+	CD2	CG	OE	HD2
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ LEF ] ; (4s)-5-fluoro-l-leucine 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB2	HA	0.0900	5
+	HB1	HA	0.0900	6
+	CG	CT1	-0.0900	7
+	HG	HA	0.0900	8
+	CD1	CT2	0.1600	9
+	HD11	HA	0.0900	10
+	HD12	HA	0.0900	11
+	F1	F1	-0.3400	12
+	CD2	CT3	-0.2700	13
+	HD21	HA	0.0900	14
+	HD22	HA	0.0900	15
+	HD23	HA	0.0900	16
+	C	C	0.5100	17
+	O	O	-0.5100	18
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB2	CB
+	HB1	CB
+	CG	CD1
+	F1	CD1
+	HD11	CD1
+	HD12	CD1
+	CG	CD2
+	HD21	CD2
+	HD22	CD2
+	HD23	CD2
+	HG	CG
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ LME ] ; (3r)-3-methyl-l-glutamic acid 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT1	-0.0900	4
+	HB	HA	0.0900	5
+	CG2	CT3	-0.2700	6
+	HG21	HA	0.0900	7
+	HG22	HA	0.0900	8
+	HG23	HA	0.0900	9
+	CG1	CT2	-0.2800	10
+	HG12	HA	0.0900	11
+	HG11	HA	0.0900	12
+	CD	CC	0.6200	13
+	OE1	OC	-0.7600	14
+	OE2	OC	-0.7600	15
+	C	C	0.5100	16
+	O	O	-0.5100	17
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	OE1	CD
+	OE2	CD
+	CG2	HG21
+	CG2	HG22
+	HG23	CG2
+	CB	CG2
+	CG1	HG12
+	CG1	CB
+	HB	CB
+	CD	CG1
+	HG11	CG1
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+	CD	CG1	OE1	OE2
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ LMQ ] ; 3-methyl-l-glutamine 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT1	-0.0900	4
+	HB	HA	0.0900	5
+	CG2	CT3	-0.2700	6
+	HG23	HA	0.0900	7
+	HG21	HA	0.0900	8
+	HG22	HA	0.0900	9
+	CG1	CT2	-0.1800	10
+	HG11	HA	0.0900	11
+	HG12	HA	0.0900	12
+	CD	CC	0.5500	13
+	OE1	O	-0.5500	14
+	NE2	NH2	-0.6200	15
+	HE21	H	0.3200	16
+	HE22	H	0.3000	17
+	C	C	0.5100	18
+	O	O	-0.5100	19
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG2	CB
+	CG1	CB
+	HB	CB
+	HG23	CG2
+	HG21	CG2
+	HG22	CG2
+	CG1	CD
+	OE1	CD
+	NE2	CD
+	HG11	CG1
+	HG12	CG1
+	NE2	HE21
+	NE2	HE22
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+        CD      NE2     CG1     OE1
+        CD      CG1     NE2     OE1
+        NE2     CD      HE21    HE22
+        NE2     CD      HE22    HE21
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ LVG ] ; vinylglycine 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CE1	-0.1500	4
+	HB	HE1	0.1500	5
+	CG	CE2	-0.3000	6
+	HG1	HE2	0.1500	7
+	HG2	HE2	0.1500	8
+	C	C	0.5100	9
+	O	O	-0.5100	10
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB	CB
+	HG1	CG
+	HG2	CG
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+	CB	CA	CG	HB
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ LVN ] ; 4-oxo-l-valine 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT1	-0.0900	4
+	HB	HA	0.0900	5
+	CG1	C	0.5100	6
+	HG11	HCO	0.0600	7
+	OG1	O	-0.5700	8
+	CG2	CT3	-0.2700	9
+	HG21	HA	0.0900	10
+	HG22	HA	0.0900	11
+	HG23	HA	0.0900	12
+	C	C	0.5100	13
+	O	O	-0.5100	14
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG1	CB
+	CG2	CB
+	HB	CB
+	OG1	CG1
+	HG11	CG1
+	HG21	CG2
+	HG22	CG2
+	HG23	CG2
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+	CG1	CB	OG1	HG11
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ M2S ] ; 3-{[(r)-methylsulfinyl]methyl}-l-valine 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT0	0.0000	4
+	CG1	CT3	-0.2700	5
+	HG13	HA	0.0900	6
+	HG11	HA	0.0900	7
+	HG12	HA	0.0900	8
+	CG2	CT3	-0.2700	9
+	HG21	HA	0.0900	10
+	HG22	HA	0.0900	11
+	HG23	HA	0.0900	12
+	CG	CT2	0.0100	13
+	HG1	HA	0.0900	14
+	HG2	HA	0.0900	15
+	SD	SO	0.1200	16
+	OE	O	-0.5000	17
+	CE	CT3	-0.0800	18
+	HE1	HA	0.0900	19
+	HE2	HA	0.0900	20
+	HE3	HA	0.0900	21
+	C	C	0.5100	22
+	O	O	-0.5100	23
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG1	CB
+	CG2	CB
+	CG	CB
+	SD	CE
+	HE1	CE
+	HE2	CE
+	HE3	CE
+	SD	CG
+	HG1	CG
+	HG2	CG
+	HG13	CG1
+	HG11	CG1
+	HG12	CG1
+	HG21	CG2
+	HG22	CG2
+	HG23	CG2
+	SD	OE
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ ME0 ] ; hydroxy-l-methionine 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CT2	-0.1400	7
+	HG1	HA	0.0900	8
+	HG2	HA	0.0900	9
+	SD	S	-0.0900	10
+	CE	CT2	0.1000	11
+	HE1	HA	0.0900	12
+	HE2	HA	0.0900	13
+	OZ	OH1	-0.6600	14
+	HZ	H	0.4300	15
+	C	C	0.5100	16
+	O	O	-0.5100	17
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	SD	CE
+	OZ	CE
+	HE1	CE
+	HE2	CE
+	SD	CG
+	HG1	CG
+	HG2	CG
+	OZ	HZ
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ MEG ] ; (3s)-3-methyl-l-glutamic acid 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT1	-0.0900	4
+	HB	HA	0.0900	5
+	CG1	CT2	-0.2800	6
+	HG12	HA	0.0900	7
+	HG11	HA	0.0900	8
+	CD	CC	0.6200	9
+	OE1	OC	-0.7600	10
+	OE2	OC	-0.7600	11
+	CG2	CT3	-0.2700	12
+	HG22	HA	0.0900	13
+	HG21	HA	0.0900	14
+	HG23	HA	0.0900	15
+	C	C	0.5100	16
+	O	O	-0.5100	17
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	OE1	CD
+	OE2	CD
+	CB	HB
+	CG1	HG12
+	CG1	CB
+	CG2	CB
+	CG1	CD
+	HG11	CG1
+	CG2	HG22
+	CG2	HG21
+	HG23	CG2
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+        CD      CG1      OE2     OE1
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ MEN ] ; n-methyl asparagine 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1200	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CC	0.5700	7
+	OD1	O	-0.5700	8
+	ND	NH1	-0.7300	9
+	HD	H	0.3700	10
+	CE	CT3	0.0300	11
+	HE2	HA	0.0900	12
+	HE1	HA	0.0900	13
+	HE3	HA	0.0900	14
+	C	C	0.5100	15
+	O	O	-0.5100	16
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	ND	CE
+	HE2	CE
+	HE1	CE
+	HE3	CE
+	OD1	CG
+	ND	CG
+	ND	HD
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+	CG	CB	ND	OD1
+	ND	CG	HD	CE
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ MEQ ] ; n5-methylglutamine 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB2	HA	0.0900	5
+	HB1	HA	0.0900	6
+	CG	CT2	-0.1200	7
+	HG1	HA	0.0900	8
+	HG2	HA	0.0900	9
+	CD	CC	0.5700	10
+	OE1	O	-0.5700	11
+	NE2	NH1	-0.7300	12
+	HE2	H	0.3700	13
+	CZ	CT3	0.0300	14
+	HZ1	HA	0.0900	15
+	HZ2	HA	0.0900	16
+	HZ3	HA	0.0900	17
+	C	C	0.5100	18
+	O	O	-0.5100	19
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	HB2	CB
+	HB1	CB
+	CG	CB
+	CG	CD
+	OE1	CD
+	NE2	CD
+	NE2	CZ
+	HZ1	CZ
+	HZ2	CZ
+	HZ3	CZ
+	HG1	CG
+	HG2	CG
+	NE2	HE2
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+	CD	CG	NE2	OE1
+	NE2	CD	CZ	HE2
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ MHO ] ; s-oxymethionine 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CT2	0.0100	7
+	HG1	HA	0.0900	8
+	HG2	HA	0.0900	9
+	SD	SO	0.1200	10
+	OD	O	-0.5000	11
+	CE	CT3	-0.0800	12
+	HE1	HA	0.0900	13
+	HE2	HA	0.0900	14
+	HE3	HA	0.0900	15
+	C	C	0.5100	16
+	O	O	-0.5100	17
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	SD	CE
+	HE1	CE
+	HE2	CE
+	HE3	CE
+	SD	CG
+	HG1	CG
+	HG2	CG
+	SD	OD
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ MOT5 ] ; 5-Methoxy-tryptophan
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CY	-0.0300	7
+	CD1	CA	0.0350	8
+	HD1	HP	0.1150	9
+	CD2	CPT	-0.0200	10
+	NE1	NY	-0.6100	11
+	HE1	H	0.3800	12
+	CE2	CPT	0.1300	13
+	CE3	CA	-0.1150	14
+	HE3	HP	0.1150	15
+	CZ2	CA	-0.1150	16
+	HZ2	HP	0.1150	17
+	CZ3	CA	0.0800	18
+	OZ3	OCC	-0.3600	19
+	CJ3	CT3	0.0100	20
+	HJ31	HA	0.0900	21
+	HJ32	HA	0.0900	22
+	HJ33	HA	0.0900	23
+	CH2	CA	-0.1150	24
+	HH2	HP	0.1150	25
+	C	C	0.5100	26
+	O	O	-0.5100	27
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CG	CD1
+	HD1	CD1
+	NE1	CD1
+	CE2	CD2
+	CE3	CD2
+	CG	CD2
+	CZ2	CE2
+	NE1	CE2
+	CZ3	CE3
+	HE3	CE3
+	CZ2	CH2
+	CZ3	CH2
+	HH2	CH2
+	HJ31	CJ3
+	HJ32	CJ3
+	HJ33	CJ3
+	OZ3	CJ3
+	HZ2	CZ2
+	OZ3	CZ3
+	NE1	HE1
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ MP34 ] ; 3,4-Dimethyl-phenylalanine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CA	0.0000	7
+	CD2	CA	-0.1150	8
+	HD2	HP	0.1150	9
+	CD1	CA	-0.1150	10
+	HD1	HP	0.1150	11
+	CE2	CA	-0.1150	12
+	HE2	HP	0.1150	13
+	CE1	CA	0.0000	14
+	CZ	CA	0.0000	15
+	CJ	CT3	-0.2700	16
+	HJ1	HA	0.0900	17
+	HJ2	HA	0.0900	18
+	HJ3	HA	0.0900	19
+	CH	CT3	-0.2700	20
+	HH1	HA	0.0900	21
+	HH2	HA	0.0900	22
+	HH3	HA	0.0900	23
+	C	C	0.5100	24
+	O	O	-0.5100	25
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CE1	CJ
+	HJ1	CJ
+	HJ2	CJ
+	HJ3	CJ
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CE2	CD2
+	CG	CD2
+	HD2	CD2
+	CE1	CD1
+	CG	CD1
+	HD1	CD1
+	CZ	CE2
+	CZ	CE1
+	CZ	CH
+	HH1	CH
+	HH2	CH
+	HH3	CH
+	CE2	HE2
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ MPH2 ] ; 2-Methyl-phenylalanine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CA	0.0000	7
+	CD2	CA	-0.1150	8
+	HD2	HP	0.1150	9
+	CD1	CA	0.0000	10
+	CE2	CA	-0.1150	11
+	HE2	HP	0.1150	12
+	CE1	CA	-0.1150	13
+	HE1	HP	0.1150	14
+	CH	CT3	-0.2700	15
+	HH1	HA	0.0900	16
+	HH2	HA	0.0900	17
+	HH3	HA	0.0900	18
+	CZ	CA	-0.1150	19
+	HZ	HP	0.1150	20
+	C	C	0.5100	21
+	O	O	-0.5100	22
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CE2	CD2
+	CG	CD2
+	HD2	CD2
+	CE1	CD1
+	CH	CD1
+	CG	CD1
+	CZ	CE2
+	CZ	CE1
+	HH1	CH
+	HH2	CH
+	HH3	CH
+	HZ	CZ
+	CE2	HE2
+	CE1	HE1
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ MTR5 ] ; 5-Methyl-tryptophan 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CY	-0.0300	7
+	CD1	CA	0.0350	8
+	HD1	HP	0.1150	9
+	CD2	CPT	-0.0200	10
+	NE1	NY	-0.6100	11
+	HE1	H	0.3800	12
+	CE2	CPT	0.1300	13
+	CE3	CA	-0.1150	14
+	HE3	HP	0.1150	15
+	CZ2	CA	-0.1150	16
+	HZ2	HP	0.1150	17
+	CZ3	CA	0.0000	18
+	CH2	CA	-0.1150	19
+	HH2	HP	0.1150	20
+	CJ3	CT3	-0.2700	21
+	HJ31	HA	0.0900	22
+	HJ32	HA	0.0900	23
+	HJ33	HA	0.0900	24
+	C	C	0.5100	25
+	O	O	-0.5100	26
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CG	CD1
+	HD1	CD1
+	NE1	CD1
+	CE2	CD2
+	CE3	CD2
+	CG	CD2
+	CZ2	CE2
+	NE1	CE2
+	CZ3	CE3
+	HE3	CE3
+	CZ2	CH2
+	CZ3	CH2
+	HH2	CH2
+	CZ3	CJ3
+	HJ31	CJ3
+	HJ32	CJ3
+	HJ33	CJ3
+	HZ2	CZ2
+	NE1	HE1
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ MTR6 ] ; 6-Methyl-tryptophan 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CY	-0.0300	7
+	CD1	CA	0.0350	8
+	HD1	HP	0.1150	9
+	CD2	CPT	-0.0200	10
+	NE1	NY	-0.6100	11
+	HE1	H	0.3800	12
+	CE2	CPT	0.1300	13
+	CE3	CA	-0.1150	14
+	HE3	HP	0.1150	15
+	CZ2	CA	-0.1150	16
+	HZ2	HP	0.1150	17
+	CZ3	CA	-0.1150	18
+	HZ3	HP	0.1150	19
+	CH2	CA	0.0000	20
+	CJ2	CT3	-0.2700	21
+	HJ21	HA	0.0900	22
+	HJ22	HA	0.0900	23
+	HJ23	HA	0.0900	24
+	C	C	0.5100	25
+	O	O	-0.5100	26
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CG	CD1
+	HD1	CD1
+	NE1	CD1
+	CE2	CD2
+	CE3	CD2
+	CG	CD2
+	CZ2	CE2
+	NE1	CE2
+	CZ3	CE3
+	HE3	CE3
+	CJ2	CH2
+	CZ2	CH2
+	CZ3	CH2
+	HJ21	CJ2
+	HJ22	CJ2
+	HJ23	CJ2
+	HZ2	CZ2
+	NE1	HE1
+	CZ3	HZ3
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ MTY ] ; m-Tyrosine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB2	HA	0.0900	5
+	HB1	HA	0.0900	6
+	CG	CA	0.0000	7
+	CD2	CA	-0.1150	8
+	HD2	HP	0.1150	9
+	CD1	CA	-0.1150	10
+	HD1	HP	0.1150	11
+	CE2	CA	-0.1150	12
+	HE2	HP	0.1150	13
+	CE1	CA	0.1100	14
+	OE1	OH1	-0.5400	15
+	HE1	H	0.4300	16
+	CZ	CA	-0.1150	17
+	HZ	HP	0.1150	18
+	C	C	0.5100	19
+	O	O	-0.5100	20
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	HB2	CB
+	HB1	CB
+	CG	CB
+	CG	CD2
+	HD2	CD2
+	CE2	CD2
+	HE2	CE2
+	CZ	CE2
+	HZ	CZ
+	CZ	CE1
+	OE1	CE1
+	OE1	HE1
+	CE1	CD1
+	HD1	CD1
+	CG	CD1
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ NAL ] ; 2-Naphtalene
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CA	0.0000	7
+	CD2	CA	-0.1150	8
+	HD2	HP	0.1150	9
+	CD1	CA	-0.1150	10
+	HD1	HP	0.1150	11
+	CE2	CA	0.0000	12
+	CE1	CA	-0.1150	13
+	HE1	HP	0.1150	14
+	CZ	CA	0.0000	15
+	CH2	CA	-0.1150	16
+	HH2	HP	0.1150	17
+	CH1	CA	-0.1150	18
+	HH1	HP	0.1150	19
+	CJ2	CA	-0.1150	20
+	HJ2	HP	0.1150	21
+	CJ1	CA	-0.1150	22
+	HJ1	HP	0.1150	23
+	C	C	0.5100	24
+	O	O	-0.5100	25
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	CG	CD2
+	CD1	CG
+	CD2	CE2
+	CZ	CE2
+	CH2	CE2
+	CE1	CD1
+	CZ	CE1
+	CH1	CZ
+	CJ1	CH1
+	CJ2	CJ1
+	CH2	CJ2
+	HB1	CB
+	HB2	CB
+	HD2	CD2
+	HD1	CD1
+	HE1	CE1
+	HH1	CH1
+	HJ1	CJ1
+	HJ2	CJ2
+	HH2	CH2
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ NAO1 ] ; 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CA	0.0000	7
+	CD1	CA	0.0000	8
+	CD2	CA	-0.1150	9
+	HD2	HP	0.1150	10
+	CE1	CA	0.0000	11
+	CH1	CA	-0.1150	12
+	HH1	HP	0.1150	13
+	CE2	CA	-0.1150	14
+	HE2	HP	0.1150	15
+	CH2	CA	-0.1150	16
+	HH2	HP	0.1150	17
+	CZ	CA	-0.1150	18
+	HZ	HP	0.1150	19
+	CJ1	CA	0.1100	20
+	OJ1	OH1	-0.5400	21
+	HJ1	H	0.4300	22
+	CJ2	CA	-0.1150	23
+	HJ2	HP	0.1150	24
+	C	C	0.5100	25
+	O	O	-0.5100	26
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CE1	CD1
+	CH1	CD1
+	CG	CD1
+	CE2	CD2
+	CG	CD2
+	HD2	CD2
+	CH2	CE1
+	CZ	CE1
+	CZ	CE2
+	HE2	CE2
+	CJ1	CH1
+	HH1	CH1
+	CJ2	CH2
+	HH2	CH2
+	CJ2	CJ1
+	OJ1	CJ1
+	HJ2	CJ2
+	HZ	CZ
+	OJ1	HJ1
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ NAO2 ] ; 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CA	0.0000	7
+	CD1	CA	-0.1150	8
+	HD1	HP	0.1150	9
+	CD2	CA	-0.1150	10
+	HD2	HP	0.1150	11
+	CE1	CA	-0.1150	12
+	HE1	HP	0.1150	13
+	CE2	CA	0.0000	14
+	CZ	CA	0.0000	15
+	CH2	CA	-0.1150	16
+	HH2	HP	0.1150	17
+	CH1	CA	-0.1150	18
+	HH1	HP	0.1150	19
+	CJ2	CA	0.1100	20
+	OJ2	OH1	-0.5400	21
+	HJ2	H	0.4300	22
+	CJ1	CA	-0.1150	23
+	HJ1	HP	0.1150	24
+	C	C	0.5100	25
+	O	O	-0.5100	26
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CD1	CG
+	CD2	CG
+	CE1	CD1
+	HD1	CD1
+	CE2	CD2
+	HD2	CD2
+	CZ	CE1
+	HE1	CE1
+	CZ	CE2
+	CH2	CE2
+	CH1	CZ
+	CJ2	CJ1
+	CH1	CJ1
+	HJ1	CJ1
+	OJ2	CJ2
+	CH2	CJ2
+	HJ2	OJ2
+	HH1	CH1
+	HH2	CH2
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ NIY ] ; meta-nitro-tyrosine 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CA	0.0000	7
+	CD1	CA	-0.1150	8
+	HD1	HP	0.1150	9
+	CD2	CA	-0.1150	10
+	HD2	HP	0.1150	11
+	CE1	CA	0.1100	12
+	NN	NH2	0.8300	13
+	ON1	OC	-0.4700	14
+	ON2	OC	-0.4700	15
+	CE2	CA	-0.1150	16
+	HE2	HP	0.1150	17
+	CZ	CA	0.1100	18
+	OH	OH1	-0.5400	19
+	HH	H	0.4300	20
+	C	C	0.5100	21
+	O	O	-0.5100	22
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	CD1	CG
+	CD2	CG
+	CE1	CD1
+	CE2	CD2
+	CZ	CE1
+	NN	CE1
+	CZ	CE2
+	OH	CZ
+	ON1	NN
+	ON2	NN
+	CB	HB1
+	CB	HB2
+	CD1	HD1
+	CD2	HD2
+	CE2	HE2
+	OH	HH
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+	NN	CE1	ON1	ON2
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ NLE ] ; Nor-leucine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CT2	-0.1800	7
+	HG1	HA	0.0900	8
+	HG2	HA	0.0900	9
+	CD	CT2	-0.1800	10
+	HD2	HA	0.0900	11
+	HD1	HA	0.0900	12
+	CE	CT3	-0.2700	13
+	HE1	HA	0.0900	14
+	HE2	HA	0.0900	15
+	HE3	HA	0.0900	16
+	C	C	0.5100	17
+	O	O	-0.5100	18
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CE	HE1
+	CE	HE2
+	CE	HE3
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CE	CD
+	CG	CD
+	HD2	CD
+	HG1	CG
+	HG2	CG
+	CD	HD1
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ NVA ] ; Norvaline
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CT2	-0.1800	7
+	HG1	HA	0.0900	8
+	HG2	HA	0.0900	9
+	CD	CT3	-0.2700	10
+	HD1	HA	0.0900	11
+	HD2	HA	0.0900	12
+	HD3	HA	0.0900	13
+	C	C	0.5100	14
+	O	O	-0.5100	15
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CG	CD
+	HD1	CD
+	HG1	CG
+	HG2	CG
+	CD	HD2
+	CD	HD3
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ OAS ] ; o-acetylserine 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	0.1000	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	OG	OCC	-0.4300	7
+	CD	CC	0.6600	8
+	OD	O	-0.5700	9
+	CE	CT3	-0.2100	10
+	HE3	HA	0.0900	11
+	HE1	HA	0.0900	12
+	HE2	HA	0.0900	13
+	C	C	0.5100	14
+	O	O	-0.5100	15
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	OG	CD
+	CE	CD
+	OD	CD
+	HE3	CE
+	HE1	CE
+	HE2	CE
+	OG	CB
+	HB1	CB
+	HB2	CB
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+	CD	OG	OD	CE
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ OBF ] ; (2s)-2-amino-4,4-difluorobutanoic acid 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CT1	0.5900	7
+	HG	HA	0.0900	8
+	FG1	F2	-0.3400	9
+	FG2	F2	-0.3400	10
+	C	C	0.5100	11
+	O	O	-0.5100	12
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	FG1	CG
+	FG2	CG
+	HG	CG
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ OCY ] ; s-(2-hydroxyethyl)-l-cysteine 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1400	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	SG	S	-0.0900	7
+	CD	CT2	-0.1300	8
+	HD1	HA	0.0900	9
+	HD2	HA	0.0900	10
+	CE	CT2	0.0500	11
+	HE2	HA	0.0900	12
+	HE1	HA	0.0900	13
+	OZ	OH1	-0.6600	14
+	HZ	H	0.4300	15
+	C	C	0.5100	16
+	O	O	-0.5100	17
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	SG	CB
+	HB1	CB
+	HB2	CB
+	SG	CD
+	HD1	CD
+	HD2	CD
+	CE	CD
+	HE2	CE
+	HE1	CE
+	OZ	CE
+	OZ	HZ
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ OLT ] ; o-methyl-l-threonine 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT1	0.1900	4
+	HB	HA	0.0900	5
+	OG1	OCC	-0.5600	6
+	CD1	CT3	0.0100	7
+	HD11	HA	0.0900	8
+	HD12	HA	0.0900	9
+	HD13	HA	0.0900	10
+	CG2	CT3	-0.2700	11
+	HG21	HA	0.0900	12
+	HG22	HA	0.0900	13
+	HG23	HA	0.0900	14
+	C	C	0.5100	15
+	O	O	-0.5100	16
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	OG1	CB
+	CG2	CB
+	HB	CB
+	CD1	OG1
+	HG21	CG2
+	HG22	CG2
+	HG23	CG2
+	HD11	CD1
+	HD12	CD1
+	HD13	CD1
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ OMT ] ; Methionine sulfone
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CT2	-0.0700	7
+	HG1	HA	0.0900	8
+	HG2	HA	0.0900	9
+	SD	SO2	1.0800	10
+	OE1	OC	-0.6500	11
+	OE2	OC	-0.6500	12
+	CE	CT3	-0.1600	13
+	HE1	HA	0.0900	14
+	HE2	HA	0.0900	15
+	HE3	HA	0.0900	16
+	C	C	0.5100	17
+	O	O	-0.5100	18
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	HE1	CE
+	HE2	CE
+	HE3	CE
+	SD	CE
+	HG1	CG
+	HG2	CG
+	SD	CG
+	SD	OE1
+	SD	OE2
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ OMX ] ; (betar)-beta-hydroxy-l-tyrosine 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT1	0.1400	4
+	HB	HA	0.0900	5
+	OG	OH1	-0.6600	6
+	HG	H	0.4300	7
+	CG	CA	0.0000	8
+	CD1	CA	-0.1150	9
+	HD1	HP	0.1150	10
+	CD2	CA	-0.1150	11
+	HD2	HP	0.1150	12
+	CE1	CA	-0.1150	13
+	HE1	HP	0.1150	14
+	CE2	CA	-0.1150	15
+	HE2	HP	0.1150	16
+	CZ	CA	0.1100	17
+	OH	OH1	-0.5400	18
+	HH	H	0.4300	19
+	C	C	0.5100	20
+	O	O	-0.5100	21
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	OG	CB
+	CG	CB
+	HB	CB
+	CE1	CD1
+	CG	CD1
+	HD1	CD1
+	CG	CD2
+	CE2	CD2
+	HD2	CD2
+	CZ	CE1
+	HE1	CE1
+	CZ	CE2
+	HE2	CE2
+	OH	CZ
+	OG	HG
+	OH	HH
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ OMY ] ; (betar)-3-chloro-beta-hydroxy-l-tyrosine 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT1	0.1400	4
+	HB	HA	0.0900	5
+	OG	OH1	-0.6600	6
+	HG	H	0.4300	7
+	CG	CA	0.0000	8
+	CD1	CA	-0.1150	9
+	HD1	HP	0.1150	10
+	CD2	CA	-0.1150	11
+	HD2	HP	0.1150	12
+	CE1	CA	0.1700	13
+	CL	CLAL	-0.1700	14
+	CE2	CA	-0.1150	15
+	HE2	HP	0.1150	16
+	CZ	CA	0.1100	17
+	OH	OH1	-0.5400	18
+	HH	H	0.4300	19
+	C	C	0.5100	20
+	O	O	-0.5100	21
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	OG	CB
+	HB	CB
+	CE1	CD1
+	CG	CD1
+	HD1	CD1
+	CE2	CD2
+	CG	CD2
+	HD2	CD2
+	CZ	CE1
+	CL	CE1
+	CZ	CE2
+	HE2	CE2
+	OH	CZ
+	OH	HH
+	OG	HG
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ ONL ] ; 5-oxo-l-norleucine 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CT2	-0.1200	7
+	HG1	HA	0.0900	8
+	HG2	HA	0.0900	9
+	CD	CC	0.4500	10
+	OD	O	-0.5700	11
+	CE	CT3	-0.2100	12
+	HE1	HA	0.0900	13
+	HE2	HA	0.0900	14
+	HE3	HA	0.0900	15
+	C	C	0.5100	16
+	O	O	-0.5100	17
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CG	CD
+	CE	CD
+	OD	CD
+	HE1	CE
+	HE2	CE
+	HE3	CE
+	HG1	CG
+	HG2	CG
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+	CD	CG	CE	OD
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ ORN ] ; Ornithine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CT2	-0.1800	7
+	HG1	HA	0.0900	8
+	HG2	HA	0.0900	9
+	CD	CT2	0.2100	10
+	HD1	HA	0.0500	11
+	HD2	HA	0.0500	12
+	NE	NH3	-0.3000	13
+	HE1	HC	0.3300	14
+	HE2	HC	0.3300	15
+	HE3	HC	0.3300	16
+	C	C	0.5100	17
+	O	O	-0.5100	18
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CD	CG
+	HG1	CG
+	HG2	CG
+	NE	CD
+	HD1	CD
+	HD2	CD
+	HE1	NE
+	HE2	NE
+	HE3	NE
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ OTYR ] ; o-Tyrosine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CA	0.0000	7
+	CD2	CA	-0.1150	8
+	HD2	HP	0.1150	9
+	CD1	CA	0.1100	10
+	OD1	OH1	-0.5400	11
+	HD1	H	0.4300	12
+	CE2	CA	-0.1150	13
+	HE2	HP	0.1150	14
+	CE1	CA	-0.1150	15
+	HE1	HP	0.1150	16
+	CZ	CA	-0.1150	17
+	HZ	HP	0.1150	18
+	C	C	0.5100	19
+	O	O	-0.5100	20
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CE2	CD2
+	CG	CD2
+	HD2	CD2
+	CE1	CD1
+	CG	CD1
+	OD1	CD1
+	CZ	CE2
+	HE2	CE2
+	CZ	CE1
+	OD1	HD1
+	CE1	HE1
+	CZ	HZ
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ PBF ] ; 4-benzoyl-Phe
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CA	0.0000	7
+	CD1	CA	-0.1150	8
+	HD1	HP	0.1150	9
+	CD2	CA	-0.1150	10
+	HD2	HP	0.1150	11
+	CE1	CA	-0.1150	12
+	HE1	HP	0.1150	13
+	CE2	CA	-0.1150	14
+	HE2	HP	0.1150	15
+	CZ	CA	0.0900	16
+	CF	CC	0.3900	17
+	CJ	CA	0.0900	18
+	OF	O	-0.5700	19
+	CH1	CA	-0.1150	20
+	HH1	HP	0.1150	21
+	CH2	CA	-0.1150	22
+	HH2	HP	0.1150	23
+	CM1	CA	-0.1150	24
+	HM1	HP	0.1150	25
+	CM2	CA	-0.1150	26
+	HM2	HP	0.1150	27
+	CL	CA	-0.1150	28
+	HL	HP	0.1150	29
+	C	C	0.5100	30
+	O	O	-0.5100	31
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CE1	CD1
+	CG	CD1
+	HD1	CD1
+	CE2	CD2
+	CG	CD2
+	HD2	CD2
+	CZ	CE1
+	HE1	CE1
+	CZ	CE2
+	HE2	CE2
+	CJ	CF
+	CZ	CF
+	OF	CF
+	CJ	CH1
+	CM1	CH1
+	CJ	CH2
+	CM2	CH2
+	CL	CM1
+	CL	CM2
+	CH1	HH1
+	CM1	HM1
+	CL	HL
+	CM2	HM2
+	CH2	HH2
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+	CF	OF	CJ	CZ
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ PF5 ] ; pentafluoro-phenylalanine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CA	0.0000	7
+	CD1	CA	0.1900	8
+	FD1	F1	-0.1900	9
+	CD2	CA	0.1900	10
+	FD2	F1	-0.1900	11
+	CE1	CA	0.1900	12
+	FE1	F1	-0.1900	13
+	CE2	CA	0.1900	14
+	FE2	F1	-0.1900	15
+	CZ	CA	0.1900	16
+	FZ	F1	-0.1900	17
+	C	C	0.5100	18
+	O	O	-0.5100	19
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CE1	CD1
+	CG	CD1
+	FD1	CD1
+	CE2	CD2
+	CG	CD2
+	FD2	CD2
+	CZ	CE1
+	FE1	CE1
+	CZ	CE2
+	FE2	CE2
+	FZ	CZ
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ PFF ] ; 4-Fluoro-Phenylalanine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CA	0.0000	7
+	CD1	CA	-0.1150	8
+	HD1	HP	0.1150	9
+	CD2	CA	-0.1150	10
+	HD2	HP	0.1150	11
+	CE1	CA	-0.1150	12
+	HE1	HP	0.1150	13
+	CE2	CA	-0.1150	14
+	HE2	HP	0.1150	15
+	CZ	CA	0.1900	16
+	FZ	F1	-0.1900	17
+	C	C	0.5100	18
+	O	O	-0.5100	19
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CE1	CD1
+	CG	CD1
+	HD1	CD1
+	CE2	CD2
+	CG	CD2
+	HD2	CD2
+	CZ	CE1
+	CZ	CE2
+	HE2	CE2
+	FZ	CZ
+	CE1	HE1
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ PHI ] ; 4-Iodo-Phe
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CA	0.0000	7
+	CD1	CA	-0.1150	8
+	HD1	HP	0.1150	9
+	CD2	CA	-0.1150	10
+	HD2	HP	0.1150	11
+	CE1	CA	-0.1150	12
+	HE1	HP	0.1150	13
+	CE2	CA	-0.1150	14
+	HE2	HP	0.1150	15
+	CZ	CA	0.0800	16
+	IZ	I	-0.0800	17
+	C	C	0.5100	18
+	O	O	-0.5100	19
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CE1	CD1
+	CG	CD1
+	HD1	CD1
+	CE2	CD2
+	CG	CD2
+	HD2	CD2
+	CZ	CE1
+	HE1	CE1
+	CZ	CE2
+	HE2	CE2
+	IZ	CZ
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ PPN ] ; 4-Nitrophenylalanine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CA	0.0000	7
+	CD1	CA	-0.1150	8
+	HD1	HP	0.1150	9
+	CD2	CA	-0.1150	10
+	HD2	HP	0.1150	11
+	CE1	CA	-0.1150	12
+	HE1	HP	0.1150	13
+	CE2	CA	-0.1150	14
+	HE2	HP	0.1150	15
+	CZ	CA	0.1100	16
+	NH	NH2	0.8300	17
+	OJ1	OC	-0.4700	18
+	OJ2	OC	-0.4700	19
+	C	C	0.5100	20
+	O	O	-0.5100	21
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CE1	CD1
+	CG	CD1
+	HD1	CD1
+	CE2	CD2
+	CG	CD2
+	HD2	CD2
+	CZ	CE1
+	HE1	CE1
+	CZ	CE2
+	HE2	CE2
+	NH	CZ
+	OJ1	NH
+	OJ2	NH
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+	NH	OJ1	OJ2	CZ
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ PTR ] ; phosphonotyrosine  (charge: -1)
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CA	0.0000	7
+	CD1	CA	-0.1150	8
+	HD1	HP	0.1150	9
+	CD2	CA	-0.1150	10
+	HD2	HP	0.1150	11
+	CE1	CA	-0.1150	12
+	HE1	HP	0.1150	13
+	CE2	CA	-0.1150	14
+	HE2	HP	0.1150	15
+	CZ	CA	0.0800	16
+	OH	OCC	-0.3500	17
+	P	PO4	1.4400	18
+	O1P	OC	-0.9500	19
+	O2P	OC	-0.9500	20
+	O3P	OH1	-0.7700	21
+	HO3P	H	0.5000	22
+	C	C	0.5100	23
+	O	O	-0.5100	24
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CE1	CD1
+	CG	CD1
+	HD1	CD1
+	CE2	CD2
+	CG	CD2
+	HD2	CD2
+	CZ	CE1
+	HE1	CE1
+	CZ	CE2
+	HE2	CE2
+	OH	CZ
+	O3P	HO3P
+	P	O1P
+	P	O2P
+	P	O3P
+	P	OH
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ PTR2 ] ; phosphonotyrosine  (charge: -2)
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CA	0.0000	7
+	CD1	CA	-0.1150	8
+	HD1	HP	0.1150	9
+	CD2	CA	-0.1150	10
+	HD2	HP	0.1150	11
+	CE1	CA	-0.1150	12
+	HE1	HP	0.1150	13
+	CE2	CA	-0.1150	14
+	HE2	HP	0.1150	15
+	CZ	CA	0.0800	16
+	OH	OCC	-0.3500	17
+	P	PO4	1.3600	18
+	O1P	OC	-1.0300	19
+	O2P	OC	-1.0300	20
+	O3P	OC	-1.0300	21
+	C	C	0.5100	22
+	O	O	-0.5100	23
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CD1	HD1
+	CB	HB1
+	CE1	HE1
+	CE1	CD1
+	CG	CD1
+	CZ	CE1
+	CG	CB
+	HB2	CB
+	CD2	CG
+	P	O3P
+	OH	CZ
+	CE2	CZ
+	P	OH
+	CE2	CD2
+	HD2	CD2
+	O2P	P
+	O1P	P
+	HE2	CE2
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ PYR2 ] ; 3-(2-Pyridyl)-alanine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CA	0.3100	7
+	ND1	NPYD	-0.6200	8
+	CE1	CA	0.1600	9
+	HE1	HP	0.1500	10
+	CD2	CA	-0.1150	11
+	HD2	HP	0.1150	12
+	CE2	CA	-0.1150	13
+	HE2	HP	0.1150	14
+	CZ	CA	-0.1150	15
+	HZ	HP	0.1150	16
+	C	C	0.5100	17
+	O	O	-0.5100	18
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CE2	CD2
+	CG	CD2
+	HD2	CD2
+	CZ	CE1
+	HE1	CE1
+	ND1	CE1
+	CZ	CE2
+	HE2	CE2
+	ND1	CG
+	HZ	CZ
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ PYR3 ] ; 3-(3-Pyridyl)-alanine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CA	0.0000	7
+	CD1	CA	0.1600	8
+	HD1	HP	0.1500	9
+	NE1	NPYD	-0.6200	10
+	CZ	CA	0.1600	11
+	HZ	HP	0.1500	12
+	CD2	CA	-0.1150	13
+	HD2	HP	0.1150	14
+	CE2	CA	-0.1150	15
+	HE2	HP	0.1150	16
+	C	C	0.5100	17
+	O	O	-0.5100	18
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	CG	CD1
+	NE1	CD1
+	CE2	CD2
+	CG	CD2
+	CZ	CE2
+	NE1	CZ
+	CB	HB1
+	CB	HB2
+	CD1	HD1
+	CD2	HD2
+	CE2	HE2
+	CZ	HZ
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ PYR4 ] ; 3-(4-Pyridyl)-alanine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CA	0.0000	7
+	CD1	CA	-0.1150	8
+	HD1	HP	0.1150	9
+	CD2	CA	-0.1150	10
+	HD2	HP	0.1150	11
+	CE1	CA	0.1600	12
+	HE1	HP	0.1500	13
+	CE2	CA	0.1600	14
+	HE2	HP	0.1500	15
+	NZ	NPYD	-0.6200	16
+	C	C	0.5100	17
+	O	O	-0.5100	18
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	CE1	CD1
+	CG	CD1
+	CE2	CD2
+	CG	CD2
+	NZ	CE1
+	NZ	CE2
+	CB	HB1
+	CB	HB2
+	CD1	HD1
+	CD2	HD2
+	CE1	HE1
+	CE2	HE2
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ PYZ1 ] ; 3-(1-Pyrazolyl)-alanine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	0.0700	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	NG	NY	0.3200	7
+	CD2	C5A	-0.3000	8
+	HD2	HP	0.1500	9
+	ND1	N5A	-0.7100	10
+	CE2	C5B	-0.1500	11
+	HE2	HP	0.1500	12
+	CE1	C5B	0.1400	13
+	HE1	HP	0.1500	14
+	C	C	0.5100	15
+	O	O	-0.5100	16
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	NG	CB
+	CD2	NG
+	ND1	NG
+	CE2	CD2
+	CE1	CE2
+	ND1	CE1
+	CB	HB1
+	CB	HB2
+	CD2	HD2
+	CE2	HE2
+	CE1	HE1
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+	NG	CB	ND1	CD2
+	CD2	NG	CE2	HD2
+	CE2	CD2	CE1	HE2
+	CE1	ND1	CE2	HE1
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ QU32 ] ; 3-(2-Quinolyl)-alanine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CA	0.3100	7
+	ND2	NPYD	-0.6200	8
+	CE2	CA	0.3100	9
+	CD1	CA	-0.1150	10
+	HD1	HP	0.1150	11
+	CE1	CA	-0.1150	12
+	HE1	HP	0.1150	13
+	CZ	CA	0.0000	14
+	CH2	CA	-0.1150	15
+	HH2	HP	0.1150	16
+	CH1	CA	-0.1150	17
+	HH1	HP	0.1150	18
+	CJ2	CA	-0.1150	19
+	HJ2	HP	0.1150	20
+	CJ1	CA	-0.1150	21
+	HJ1	HP	0.1150	22
+	C	C	0.5100	23
+	O	O	-0.5100	24
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	CE1	CD1
+	CG	CD1
+	CZ	CE1
+	CH2	CE2
+	CZ	CE2
+	ND2	CE2
+	CJ1	CH1
+	CZ	CH1
+	CJ2	CH2
+	ND2	CG
+	CJ2	CJ1
+	CB	HB1
+	CB	HB2
+	CD1	HD1
+	CE1	HE1
+	CJ1	HJ1
+	CJ2	HJ2
+	CH1	HH1
+	CH2	HH2
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ QU33 ] ; 3-(3-quinolyl)-alanine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CA	0.0000	7
+	CD1	CA	0.1600	8
+	HD1	HP	0.1500	9
+	NE1	NPYD	-0.6200	10
+	CZ	CA	0.3100	11
+	CD2	CA	-0.1150	12
+	HD2	HP	0.1150	13
+	CE2	CA	0.0000	14
+	CH2	CA	-0.1150	15
+	HH2	HP	0.1150	16
+	CH1	CA	-0.1150	17
+	HH1	HP	0.1150	18
+	CJ2	CA	-0.1150	19
+	HJ2	HP	0.1150	20
+	CJ1	CA	-0.1150	21
+	HJ1	HP	0.1150	22
+	C	C	0.5100	23
+	O	O	-0.5100	24
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	CG	CD1
+	NE1	CD1
+	CE2	CD2
+	CG	CD2
+	CH2	CE2
+	CZ	CE2
+	CJ1	CH1
+	CZ	CH1
+	CJ2	CH2
+	CJ2	CJ1
+	NE1	CZ
+	CB	HB1
+	CB	HB2
+	CD1	HD1
+	CJ1	HJ1
+	CJ2	HJ2
+	CD2	HD2
+	CH1	HH1
+	CH2	HH2
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ QU34 ] ; 3-(4-quinolyl)-alanine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CA	0.0000	7
+	CD1	CA	0.0000	8
+	CD2	CA	-0.1150	9
+	HD2	HP	0.1150	10
+	CE2	CA	0.1600	11
+	HE2	HP	0.1500	12
+	NZ	NPYD	-0.6200	13
+	CE1	CA	0.3100	14
+	CH1	CA	-0.1150	15
+	HH1	HP	0.1150	16
+	CH2	CA	-0.1150	17
+	HH2	HP	0.1150	18
+	CJ1	CA	-0.1150	19
+	HJ1	HP	0.1150	20
+	CJ2	CA	-0.1150	21
+	HJ2	HP	0.1150	22
+	C	C	0.5100	23
+	O	O	-0.5100	24
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	CE1	CD1
+	CH1	CD1
+	CG	CD1
+	CE2	CD2
+	CG	CD2
+	CH2	CE1
+	NZ	CE1
+	NZ	CE2
+	CJ1	CH1
+	CJ2	CH2
+	CJ2	CJ1
+	CB	HB1
+	CB	HB2
+	CD2	HD2
+	CE2	HE2
+	CJ1	HJ1
+	CJ2	HJ2
+	CH1	HH1
+	CH2	HH2
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ QU35 ] ; 3-(5-Quinolyl)-alanine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CA	0.0000	7
+	CD1	CA	-0.1150	8
+	HD1	HP	0.1150	9
+	CD2	CA	-0.1150	10
+	HD2	HP	0.1150	11
+	CE1	CA	-0.1150	12
+	HE1	HP	0.1150	13
+	CE2	CA	0.3100	14
+	NH2	NPYD	-0.6200	15
+	CJ2	CA	0.1600	16
+	HJ2	HP	0.1500	17
+	CZ	CA	0.0000	18
+	CH1	CA	-0.1150	19
+	HH1	HP	0.1150	20
+	CJ1	CA	-0.1150	21
+	HJ1	HP	0.1150	22
+	C	C	0.5100	23
+	O	O	-0.5100	24
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	CE1	CD1
+	CG	CD1
+	CE2	CD2
+	CG	CD2
+	CZ	CE1
+	CZ	CE2
+	NH2	CE2
+	CJ1	CH1
+	CZ	CH1
+	CJ2	CJ1
+	NH2	CJ2
+	CB	HB1
+	CB	HB2
+	CD1	HD1
+	CD2	HD2
+	CE1	HE1
+	CJ1	HJ1
+	CJ2	HJ2
+	CH1	HH1
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ QU36 ] ; 3-(6-Quinolyl)-alanine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CA	0.0000	7
+	CD1	CA	-0.1150	8
+	HD1	HP	0.1150	9
+	CD2	CA	-0.1150	10
+	HD2	HP	0.1150	11
+	CE1	CA	-0.1150	12
+	HE1	HP	0.1150	13
+	CE2	CA	0.0000	14
+	CZ	CA	0.0000	15
+	CH2	CA	0.1600	16
+	HH2	HP	0.1500	17
+	NJ2	NPYD	-0.6200	18
+	CJ1	CA	0.1600	19
+	HJ1	HP	0.1500	20
+	CH1	CA	-0.1150	21
+	HH1	HP	0.1150	22
+	C	C	0.5100	23
+	O	O	-0.5100	24
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	CE1	CD1
+	CG	CD1
+	CE2	CD2
+	CG	CD2
+	CZ	CE1
+	CH2	CE2
+	CZ	CE2
+	CJ1	CH1
+	CZ	CH1
+	NJ2	CH2
+	NJ2	CJ1
+	CB	HB1
+	CB	HB2
+	CD1	HD1
+	CD2	HD2
+	CE1	HE1
+	CJ1	HJ1
+	CH1	HH1
+	CH2	HH2
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ QX32 ] ; 3-(2-quinoxalyl)-alanine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CA	0.3100	7
+	ND1	NPYD	-0.6200	8
+	CE1	CA	0.3100	9
+	CD2	CA	0.1600	10
+	HD2	HP	0.1500	11
+	NE2	NPYD	-0.6200	12
+	CZ	CA	0.3100	13
+	CH1	CA	-0.1150	14
+	HH1	HP	0.1150	15
+	CH2	CA	-0.1150	16
+	HH2	HP	0.1150	17
+	CJ1	CA	-0.1150	18
+	HJ1	HP	0.1150	19
+	CJ2	CA	-0.1150	20
+	HJ2	HP	0.1150	21
+	C	C	0.5100	22
+	O	O	-0.5100	23
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	CG	CD2
+	ND1	CG
+	NE2	CZ
+	CD2	NE2
+	CE1	ND1
+	CJ1	CH1
+	CJ2	CJ1
+	CH2	CJ2
+	CE1	CZ
+	CH2	CZ
+	CH1	CE1
+	CB	HB1
+	CB	HB2
+	CD2	HD2
+	CH1	HH1
+	CJ1	HJ1
+	CJ2	HJ2
+	CH2	HH2
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ SEP ] ; phosphoserine (charge: -1)
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	0.1000	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	OG	OCC	-0.5500	7
+	P	PO4	1.4400	8
+	O1P	OC	-0.9500	9
+	O2P	OC	-0.9500	10
+	O3P	OH1	-0.7700	11
+	HOP3	H	0.5000	12
+	C	C	0.5100	13
+	O	O	-0.5100	14
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	HB1	CB
+	HB2	CB
+	OG	CB
+	O3P	HOP3
+	P	O1P
+	P	O2P
+	P	O3P
+	P	OG
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ SEP2 ] ; phosphoserine (charge: -2)
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	0.1000	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	OG	OCC	-0.5500	7
+	P	PO4	1.3600	8
+	O1P	OC	-1.0300	9
+	O2P	OC	-1.0300	10
+	O3P	OC	-1.0300	11
+	C	C	0.5100	12
+	O	O	-0.5100	13
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CB	HB2
+	P	O1P
+	OG	CB
+	HB1	CB
+	P	OG
+	O2P	P
+	O3P	P
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ SLZ ] ; thialysine 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1400	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	SG	S	-0.0900	7
+	CD	CT2	-0.1300	8
+	HD1	HA	0.0900	9
+	HD2	HA	0.0900	10
+	CE	CT2	0.2100	11
+	HE1	HA	0.0500	12
+	HE2	HA	0.0500	13
+	NZ	NH3	-0.3000	14
+	HZ1	HC	0.3300	15
+	HZ2	HC	0.3300	16
+	HZ3	HC	0.3300	17
+	C	C	0.5100	18
+	O	O	-0.5100	19
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	SG	CB
+	HB1	CB
+	HB2	CB
+	SG	CD
+	CE	CD
+	HD1	CD
+	HD2	CD
+	NZ	CE
+	HE1	CE
+	HE2	CE
+	NZ	HZ1
+	NZ	HZ2
+	NZ	HZ3
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ SME ] ; Methionine sulfoxide
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB2	HA	0.0900	5
+	HB1	HA	0.0900	6
+	CG	CT2	0.0100	7
+	HG1	HA	0.0900	8
+	HG2	HA	0.0900	9
+	SD	SO	0.1200	10
+	OE	O	-0.5000	11
+	CE	CT3	-0.0800	12
+	HE3	HA	0.0900	13
+	HE2	HA	0.0900	14
+	HE1	HA	0.0900	15
+	C	C	0.5100	16
+	O	O	-0.5100	17
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	SD	CG
+	HG1	CG
+	HG2	CG
+	SD	CE
+	HE1	CE
+	HE2	CE
+	HE3	CE
+	SD	OE
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+	SD	OE	CE	CG
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ STYA ] ; styryl-alanine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CE1	-0.1500	7
+	HG	HE1	0.1500	8
+	CD	CE1	-0.1500	9
+	HD	HE1	0.1500	10
+	CE	CA	0.0000	11
+	CZ1	CA	-0.1150	12
+	HZ1	HP	0.1150	13
+	CZ2	CA	-0.1150	14
+	HZ2	HP	0.1150	15
+	CH1	CA	-0.1150	16
+	HH1	HP	0.1150	17
+	CH2	CA	-0.1150	18
+	HH2	HP	0.1150	19
+	CJ	CA	-0.1150	20
+	HJ	HP	0.1150	21
+	C	C	0.5100	22
+	O	O	-0.5100	23
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	CD	CG
+	CE	CD
+	CZ1	CE
+	CZ2	CE
+	CH1	CZ1
+	CJ	CH1
+	CH2	CJ
+	CZ2	CH2
+	CB	HB1
+	CB	HB2
+	CG	HG
+	CD	HD
+	CZ1	HZ1
+	CH1	HH1
+	CJ	HJ
+	CH2	HH2
+	CZ2	HZ2
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+	CG	CB	CD	HG
+	CD	CG	CE	HD
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ SYM ] ; 2s,4r-4-methylglutamate 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB2	HA	0.0900	5
+	HB1	HA	0.0900	6
+	CG	CT1	-0.1900	7
+	HG	HA	0.0900	8
+	CD1	CC	0.6200	9
+	OE1	OC	-0.7600	10
+	OE2	OC	-0.7600	11
+	CD2	CT3	-0.2700	12
+	HD21	HA	0.0900	13
+	HD22	HA	0.0900	14
+	HD23	HA	0.0900	15
+	C	C	0.5100	16
+	O	O	-0.5100	17
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	OE1	CD1
+	OE2	CD1
+	CG	HG
+	CG	CD1
+	CD2	HD21
+	CD2	CG
+	CB	CG
+	HD22	CD2
+	HD23	CD2
+	HB2	CB
+	HB1	CB
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+	CD1	CG	OE1	OE2
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ TBP4 ] ; 4-tert-butyl-phenylalanine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CA	0.0000	7
+	CD1	CA	-0.1150	8
+	HD1	HP	0.1150	9
+	CD2	CA	-0.1150	10
+	HD2	HP	0.1150	11
+	CE1	CA	-0.1150	12
+	HE1	HP	0.1150	13
+	CE2	CA	-0.1150	14
+	HE2	HP	0.1150	15
+	CZ	CA	0.0000	16
+	CH	CT0	0.0000	17
+	CJ1	CT3	-0.2700	18
+	HJ11	HA	0.0900	19
+	HJ12	HA	0.0900	20
+	HJ13	HA	0.0900	21
+	CJ2	CT3	-0.2700	22
+	HJ21	HA	0.0900	23
+	HJ22	HA	0.0900	24
+	HJ23	HA	0.0900	25
+	CJ3	CT3	-0.2700	26
+	HJ31	HA	0.0900	27
+	HJ32	HA	0.0900	28
+	HJ33	HA	0.0900	29
+	C	C	0.5100	30
+	O	O	-0.5100	31
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CE1	CD1
+	CG	CD1
+	HD1	CD1
+	CE2	CD2
+	CG	CD2
+	HD2	CD2
+	CZ	CE1
+	HE1	CE1
+	CZ	CE2
+	HE2	CE2
+	CJ1	CH
+	CJ2	CH
+	CJ3	CH
+	CZ	CH
+	HJ11	CJ1
+	HJ12	CJ1
+	HJ13	CJ1
+	HJ21	CJ2
+	HJ22	CJ2
+	HJ23	CJ2
+	HJ31	CJ3
+	HJ32	CJ3
+	HJ33	CJ3
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ TEZA ] ; 3-(2-Tetrazolyl)-alanine 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	0.0800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	NG	NY	0.5800	7
+	ND1	N5A	-0.4200	8
+	ND2	N5A	-0.7100	9
+	NE1	N5B	-0.2200	10
+	CE2	C5B	0.3600	11
+	HE2	HP	0.1500	12
+	C	C	0.5100	13
+	O	O	-0.5100	14
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	NG	CB
+	NG	ND1
+	NG	ND2
+	CE2	ND2
+	NE1	CE2
+	ND1	NE1
+	CB	HB1
+	CB	HB2
+	CE2	HE2
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+	NG	CB	ND1	ND2
+	CE2	ND2	NE1	HE2
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ TFG2 ] ; 2-(Trifluoromethyl)-phenylglycine 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CA	0.0000	4
+	CG1	CA	-0.1400	5
+	CH1	CT0	1.1600	6
+	FH1	F3	-0.3400	7
+	FH2	F3	-0.3400	8
+	FH3	F3	-0.3400	9
+	CG2	CA	-0.1150	10
+	HG2	HP	0.1150	11
+	CD1	CA	-0.1150	12
+	HD1	HP	0.1150	13
+	CD2	CA	-0.1150	14
+	HD2	HP	0.1150	15
+	CE	CA	-0.1150	16
+	HE	HP	0.1150	17
+	C	C	0.5100	18
+	O	O	-0.5100	19
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG1	CB
+	CG2	CB
+	CE	CD1
+	CG1	CD1
+	HD1	CD1
+	CE	CD2
+	CG2	CD2
+	HD2	CD2
+	HE	CE
+	CG1	CH1
+	FH1	CH1
+	FH2	CH1
+	FH3	CH1
+	HG2	CG2
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ TFG3 ] ; 3-(Trifluoromethyl)-phenylglycine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CA	0.0000	4
+	CG1	CA	-0.1150	5
+	HG1	HP	0.1150	6
+	CG2	CA	-0.1150	7
+	HG2	HP	0.1150	8
+	CD1	CA	-0.1400	9
+	CH1	CT0	1.1600	10
+	FH1	F3	-0.3400	11
+	FH2	F3	-0.3400	12
+	FH3	F3	-0.3400	13
+	CD2	CA	-0.1150	14
+	HD2	HP	0.1150	15
+	CE	CA	-0.1150	16
+	HE	HP	0.1150	17
+	C	C	0.5100	18
+	O	O	-0.5100	19
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CD1	CH1
+	FH1	CH1
+	FH2	CH1
+	FH3	CH1
+	CG1	CB
+	CG2	CB
+	CE	CD1
+	CG1	CD1
+	CE	CD2
+	CG2	CD2
+	HD2	CD2
+	HE	CE
+	HG2	CG2
+	CG1	HG1
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ TFG4 ] ; 4-(Trifluoromethyl)-phenylglycine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CA	0.0000	4
+	CG1	CA	-0.1150	5
+	HG1	HP	0.1150	6
+	CG2	CA	-0.1150	7
+	HG2	HP	0.1150	8
+	CD1	CA	-0.1150	9
+	HD1	HP	0.1150	10
+	CD2	CA	-0.1150	11
+	HD2	HP	0.1150	12
+	CE	CA	-0.1400	13
+	CH	CT0	1.1600	14
+	FH1	F3	-0.3400	15
+	FH2	F3	-0.3400	16
+	FH3	F3	-0.3400	17
+	C	C	0.5100	18
+	O	O	-0.5100	19
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CE	CH
+	FH1	CH
+	FH2	CH
+	FH3	CH
+	CG1	CB
+	CG2	CB
+	CE	CD1
+	CG1	CD1
+	HD1	CD1
+	CE	CD2
+	CG2	CD2
+	HD2	CD2
+	HG2	CG2
+	CG1	HG1
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ TFLE ] ; 5,5,5-Trifluoro-DL-leucine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CT1	-0.0900	7
+	HG	HA	0.0900	8
+	CD1	CT0	1.0200	9
+	FD1	F3	-0.3400	10
+	FD2	F3	-0.3400	11
+	FD3	F3	-0.3400	12
+	CD2	CT3	-0.2700	13
+	HD21	HA	0.0900	14
+	HD22	HA	0.0900	15
+	HD23	HA	0.0900	16
+	C	C	0.5100	17
+	O	O	-0.5100	18
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CG	CD1
+	FD1	CD1
+	FD2	CD1
+	FD3	CD1
+	CG	CD2
+	HD21	CD2
+	HD22	CD2
+	HD23	CD2
+	HG	CG
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ TFP2 ] ; 2-(Trifluoromethyl)-phenylalanine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CA	-0.1400	7
+	CD1	CA	0.0000	8
+	CH1	CT0	1.1600	9
+	FH1	F3	-0.3400	10
+	FH2	F3	-0.3400	11
+	FH3	F3	-0.3400	12
+	CD2	CA	-0.1150	13
+	HD2	HP	0.1150	14
+	CE1	CA	-0.1150	15
+	HE1	HP	0.1150	16
+	CE2	CA	-0.1150	17
+	HE2	HP	0.1150	18
+	CZ	CA	-0.1150	19
+	HZ	HP	0.1150	20
+	C	C	0.5100	21
+	O	O	-0.5100	22
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CE1	CD1
+	CH1	CD1
+	CG	CD1
+	CE2	CD2
+	CG	CD2
+	HD2	CD2
+	CZ	CE1
+	HE1	CE1
+	CZ	CE2
+	HE2	CE2
+	FH1	CH1
+	FH2	CH1
+	FH3	CH1
+	HZ	CZ
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ TFP3 ] ; 3-(Trifluoromethyl)-phenylalanine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CA	0.0000	7
+	CD1	CA	-0.1150	8
+	HD1	HP	0.1150	9
+	CD2	CA	-0.1150	10
+	HD2	HP	0.1150	11
+	CE1	CA	-0.1400	12
+	CH1	CT0	1.1600	13
+	FH1	F3	-0.3400	14
+	FH2	F3	-0.3400	15
+	FH3	F3	-0.3400	16
+	CE2	CA	-0.1150	17
+	HE2	HP	0.1150	18
+	CZ	CA	-0.1150	19
+	HZ	HP	0.1150	20
+	C	C	0.5100	21
+	O	O	-0.5100	22
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CE1	CH1
+	FH1	CH1
+	FH2	CH1
+	FH3	CH1
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CE1	CD1
+	CG	CD1
+	CE2	CD2
+	CG	CD2
+	HD2	CD2
+	CZ	CE1
+	CZ	CE2
+	HE2	CE2
+	HZ	CZ
+	CD1	HD1
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ TFP4 ] ; 4-(Trifluoromethyl)-phenylalanine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CA	0.0000	7
+	CD1	CA	-0.1150	8
+	HD1	HP	0.1150	9
+	CD2	CA	-0.1150	10
+	HD2	HP	0.1150	11
+	CE1	CA	-0.1150	12
+	HE1	HP	0.1150	13
+	CE2	CA	-0.1150	14
+	HE2	HP	0.1150	15
+	CZ	CA	-0.1400	16
+	CH	CT0	1.1600	17
+	FH1	F3	-0.3400	18
+	FH2	F3	-0.3400	19
+	FH3	F3	-0.3400	20
+	C	C	0.5100	21
+	O	O	-0.5100	22
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CD1	CG
+	CD2	CG
+	CE1	CD1
+	HD1	CD1
+	CE2	CD2
+	HD2	CD2
+	CZ	CE1
+	CZ	CE2
+	HE2	CE2
+	CH	CZ
+	FH1	CH
+	FH2	CH
+	FH3	CH
+	CE1	HE1
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ TH6 ] ; 4-hydroxy-l-threonine 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT1	0.1400	4
+	HB	HA	0.0900	5
+	OB1	OH1	-0.6600	6
+	HB1	H	0.4300	7
+	CG	CT2	0.0500	8
+	HG1	HA	0.0900	9
+	HG2	HA	0.0900	10
+	OD	OH1	-0.6600	11
+	HD	H	0.4300	12
+	C	C	0.5100	13
+	O	O	-0.5100	14
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	OB1	CB
+	CG	CB
+	HB	CB
+	OD	CG
+	HG1	CG
+	HG2	CG
+	OB1	HB1
+	OD	HD
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ THA3 ] ; 3-(3-thienyl)-alanine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	C5B	0.0000	7
+	CD1	C5A	-0.1100	8
+	HD1	HP	0.1500	9
+	CD2	C5B	-0.1500	10
+	HD2	HP	0.1500	11
+	SE1	STHI	-0.0800	12
+	CE2	C5A	-0.1100	13
+	HE2	HP	0.1500	14
+	C	C	0.5100	15
+	O	O	-0.5100	16
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CG	CD1
+	SE1	CD1
+	CE2	CD2
+	CG	CD2
+	SE1	CE2
+	CD2	HD2
+	CE2	HE2
+	CD1	HD1
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+	CD1	CG	SE1	HD1
+	CD2	CG	CE2	HD2
+	CE2	CD2	SE1	HE2
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ THG2 ] ; 2-thienylglycine 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	C5A	0.0400	4
+	SG1	STHI	-0.0800	5
+	CG2	C5B	-0.1500	6
+	HG2	HP	0.1500	7
+	CD1	C5A	-0.1100	8
+	HD1	HP	0.1500	9
+	CD2	C5B	-0.1500	10
+	HD2	HP	0.1500	11
+	C	C	0.5100	12
+	O	O	-0.5100	13
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CB	SG1
+	CG2	CB
+	SG1	CD1
+	CD2	CG2
+	CD2	CD1
+	CD1	HD1
+	CG2	HG2
+	CD2	HD2
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+	CG2	CB	CD2	HG2
+	CD2	CG2	CD1	HD2
+	CD1	SG1	CD2	HD1
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ THG3 ] ; 3-thienylglycine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	C5B	-0.0000	4
+	CG1	C5A	-0.1100	5
+	HG1	HP	0.1500	6
+	CG2	C5B	-0.1500	7
+	HG2	HP	0.1500	8
+	SD1	STHI	-0.0800	9
+	CD2	C5A	-0.1100	10
+	HD2	HP	0.1500	11
+	C	C	0.5100	12
+	O	O	-0.5100	13
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CB	CG1
+	CG2	CB
+	CG1	SD1
+	CD2	CG2
+	CD2	SD1
+	CG1	HG1
+	CG2	HG2
+	CD2	HD2
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+	CG1	CB	SD1	HG1
+	CG2	CB	CD2	HG2
+	CD2	CG2	SD1	HD2
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ THIC ] ; Thio-citrulline
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CT2	-0.1800	7
+	HG2	HA	0.0900	8
+	HG1	HA	0.0900	9
+	CD	CT2	0.1200	10
+	HD1	HA	0.0900	11
+	HD2	HA	0.0900	12
+	NE	NH1	-0.7300	13
+	HE	H	0.3700	14
+	CZ	CC	0.5000	15
+	NH	NH2	-0.8000	16
+	HH1	H	0.3700	17
+	HH2	H	0.3700	18
+	SZ	SCN	-0.3800	19
+	C	C	0.5100	20
+	O	O	-0.5100	21
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CB	HB1
+	HB2	CB
+	CG	CB
+	CG	HG2
+	HG1	CG
+	CD	CG
+	CD	HD1
+	HD2	CD
+	NE	CD
+	NE	HE
+	CZ	NE
+	NH	HH1
+	NH	CZ
+	SZ	CZ
+	HH2	NH
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+	NE	HE	CZ	CD
+	CZ	SZ	NH	NE
+	NH	HH2	HH1	CZ
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ TIH ] ; 3-(2-thienyl)-alanine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	C5A	0.0400	7
+	CD2	C5B	-0.1500	8
+	HD2	HP	0.1500	9
+	SD1	STHI	-0.0800	10
+	CE2	C5B	-0.1500	11
+	HE2	HP	0.1500	12
+	CE1	C5A	-0.1100	13
+	HE1	HP	0.1500	14
+	C	C	0.5100	15
+	O	O	-0.5100	16
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CE2	CD2
+	CG	CD2
+	CE2	CE1
+	SD1	CE1
+	CB	CG
+	SD1	CG
+	HB1	CB
+	HB2	CB
+	CD2	HD2
+	CE2	HE2
+	CE1	HE1
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+	CD2	CG	CE2	HD2
+	CE2	CD2	CE1	HE2
+	CE1	SD1	CE2	HE1
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ TPO ] ; phosphothreonine  (charge: -1)
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT1	0.1900	4
+	HB	HA	0.0900	5
+	OG1	OCC	-0.5500	6
+	P	PO4	1.4400	7
+	O1P	OC	-0.9500	8
+	O2P	OC	-0.9500	9
+	O3P	OH1	-0.7700	10
+	HOP3	H	0.5000	11
+	CG2	CT3	-0.2700	12
+	HG21	HA	0.0900	13
+	HG22	HA	0.0900	14
+	HG23	HA	0.0900	15
+	C	C	0.5100	16
+	O	O	-0.5100	17
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG2	CB
+	HB	CB
+	OG1	CB
+	HG21	CG2
+	HG22	CG2
+	HG23	CG2
+	O3P	HOP3
+	P	O1P
+	P	O2P
+	P	O3P
+	P	OG1
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ TPO2 ] ; phosphothreonine  (charge: -1)
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT1	0.1900	4
+	HB	HA	0.0900	5
+	OG1	OCC	-0.5500	6
+	P	PO4	1.3600	7
+	O1P	OC	-1.0300	8
+	O2P	OC	-1.0300	9
+	O3P	OC	-1.0300	10
+	CG2	CT3	-0.2700	11
+	HG21	HA	0.0900	12
+	HG22	HA	0.0900	13
+	HG23	HA	0.0900	14
+	C	C	0.5100	15
+	O	O	-0.5100	16
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	P	O2P
+	CG2	HG22
+	P	O1P
+	CG2	HG21
+	OG1	P
+	O3P	P
+	CB	OG1
+	CB	CG2
+	HG23	CG2
+	HB	CB
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ TRO ] ; 2-hydroxy-tryptophan 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CY	-0.0000	7
+	CD1	CA	0.2000	8
+	OD1	OH1	-0.5100	9
+	HD1	H	0.4300	10
+	CD2	CPT	-0.0200	11
+	NE1	NY	-0.6100	12
+	HE1	H	0.3800	13
+	CE2	CPT	0.1300	14
+	CE3	CA	-0.1150	15
+	HE3	HP	0.1150	16
+	CZ2	CA	-0.1150	17
+	HZ2	HP	0.1150	18
+	CZ3	CA	-0.1150	19
+	HZ3	HP	0.1150	20
+	CH2	CA	-0.1150	21
+	HH2	HP	0.1150	22
+	C	C	0.5100	23
+	O	O	-0.5100	24
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CG	CD1
+	OD1	CD1
+	NE1	CD1
+	CG	CD2
+	CE2	CD2
+	CE3	CD2
+	NE1	CE2
+	CZ2	CE2
+	CZ3	CE3
+	HE3	CE3
+	CZ2	CH2
+	CZ3	CH2
+	HH2	CH2
+	HZ2	CZ2
+	HZ3	CZ3
+	OD1	HD1
+	NE1	HE1
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ TRX ] ; 6-hydroxytryptophan 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CY	-0.0300	7
+	CD1	CA	0.0350	8
+	HD1	HP	0.1150	9
+	CD2	CPT	-0.0200	10
+	NE1	NY	-0.6100	11
+	HE1	H	0.3800	12
+	CE2	CPT	0.1300	13
+	CE3	CA	-0.1150	14
+	HE3	HP	0.1150	15
+	CZ2	CA	-0.1150	16
+	HZ2	HP	0.1150	17
+	CZ3	CA	-0.1150	18
+	HZ3	HP	0.1150	19
+	CH2	CA	0.1100	20
+	OH2	OH1	-0.5400	21
+	HH2	H	0.4300	22
+	C	C	0.5100	23
+	O	O	-0.5100	24
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CG	CD1
+	NE1	CD1
+	HD1	CD1
+	CE2	CD2
+	CG	CD2
+	CE3	CD2
+	NE1	CE2
+	CZ2	CE2
+	CZ3	CE3
+	HE3	CE3
+	CZ2	CH2
+	CZ3	CH2
+	OH2	CH2
+	HZ2	CZ2
+	HZ3	CZ3
+	NE1	HE1
+	OH2	HH2
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ TRZ4 ] ; 3-(1,2,4-Triazol-1-yl)-alanine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	0.0800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	NG	NY	0.3100	7
+	CD2	C5A	0.0400	8
+	HD2	HP	0.1500	9
+	ND1	N5A	-0.7100	10
+	NE2	N5B	-0.5700	11
+	CE1	C5B	0.3700	12
+	HE1	HP	0.1500	13
+	C	C	0.5100	14
+	O	O	-0.5100	15
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	NG	CB
+	CD2	NG
+	ND1	NG
+	NE2	CD2
+	CE1	NE2
+	ND1	CE1
+	CB	HB1
+	CB	HB2
+	CD2	HD2
+	CE1	HE1
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+	NG	CB	ND1	CD2
+	CD2	NG	NE2	HD2
+	CE1	ND1	NE2	HE1
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ TTQ ] ; 6-amino-7-hydroxy-l-tryptophan 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CY	-0.0300	7
+	CD1	CA	0.0350	8
+	HD1	HP	0.1150	9
+	CD2	CPT	-0.0200	10
+	NE1	NY	-0.6100	11
+	HE1	H	0.3800	12
+	CE2	CPT	0.1300	13
+	CE3	CA	-0.1150	14
+	HE3	HP	0.1150	15
+	CZ2	CA	0.1100	16
+	OZ2	OH1	-0.5400	17
+	HZ2	H	0.4300	18
+	CZ3	CA	-0.1150	19
+	HZ3	HP	0.1150	20
+	CH2	CA	0.1000	21
+	N2	NH2	-0.9000	22
+	H21	H	0.4000	23
+	H22	H	0.4000	24
+	C	C	0.5100	25
+	O	O	-0.5100	26
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CG	CD1
+	NE1	CD1
+	HD1	CD1
+	CE2	CD2
+	CG	CD2
+	CE3	CD2
+	NE1	CE2
+	CZ2	CE2
+	CZ3	CE3
+	HE3	CE3
+	CZ2	CH2
+	CZ3	CH2
+	N2	CH2
+	OZ2	CZ2
+	HZ3	CZ3
+	N2	H21
+	N2	H22
+	NE1	HE1
+	OZ2	HZ2
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ TY2 ] ; 3-Amino-L-tyrosine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CA	0.0000	7
+	CD2	CA	-0.1150	8
+	HD2	HP	0.1150	9
+	CD1	CA	-0.1150	10
+	HD1	HP	0.1150	11
+	CE2	CA	-0.1150	12
+	HE2	HP	0.1150	13
+	CE1	CA	0.1000	14
+	NE1	NH2	-0.9000	15
+	HE11	H	0.4000	16
+	HE12	H	0.4000	17
+	CZ	CA	0.1100	18
+	OZ	OH1	-0.5400	19
+	HZ	H	0.4300	20
+	C	C	0.5100	21
+	O	O	-0.5100	22
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CE2	CD2
+	CG	CD2
+	HD2	CD2
+	CE1	CD1
+	CG	CD1
+	HD1	CD1
+	CZ	CE2
+	HE2	CE2
+	CZ	CE1
+	NE1	CE1
+	OZ	CZ
+	OZ	HZ
+	NE1	HE11
+	NE1	HE12
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+	NE1	HE11	HE12	CE1
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ TYI ] ; 3,5-diiodotyrosine 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CA	0.0000	7
+	CD1	CA	-0.1150	8
+	HD1	HP	0.1150	9
+	CD2	CA	-0.1150	10
+	HD2	HP	0.1150	11
+	CE1	CA	0.0800	12
+	IE1	I	-0.0800	13
+	CE2	CA	0.0800	14
+	IE2	I	-0.0800	15
+	CZ	CA	0.1100	16
+	OH	OH1	-0.5400	17
+	HH	H	0.4300	18
+	C	C	0.5100	19
+	O	O	-0.5100	20
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CG	CD1
+	CE1	CD1
+	HD1	CD1
+	CG	CD2
+	CE2	CD2
+	HD2	CD2
+	CZ	CE1
+	IE1	CE1
+	CZ	CE2
+	IE2	CE2
+	OH	CZ
+	OH	HH
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ TYQ ] ; 3-amino-6-hydroxy-tyrosine 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CA	0.0000	7
+	CD1	CA	0.1100	8
+	OD1	OH1	-0.5400	9
+	HD1	H	0.4300	10
+	CD2	CA	-0.1150	11
+	HD2	HP	0.1150	12
+	CE1	CA	-0.1150	13
+	HE1	HP	0.1150	14
+	CE2	CA	0.1000	15
+	NE2	NH2	-0.9000	16
+	HE21	H	0.4000	17
+	HE22	H	0.4000	18
+	CZ	CA	0.1100	19
+	OH	OH1	-0.5400	20
+	HH	H	0.4300	21
+	C	C	0.5100	22
+	O	O	-0.5100	23
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CG	CD1
+	CE1	CD1
+	OD1	CD1
+	CE2	CD2
+	CG	CD2
+	HD2	CD2
+	CZ	CE1
+	HE1	CE1
+	CZ	CE2
+	NE2	CE2
+	OH	CZ
+	OH	HH
+	NE2	HE21
+	NE2	HE22
+	OD1	HD1
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ TZA4 ] ; (4-thiazolyl)-alanine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	C5B	0.2300	7
+	CD1	C5A	-0.1100	8
+	HD1	HP	0.1500	9
+	ND2	N5B	-0.5700	10
+	SE1	STHI	-0.0800	11
+	CE2	C5A	0.2300	12
+	HE2	HP	0.1500	13
+	C	C	0.5100	14
+	O	O	-0.5100	15
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CD1	CG
+	ND2	CG
+	SE1	CD1
+	HD1	CD1
+	SE1	CE2
+	ND2	CE2
+	HE2	CE2
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+        CD1     CG      SE1     HD1
+        CE2     ND2     SE1     HE2
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ UN1 ] ; 2-Aminoadipic acid
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CT2	-0.1800	7
+	HG1	HA	0.0900	8
+	HG2	HA	0.0900	9
+	CD	CT2	-0.2800	10
+	HD1	HA	0.0900	11
+	HD2	HA	0.0900	12
+	CE	CC	0.6200	13
+	OZ1	OC	-0.7600	14
+	OZ2	OC	-0.7600	15
+	C	C	0.5100	16
+	O	O	-0.5100	17
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	OZ1	CE
+	OZ2	CE
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CE	CD
+	CG	CD
+	HD1	CD
+	HD2	CD
+	HG1	CG
+	HG2	CG
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+	CE	CD	OZ1	OZ2
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ VAH ] ; Hydroxynorvaline
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT1	0.1400	4
+	HB	HA	0.0900	5
+	OG1	OH1	-0.6600	6
+	HG1	H	0.4300	7
+	CG2	CT2	-0.1800	8
+	HG21	HA	0.0900	9
+	HG22	HA	0.0900	10
+	CD	CT3	-0.2700	11
+	HD1	HA	0.0900	12
+	HD2	HA	0.0900	13
+	HD3	HA	0.0900	14
+	C	C	0.5100	15
+	O	O	-0.5100	16
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG2	CB
+	HB	CB
+	OG1	CB
+	CG2	CD
+	HD1	CD
+	HD2	CD
+	HD3	CD
+	HG21	CG2
+	HG22	CG2
+	OG1	HG1
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ WFP ] ; 3,5-Difluoro-phenylalanine
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CA	0.0000	7
+	CD1	CA	-0.1150	8
+	HD1	HP	0.1150	9
+	CD2	CA	-0.1150	10
+	HD2	HP	0.1150	11
+	CE1	CA	0.1900	12
+	FE1	F1	-0.1900	13
+	CE2	CA	0.1900	14
+	FE2	F1	-0.1900	15
+	CZ	CA	-0.1150	16
+	HZ	HP	0.1150	17
+	C	C	0.5100	18
+	O	O	-0.5100	19
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CE1	CD1
+	CG	CD1
+	HD1	CD1
+	CE2	CD2
+	CG	CD2
+	HD2	CD2
+	CZ	CE1
+	FE1	CE1
+	CZ	CE2
+	FE2	CE2
+	CZ	HZ
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ YCM ] ; cysteine-s-acetamide 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1400	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	SG	S	-0.0900	7
+	CD	CT2	-0.1300	8
+	HD2	HA	0.0900	9
+	HD1	HA	0.0900	10
+	CE	CC	0.5500	11
+	OZ1	O	-0.5500	12
+	NZ2	NH2	-0.6200	13
+	HZ21	H	0.3200	14
+	HZ22	H	0.3000	15
+	C	C	0.5100	16
+	O	O	-0.5100	17
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	HB1	CB
+	HB2	CB
+	SG	CB
+	HD2	CD
+	HD1	CD
+	SG	CD
+	CE	CD
+	OZ1	CE
+	NZ2	CE
+	NZ2	HZ21
+	NZ2	HZ22
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+	CE	CD	NZ2	OZ1
+	NZ2	CE	HZ21	HZ22
+ [ cmap ]
+	-C	N	CA	C	+N
+
+[ YOF ] ; 3-fluorotyrosine 
+ [ atoms ]
+	N	NH1	-0.4700	0
+	HN	H	0.3100	1
+	CA	CT1	0.0700	2
+	HA	HB	0.0900	3
+	CB	CT2	-0.1800	4
+	HB1	HA	0.0900	5
+	HB2	HA	0.0900	6
+	CG	CA	0.0000	7
+	CD1	CA	-0.1150	8
+	HD1	HP	0.1150	9
+	CD2	CA	-0.1150	10
+	HD2	HP	0.1150	11
+	CE1	CA	0.1900	12
+	FE1	F1	-0.1900	13
+	CE2	CA	-0.1150	14
+	HE2	HP	0.1150	15
+	CZ	CA	0.1100	16
+	OH	OH1	-0.5400	17
+	HH	H	0.4300	18
+	C	C	0.5100	19
+	O	O	-0.5100	20
+ [ bonds ]
+	N	HN
+	N	CA
+	C	CA
+	C	+N
+	CA	HA
+	CB	CA
+	O	C
+	CG	CB
+	HB1	CB
+	HB2	CB
+	CE1	CD1
+	CG	CD1
+	HD1	CD1
+	CG	CD2
+	CE2	CD2
+	HD2	CD2
+	CZ	CE1
+	FE1	CE1
+	CZ	CE2
+	HE2	CE2
+	OH	CZ
+	OH	HH
+ [ impropers ]
+	N	-C	CA	HN
+	C	CA	+N	O
+ [ cmap ]
+	-C	N	CA	C	+N

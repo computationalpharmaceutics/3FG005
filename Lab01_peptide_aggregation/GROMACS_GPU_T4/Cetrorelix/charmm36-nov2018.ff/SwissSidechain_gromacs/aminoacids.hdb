@@ -1,0 +1,1825 @@
+ALA     3       
+1	1	HN	N	-C	CA
+1	5	HA	CA	N	C	CB
+3	4	HB	CB	CA	N
+ARG     8       
+1	1	HN	N	-C	CA
+1	5	HA	CA	N	C	CB
+2	6	HB	CB	CG	CA
+2	6	HG	CG	CD	CB
+2	6	HD	CD	NE	CG
+1	1	HE	NE	CD	CZ
+2	3	HH1	NH1	CZ	NE
+2	3	HH2	NH2	CZ	NE
+ARGN    8       
+1	1	HN	N	-C	CA
+1	5	HA	CA	N	C	CB
+2	6	HB	CB	CG	CA
+2	6	HG	CG	CD	CB
+2	6	HD	CD	NE	CG
+1	1	HE	NE	CD	CZ
+1	2	HH1	NH1	CZ	NE
+2	3	HH2	NH2	CZ	NE
+ASN     4       
+1	1	HN	N	-C	CA
+1	5	HA	CA	N	C	CB
+2	6	HB	CB	CG	CA
+2	3	HD2	ND2	CG	CB
+ASP     3       
+1	1	HN	N	-C	CA
+1	5	HA	CA	N	C	CB
+2	6	HB	CB	CG	CA
+ASPP    4       
+1	1	HN	N	-C	CA
+1	5	HA	CA	N	C	CB
+2	6	HB	CB	CG	CA
+1	2	HD2	OD2	CG	CB
+CYS2    3       
+1	1	HN	N	-C	CA
+1	5	HA	CA	N	C	CB
+2	6	HB	CB	SG	CA
+CYS     4       
+1	1	HN	N	-C	CA
+1	5	HA	CA	N	C	CB
+2	6	HB	CB	SG	CA
+1	2	HG1	SG	CB	CA
+CYS3    3
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2       6       HB      CB      SG      CA
+CYT     9
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2       6       HB      CB      SG      CA
+2       6       H21     C21     C16     SG
+1       1       H69     C69     C16     C9
+1       1       H26     C26     C16     C2
+1       1       H29     C29     C2      C9
+3       4       H22     C22     C9      C69
+3       4       H23     C23     C2      C26
+CYT3    9
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2       6       HB      CB      SG      CA
+2       6       H21     C21     C16     SG
+1       1       H69     C69     C16     C9
+1       1       H26     C26     C16     C2
+1       1       H29     C29     C2      C9
+2       6       H22     C22     C9      C69
+2       6       H23     C23     C2      C26
+GLN     5       
+1	1	HN	N	-C	CA
+1	5	HA	CA	N	C	CB
+2	6	HB	CB	CG	CA
+2	6	HG	CG	CD	CB
+2	3	HE2	NE2	CD	CG
+GLU     4       
+1	1	HN	N	-C	CA
+1	5	HA	CA	N	C	CB
+2	6	HB	CB	CG	CA
+2	6	HG	CG	CD	CB
+GLUP    5       
+1	1	HN	N	-C	CA
+1	5	HA	CA	N	C	CB
+2	6	HB	CB	CG	CA
+2	6	HG	CG	CD	CB
+1	2	HE2	OE2	CD	CG
+GLY     2       
+1	1	HN	N	-C	CA
+2	6	HA	CA	C	N
+HIS1    6       
+1	1	HN	N	-C	CA
+1	5	HA	CA	N	C	CB
+2	6	HB	CB	CG	CA
+1	1	HD2	CD2	CG	NE2
+1	1	HE1	CE1	ND1	NE2
+1	1	HD1	ND1	CG	CE1
+HSD     6       
+1	1	HN	N	-C	CA
+1	5	HA	CA	N	C	CB
+2	6	HB	CB	CG	CA
+1	1	HD2	CD2	CG	NE2
+1	1	HE1	CE1	ND1	NE2
+1	1	HD1	ND1	CG	CE1
+HSE     6       
+1	1	HN	N	-C	CA
+2	6	HB	CB	CG	CA
+1	5	HA	CA	N	C	CB
+1	1	HE2	NE2	CE1	CD2
+1	1	HD2	CD2	CG	NE2
+1	1	HE1	CE1	ND1	NE2
+HSP     7       
+1	1	HN	N	-C	CA
+1	5	HA	CA	N	C	CB
+2	6	HB	CB	CG	CA
+1	1	HD2	CD2	CG	NE2
+1	1	HE1	CE1	ND1	NE2
+1	1	HD1	ND1	CG	CE1
+1	1	HE2	NE2	CE1	CD2
+HO4     1       
+3	10	HW	OW
+HO5     1       
+4	11	HW	OW
+HOH     1       
+2	7	HW	OW
+ILE     6       
+1	1	HN	N	-C	CA
+1	5	HA	CA	N	C	CB
+1	5	HB	CB	CA	CG1	CG2
+2	6	HG1	CG1	CD	CB
+3	4	HG2	CG2	CB	CA
+3	4	HD	CD	CG1	CB
+LEU     6       
+1	1	HN	N	-C	CA
+1	5	HA	CA	N	C	CB
+2	6	HB	CB	CG	CA
+1	5	HG	CG	CB	CD1	CD2
+3	4	HD1	CD1	CG	CB
+3	4	HD2	CD2	CG	CB
+LSN     7
+1	1	HN	N	-C	CA
+1	5	HA	CA	N	C	CB
+2	6	HB	CB	CG	CA
+2	6	HG	CG	CD	CB
+2	6	HD	CD	CE	CG
+2	6	HE	CE	NZ	CD
+2	4	HZ	NZ	CE	CD
+LYS     7       
+1	1	HN	N	-C	CA
+1	5	HA	CA	N	C	CB
+2	6	HB	CB	CG	CA
+2	6	HG	CG	CD	CB
+2	6	HD	CD	CE	CG
+2	6	HE	CE	NZ	CD
+3	4	HZ	NZ	CE	CD
+MET     5       
+1	1	HN	N	-C	CA
+1	5	HA	CA	N	C	CB
+2	6	HB	CB	CG	CA
+2	6	HG	CG	SD	CB
+3	4	HE	CE	SD	CG
+PHE     8       
+1	1	HN	N	-C	CA
+1	5	HA	CA	N	C	CB
+2	6	HB	CB	CG	CA
+1	1	HD1	CD1	CG	CE1
+1	1	HD2	CD2	CG	CE2
+1	1	HE1	CE1	CD1	CZ
+1	1	HE2	CE2	CD2	CZ
+1	1	HZ	CZ	CE1	CE2
+PRO     4       
+1	5	HA	CA	N	C	CB
+2	6	HB	CB	CG	CA
+2	6	HG	CG	CD	CB
+2	6	HD	CD	N	CG
+SER     4       
+1	1	HN	N	-C	CA
+1	5	HA	CA	N	C	CB
+2	6	HB	CB	OG	CA
+1	2	HG1	OG	CB	CA
+THR     5       
+1	1	HN	N	-C	CA
+1	5	HA	CA	N	C	CB
+1	5	HB	CB	CA	OG1	CG2
+1	2	HG1	OG1	CB	CA
+3	4	HG2	CG2	CB	CA
+TRP     9       
+1	1	HN	N	-C	CA
+1	5	HA	CA	N	C	CB
+2	6	HB	CB	CG	CA
+1	1	HD1	CD1	NE1	CG
+1	1	HE1	NE1	CD1	CE2
+1	1	HE3	CE3	CD2	CZ3
+1	1	HZ3	CZ3	CE3	CH2
+1	1	HH2	CH2	CZ3	CZ2
+1	1	HZ2	CZ2	CE2	CH2
+TYR     8       
+1	1	HN	N	-C	CA
+1	5	HA	CA	N	C	CB
+2	6	HB	CB	CG	CA
+1	1	HD1	CD1	CG	CE1
+1	1	HD2	CD2	CG	CE2
+1	1	HE1	CE1	CD1	CZ
+1	1	HE2	CE2	CD2	CZ
+1	2	HH	OH	CZ	CE1
+VAL     5       
+1	1	HN	N	-C	CA
+1	5	HA	CA	N	C	CB
+1	5	HB	CB	CA	CG1	CG2
+3	4	HG1	CG1	CB	CA
+3	4	HG2	CG2	CB	CA
+004	7
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+1	1	HG1	CG1	CB	CD1	
+1	1	HG2	CG2	CB	CD2	
+1	1	HD1	CD1	CG1	CE	
+1	1	HD2	CD2	CE	CG2	
+1	1	HE	CE	CD1	CD2	
+0A1	8
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD1	CD1	CE1	CG	
+1	1	HD2	CD2	CE2	CG	
+1	1	HE1	CE1	CD1	CZ	
+1	1	HE2	CE2	CD2	CZ	
+3	4	HH	CH	OH	CZ	
+0AF	9
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD1	CD1	CG	NE1	
+1	1	HE1	NE1	CD1	CE2	
+1	1	HE3	CE3	CD2	CZ3	
+1	1	HZ3	CZ3	CE3	CH2	
+1	1	HH2	CH2	CZ2	CZ3	
+1	2	HZ2	OZ2	CZ2	CE2	
+0BN	9
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CG	CA	
+1	1	HD1	CD1	CG	CE1	
+1	1	HD2	CD2	CG	CE2	
+1	1	HE1	CE1	CD1	CZ	
+1	1	HE2	CE2	CD2	CZ	
+2	3	HJ1	NJ1	CH	CZ	
+2	3	HJ2	NJ2	CH	CZ	
+200	7
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD1	CD1	CE1	CG	
+1	1	HD2	CD2	CE2	CG	
+1	1	HE1	CE1	CD1	CZ	
+1	1	HE2	CE2	CD2	CZ	
+26P	5
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CG	CA	
+2	6	HG	CG	CD	CB	
+2	6	HD	CD	CE	CG	
+2AG	5
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HG	CG	CB	CD	
+2	3	HD	CD	CG	CB	
+2AS	4
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+1	5	HB2	CB	CA	CG1	CG2	
+3	4	HG2	CG2	CB	CA	
+2FM	5
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+2	6	HG	CG	CB	SD	
+1	5	HE	CE	SD	FZ1	FZ2	
+2HF	6
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD1	ND1	CG	CE1	
+1	1	HD2	CD2	CG	NE2	
+1	1	HE2	NE2	CD2	CE1	
+2HF1	5
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD2	CD2	CG	NE2	
+1	1	HD1	ND1	CE1	CG	
+2HF2	5
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD2	CD2	CG	NE2	
+1	1	HE2	NE2	CD2	CE1	
+2NP	6
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+2	6	HG	CG	CB	CD	
+2	6	HD	CD	CG	CE	
+2	3	HZ2	CZ2	CE	CD	
+32T	7
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD1	CD1	CG	NE1	
+1	1	HE1	NE1	CD1	CE2	
+1	1	HZ2	CZ2	CE2	CZ3	
+1	1	HZ3	CZ3	CZ2	SUL	
+3CF	7
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD1	CD1	CE1	CG	
+1	1	HD2	CD2	CE2	CG	
+1	1	HE2	CE2	CD2	CZ	
+1	1	HZ	CZ	CE1	CE2	
+3FG	7
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+1	1	HG1	CG1	CB	CD1	
+1	1	HG2	CG2	CB	CD2	
+1	1	HZ	CZ	CD1	CD2	
+1	2	HD1	OD1	CD1	CG1	
+1	2	HD2	OD2	CD2	CG2	
+3GL	5
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	5	HG	CG	OH	CB	CD	
+1	2	HH	OH	CG	CB	
+3MY	7
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD1	CD1	CE1	CG	
+1	1	HD2	CD2	CE2	CG	
+1	1	HE1	CE1	CD1	CZ	
+1	2	HH	OH	CZ	CE1	
+4BF	7
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD1	CD1	CE1	CG	
+1	1	HD2	CD2	CE2	CG	
+1	1	HE1	CE1	CD1	CZ	
+1	1	HE2	CE2	CD2	CZ	
+4CF	7
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD1	CD1	CE1	CG	
+1	1	HD2	CD2	CE2	CG	
+1	1	HE1	CE1	CD1	CZ	
+1	1	HE2	CE2	CD2	CZ	
+4CY	4
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+2	6	HG	CG	CB	SD	
+4FW	8
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CG	CA	
+1	1	HD1	CD1	NE1	CG	
+1	1	HE1	NE1	CD1	CE2	
+1	1	HZ2	CZ2	CE2	CH2	
+1	1	HZ3	CZ3	CE3	CH2	
+1	1	HH2	CH2	CZ2	CZ3	
+4HMP	9
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD1	CD1	CE1	CG	
+1	1	HD2	CD2	CE2	CG	
+1	1	HE1	CE1	CD1	CZ	
+1	1	HE2	CE2	CD2	CZ	
+2	6	HH	CH	CZ	OJ	
+1	2	HJ	OJ	CH	CZ	
+4HT	9
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD1	CD1	CG	NE1	
+1	1	HE1	NE1	CD1	CE2	
+1	1	HZ2	CZ2	CE2	CH2	
+1	2	HE3	OE3	CE3	CD2	
+1	1	HZ3	CZ3	CE3	CH2	
+1	1	HH2	CH2	CZ3	CZ2	
+4IN	9
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD1	CD1	CG	NE1	
+1	1	HE1	NE1	CD1	CE2	
+1	1	HZ2	CZ2	CE2	CH2	
+1	1	HZ3	CZ3	CE3	CH2	
+2	3	HZ1	NZ1	CE3	CD2	
+1	1	HH2	CH2	CZ2	CZ3	
+4PH	8
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD1	CD1	CG	CE1	
+1	1	HD2	CD2	CG	CE2	
+1	1	HE1	CE1	CD1	CZ	
+1	1	HE2	CE2	CD2	CZ	
+3	4	HH	CH	CZ	CE1	
+6CL	7
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CG	CA	
+2	6	HG	CG	CD	CB	
+2	6	HD	CD	CE	CG	
+1	5	HE	CE	CZ	CD	NZ	
+3	4	HZ	NZ	CE	CZ	
+6CW	8
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD1	CD1	CG	NE1	
+1	1	HE1	NE1	CD1	CE2	
+1	1	HE3	CE3	CD2	CZ3	
+1	1	HZ3	CZ3	CE3	CH2	
+1	1	HZ2	CZ2	CE2	CH2	
+AA4	6
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+2	6	HG	CG	CB	CD	
+2	6	HD	CD	CG	OE	
+1	2	HE	OE	CD	CG	
+ABA	4
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+3	4	HG	CG	CB	CA	
+ACZ	11
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+2	6	HG	CG	CB	CD	
+1	5	HD	CD	CE1	CE2	CG	
+1	1	HE11	CE1	CD	CZ1	
+1	1	HE22	CE2	CD	CZ2	
+1	1	HZ11	CZ1	CE1	CH	
+1	1	HZ22	CZ2	CE2	CH	
+1	5	HH	CH	CZ1	CZ2	NJ	
+3	4	HJ	NJ	CH	CZ1	
+ADAM	12
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+2	6	HD1	CD1	CE1	CG	
+2	6	HD2	CD2	CE2	CG	
+2	6	HD3	CD3	CE3	CG	
+1	5	HE1	CE1	CD1	CZ1	CZ3	
+1	5	HE2	CE2	CD2	CZ1	CZ2	
+1	5	HE3	CE3	CD3	CZ2	CZ3	
+2	6	HZ1	CZ1	CE1	CE2	
+2	6	HZ3	CZ3	CE1	CE3	
+2	6	HZ2	CZ2	CE2	CE3	
+AGM	9
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CG	CA	
+2	6	HG	CG	CD	CB	
+1	5	HD	CD	NE1	CE2	CG	
+1	1	HE1	NE1	CZ	CD	
+3	4	HE2	CE2	CD	NE1	
+2	3	HH2	NH2	CZ	NH1	
+2	3	HH1	NH1	CZ	NH2	
+AHB	5
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+1	5	HB	CB	CA	OB	CG	
+1	2	HOB	OB	CB	CA	
+2	3	HD2	ND2	CG	CB	
+AHP	7
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+2	6	HG	CG	CB	CD	
+2	6	HD	CD	CE	CG	
+2	6	HE	CE	CD	CZ	
+3	4	HZ	CZ	CE	CD	
+ALC	9
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	5	HG	CG	CB	CD1	CD2	
+2	6	HD1	CD1	CE1	CG	
+2	6	HD2	CD2	CE2	CG	
+2	6	HE1	CE1	CD1	CZ	
+2	6	HE2	CE2	CD2	CZ	
+2	6	HZ	CZ	CE1	CE2	
+ALN	10
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD2	CD2	CE2	CG	
+1	1	HH1	CH1	CD1	CJ1	
+1	1	HE2	CE2	CD2	CZ	
+1	1	HH2	CH2	CE1	CJ2	
+1	1	HZ	CZ	CE1	CE2	
+1	1	HJ1	CJ1	CH1	CJ2	
+1	1	HJ2	CJ2	CH2	CJ1	
+ALO	5
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+1	5	HB	CB	CA	CG2	OG1	
+3	4	HG2	CG2	CB	CA	
+1	2	HG1	OG1	CB	CA	
+ANTH	12
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HF1	CF1	CD1	CJ1	
+1	1	HH1	CH1	CD2	CM1	
+1	1	HF2	CF2	CE1	CJ2	
+1	1	HZ	CZ	CE1	CE2	
+1	1	HJ1	CJ1	CF1	CJ2	
+1	1	HH2	CH2	CE2	CM2	
+1	1	HM1	CM1	CH1	CM2	
+1	1	HJ2	CJ2	CF2	CJ1	
+1	1	HM2	CM2	CH2	CM1	
+APD	8
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD2	CD2	CG	CE2	
+1	1	HD1	CD1	CG	CE1	
+1	1	HE2	CE2	CD2	CZ	
+1	1	HZ	CZ	CE2	CE1	
+3	4	HH	CH	CE1	CD1	
+APM	9
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CG	CA	
+1	1	HD1	CD1	CE1	CG	
+1	1	HD2	CD2	CG	CE2	
+1	1	HE2	CE2	CZ	CD2	
+1	1	HZ	CZ	CE1	CE2	
+2	3	HJ1	NJ1	CH	NJ2	
+2	3	HJ2	NJ2	CH	NJ1	
+ARO	9
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	5	HG	CG	CB	CD	OH	
+2	6	HD	CD	CG	NE	
+1	2	HH	OH	CG	CB	
+1	1	HE	NE	CD	CZ	
+2	3	HH1	NH1	CZ	NE	
+2	3	HH2	NH2	CZ	NH1	
+AS2	4
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HG	CG	CB	OG	
+AZDA	3
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	NG	CA	
+BB8	9
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+1	5	HB	CB	CA	CG1	OG2	
+1	2	HG2	OG2	CB	CA	
+1	1	HD1	CD1	CE1	CG1	
+1	1	HD2	CD2	CE2	CG1	
+1	1	HE1	CE1	CD1	CZ	
+1	1	HE2	CE2	CD2	CZ	
+1	1	HZ	CZ	CE1	CE2	
+BCS	9
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	SG	
+2	6	HD	CD	SG	CE	
+1	1	HZ1	CZ1	CE	CH1	
+1	1	HZ2	CZ2	CE	CH2	
+1	1	HH1	CH1	CJ	CZ1	
+1	1	HH2	CH2	CJ	CZ2	
+1	1	HJ	CJ	CH1	CH2	
+BHD	4
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+1	5	HB	CB	CA	CG	OB	
+1	2	HOB	OB	CB	CA	
+BIF	12
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD1	CD1	CE1	CG	
+1	1	HD2	CD2	CE2	CG	
+1	1	HE1	CE1	CD1	CZ	
+1	1	HE2	CE2	CD2	CZ	
+1	1	H11	C11	C10	C12	
+1	1	H13	C13	C12	C8	
+1	1	H10	C10	C11	C9	
+1	1	H8	C8	C13	C9	
+1	1	H9	C9	C10	C8	
+BIU	6
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+1	5	HB	CB	CA	CG2	CG1	
+3	4	HG2	CG2	CB	CA	
+2	6	HG1	CG1	CB	CD	
+2	6	HD	CD	BR	CG1	
+BTH3	8
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD1	CD1	CG	SE1	
+1	1	HE3	CE3	CZ3	CD2	
+1	1	HZ3	CZ3	CH2	CE3	
+1	1	HZ2	CZ2	CH2	CE2	
+1	1	HH2	CH2	CZ3	CZ2	
+BTR	8
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD1	CD1	CG	NE1	
+1	1	HE1	NE1	CD1	CE2	
+1	1	HE3	CE3	CD2	CZ3	
+1	1	HZ2	CZ2	CE2	CH2	
+1	1	HZ3	CZ3	CE3	CH2	
+BUG	5
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+3	4	HG1	CG1	CB	CA	
+3	4	HG2	CG2	CB	CA	
+3	4	HG3	CG3	CB	CA	
+C2N	3
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CL	CA	
+CAN	5
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+2	6	HG	CG	CB	OD	
+2	3	HE	NE	OD	CG	
+CCS	4
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	SG	CA	
+2	6	HD	CD	CE	SG	
+CHG	8
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+1	5	HB	CB	CA	CG1	CG2	
+2	6	HG1	CG1	CB	CD1	
+2	6	HG2	CG2	CB	CD2	
+2	6	HD1	CD1	CG1	CE	
+2	6	HD2	CD2	CE	CG2	
+2	6	HE	CE	CD1	CD2	
+CHP	6
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+1	1	HG1	CG1	CB	CD1	
+1	1	HG2	CG2	CB	CD2	
+1	1	HD2	CD2	CE	CG2	
+1	2	HE	OE	CE	CD1	
+CIR	7
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+2	6	HG	CG	CB	CD	
+2	6	HD	CD	CG	NE	
+1	1	HE	NE	CD	CZ	
+2	3	HH	NH	CZ	NE	
+CNP2	7
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD2	CD2	CE2	CG	
+1	1	HE1	CE1	CD1	CZ	
+1	1	HE2	CE2	CD2	CZ	
+1	1	HZ	CZ	CE1	CE2	
+CP24	6
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD2	CD2	CE2	CG	
+1	1	HE1	CE1	CD1	CZ	
+1	1	HE2	CE2	CD2	CZ	
+CP34	6
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD1	CD1	CE1	CG	
+1	1	HD2	CD2	CE2	CG	
+1	1	HE2	CE2	CD2	CZ	
+CPA3	8
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	5	HG	CG	CB	CD1	CD2	
+2	6	HD1	CD1	CG	CE1	
+2	6	HD2	CD2	CG	CE2	
+2	6	HE1	CE1	CD1	CE2	
+2	6	HE2	CE2	CD2	CE1	
+CPG2	6
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+1	1	HG1	CG1	CB	CD1	
+1	1	HD1	CD1	CG1	CE	
+1	1	HD2	CD2	CG2	CE	
+1	1	HE	CE	CD1	CD2	
+CPG3	6
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+1	1	HG1	CG1	CB	CD1	
+1	1	HG2	CG2	CB	CD2	
+1	1	HD1	CD1	CE	CG1	
+1	1	HE	CE	CD1	CD2	
+CPG4	6
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+1	1	HG1	CG1	CB	CD1	
+1	1	HG2	CG2	CB	CD2	
+1	1	HD1	CD1	CE	CG1	
+1	1	HD2	CD2	CE	CG2	
+CPH2	7
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD2	CD2	CE2	CG	
+1	1	HE1	CE1	CD1	CZ	
+1	1	HE2	CE2	CD2	CZ	
+1	1	HZ	CZ	CE1	CE2	
+CSA	5
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	SG	
+2	6	HD	CD	CE	SG	
+3	4	HZ	CZ	CE	CD	
+CTE	8
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD1	CD1	CG	NE1	
+1	1	HE1	NE1	CD1	CE2	
+1	1	HE3	CE3	CD2	CZ3	
+1	1	HZ3	CZ3	CE3	CH2	
+1	1	HH2	CH2	CZ3	CZ2	
+CTH	5
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+1	5	HB	CB	CA	CG2	OG1	
+2	6	HG2	CG2	CB	CL2	
+1	2	HG1	OG1	CB	CA	
+D4P	7
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+1	1	HG1	CG1	CB	CD1	
+1	1	HG2	CG2	CB	CD2	
+1	1	HD1	CD1	CE	CG1	
+1	1	HD2	CD2	CE	CG2	
+1	2	HE	OE	CE	CD1	
+DAB	5
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+2	6	HG	CG	CB	ND	
+3	4	HD	ND	CG	CB	
+DAH	8
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD2	CD2	CG	CE2	
+1	1	HD1	CD1	CG	CE1	
+1	1	HE2	CE2	CD2	CZ	
+1	2	HE1	OE1	CE1	CD1	
+1	2	HZ	OZ	CZ	CE2	
+DBY	6
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD1	CD1	CG	CE1	
+1	1	HD2	CD2	CE2	CG	
+1	2	HH	OH	CZ	CE1	
+DDZ	5
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+1	5	HB	CB	CA	OG1	OG2	
+1	2	HG1	OG1	CB	CA	
+1	2	HG2	OG2	CB	CA	
+DILE	7
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+1	5	HB	CB	CA	CG1	CG2	
+2	6	HG1	CG1	CB	CD1	
+2	6	HG2	CG2	CB	CD2	
+3	4	HD1	CD1	CG1	CB	
+3	4	HD2	CD2	CG2	CB	
+DIPH	13
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+1	5	HB	CB	CA	CG3	CG1	
+1	1	HD3	CD3	CG3	CE3	
+1	1	HD4	CD4	CE4	CG3	
+1	1	HD1	CD1	CG1	CE1	
+1	1	HD2	CD2	CE2	CG1	
+1	1	HE3	CE3	CD3	CZ3	
+1	1	HE4	CE4	CZ3	CD4	
+1	1	HE1	CE1	CD1	CZ1	
+1	1	HE2	CE2	CZ1	CD2	
+1	1	HZ3	CZ3	CE3	CE4	
+1	1	HZ1	CZ1	CE1	CE2	
+DMK	4
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+3	4	HG3	CG3	CB	CA	
+3	4	HG2	CG2	CB	CG3	
+DMP3	9
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD1	CD1	CE1	CG	
+1	1	HD2	CD2	CE2	CG	
+1	1	HE1	CE1	CD1	CZ	
+1	1	HZ	CZ	CE1	CE2	
+2	6	HH	CH	CE2	CJ	
+3	4	HJ	CJ	CH	CE2	
+DPP	4
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	NG	
+3	4	HG	NG	CB	CA	
+ESC	6
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+2	6	HG	CG	CB	SD	
+2	6	HE	CE	CZ	SD	
+3	4	HZ	CZ	CE	SD	
+F2F	6
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD1	CD1	CE1	CG	
+1	1	HD2	CD2	CE2	CG	
+1	1	HE2	CE2	CD2	CZ	
+FCL	7
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD1	CD1	CE1	CG	
+1	1	HD2	CD2	CE2	CG	
+1	1	HE2	CE2	CD2	CZ	
+1	1	HZ	CZ	CE1	CE2	
+FGA4	4
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	5	HG	CG	CB	CD	FG	
+FGL	2
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+FLA	2
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+FPG2	6
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+1	1	HG1	CG1	CB	CD1	
+1	1	HD1	CD1	CE	CG1	
+1	1	HD2	CD2	CE	CG2	
+1	1	HE	CE	CD1	CD2	
+FPG3	6
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+1	1	HG2	CG2	CB	CD2	
+1	1	HG1	CG1	CB	CD1	
+1	1	HD2	CD2	CG2	CE	
+1	1	HE	CE	CD2	CD1	
+FPG4	6
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+1	1	HG1	CG1	CB	CD1	
+1	1	HG2	CG2	CB	CD2	
+1	1	HD1	CD1	CE	CG1	
+1	1	HD2	CD2	CE	CG2	
+FPH2	7
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD2	CD2	CE2	CG	
+1	1	HE1	CE1	CD1	CZ	
+1	1	HE2	CE2	CD2	CZ	
+1	1	HZ	CZ	CE1	CE2	
+FPH3	7
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD1	CD1	CE1	CG	
+1	1	HD2	CD2	CE2	CG	
+1	1	HE2	CE2	CD2	CZ	
+1	1	HZ	CZ	CE1	CE2	
+FT6	8
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD1	CD1	CG	NE1	
+1	1	HE1	NE1	CD1	CE2	
+1	1	HE3	CE3	CD2	CZ3	
+1	1	HZ2	CZ2	CE2	CH2	
+1	1	HZ3	CZ3	CE3	CH2	
+FTR	8
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD1	CD1	CG	NE1	
+1	1	HE1	NE1	CD1	CE2	
+1	1	HE3	CE3	CD2	CZ3	
+1	1	HZ2	CZ2	CE2	CH2	
+1	1	HH2	CH2	CZ2	CZ3	
+FUA2	6
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD2	CD2	CG	CE2	
+1	1	HE2	CE2	CE1	CD2	
+1	1	HE1	CE1	CE2	OD1	
+FVAL	4
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+3	4	HG1	CG1	CB	CA	
+3	4	HG2	CG2	CB	CA	
+GBUT	7
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+2	6	HG	CG	CB	ND	
+1	1	HD	ND	CG	CE	
+2	3	HZ2	NZ2	CE	ND	
+2	3	HZ1	NZ1	CE	ND	
+GDPR	6
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	NG	
+1	1	HG	NG	CB	CD	
+2	3	HE1	NE1	CD	NG	
+2	3	HE2	NE2	CD	NE1	
+GGB	6
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CG	CA	
+2	6	HG	CG	OD	CB	
+2	3	HH2	NH2	CZ	NH1	
+2	3	HH1	NH1	CZ	NH2	
+GHG	6
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	5	HG	CG	CB	CD	OG1	
+1	2	HG1	OG1	CG	CB	
+2	3	HE2	NE2	CD	CG	
+GME	5
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+2	6	HG	CG	CB	CD	
+3	4	HZ	CZ	OE2	CD	
+HCS	5
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+2	6	HG	CG	CB	SD	
+1	2	HD	SD	CG	CB	
+HGA	6
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+2	6	HG	CG	CB	CD	
+1	1	HE	NE2	CD	OZ	
+1	2	HZ	OZ	NE2	CD	
+HHK	9
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+2	6	HG	CG	CB	CD	
+2	6	HD	CD	CG	CE	
+2	6	HE	CE	CD	CZ	
+2	6	HZ	CZ	CE	CH	
+2	6	HH	CH	CZ	NJ	
+3	4	HJ	NJ	CH	CZ	
+HIL4	7
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+1	5	HB1	CB	CA	CG1	CG2	
+1	5	HG11	CG1	CB	CD2	OD1	
+3	4	HG2	CG2	CB	CA	
+3	4	HD2	CD2	CG1	CB	
+1	2	HD11	OD1	CG1	CB	
+HL2	7
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+1	5	HB	CB	CG	CA	OH	
+1	5	HG	CG	CD2	CB	CD1	
+1	2	HH	OH	CB	CG	
+3	4	HD2	CD2	CG	CB	
+3	4	HD1	CD1	CG	CD2	
+HLEU	7
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+2	6	HG	CG	CB	CD	
+1	5	HD	CD	CG	CE1	CE2	
+3	4	HE1	CE1	CD	CG	
+3	4	HE2	CE2	CD	CG	
+HLU	7
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+1	5	HB	CB	CA	CG	OH	
+1	5	HG	CG	CB	CD1	CD2	
+1	2	HH	OH	CB	CA	
+3	4	HD1	CD1	CG	CB	
+3	4	HD2	CD2	CG	CB	
+HOX	8
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD1	CD1	CE1	CG	
+1	1	HD2	CD2	CE2	CG	
+1	1	HE1	CE1	CD1	CZ	
+1	1	HE2	CE2	CD2	CZ	
+2	3	HH	NH	CZ	CE1	
+HPE	9
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+2	6	HG	CG	CB	CD	
+1	1	HE2	CE2	CZ2	CD	
+1	1	HE1	CE1	CD	CZ1	
+1	1	HZ2	CZ2	CE2	CH	
+1	1	HZ1	CZ1	CH	CE1	
+1	1	HH	CH	CZ2	CZ1	
+HQA	9
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD1	CD1	CG	NE1	
+1	1	HD2	CD2	CE2	CG	
+1	1	HZ2	CZ2	CE2	CH2	
+1	1	HH2	CH2	CJ	CZ2	
+1	1	HJ	CJ	CH1	CH2	
+1	2	HH1	OH1	CH1	CJ	
+HRG	9
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CG	CA	
+2	6	HG	CG	CD	CB	
+2	6	HD	CD	CE	CG	
+2	6	HE	CE	NZ	CD	
+1	1	HZ	NZ	CH	CE	
+2	3	HJ1	NJ1	CH	NZ	
+2	3	HJ2	NJ2	CH	NJ1	
+HRP	9
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD1	CD1	CG	NE1	
+1	1	HE1	NE1	CD1	CE2	
+1	1	HE3	CE3	CD2	CZ3	
+1	1	HZ2	CZ2	CE2	CH2	
+1	1	HH2	CH2	CZ2	CZ3	
+1	2	HZ3	OZ3	CZ3	CE3	
+HSER	5
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+2	6	HG	CG	CB	OD	
+1	2	HD	OD	CG	CB	
+HTR	10
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+1	5	HB	CB	CA	OH	CG	
+1	2	HH	OH	CB	CA	
+1	1	HD1	CD1	CG	NE1	
+1	1	HE1	NE1	CD1	CE2	
+1	1	HE3	CE3	CZ3	CD2	
+1	1	HZ2	CZ2	CE2	CH2	
+1	1	HZ3	CZ3	CH2	CE3	
+1	1	HH2	CH2	CZ2	CZ3	
+HVA	5
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+3	4	HG1	CG1	CB	CA	
+3	4	HG2	CG2	CB	CA	
+1	2	HG3	OG3	CB	CA	
+I2M	6
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+3	4	HG3	CG3	CB	CA	
+3	4	HG2	CG2	CB	CA	
+2	6	HG1	CG1	CB	CD1	
+3	4	HD1	CD1	CG1	CB	
+IGL	9
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+1	5	HB	CB	CA	CG1	CG2	
+2	6	HG1	CG1	CB	CD1	
+2	6	HG2	CG2	CB	CD2	
+1	1	HE1	CE1	CD1	CH1	
+1	1	HE2	CE2	CD2	CH2	
+1	1	HH1	CH1	CE1	CH2	
+1	1	HH2	CH2	CE2	CH1	
+IIL	6
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+1	5	HB	CB	CA	CG1	CG2	
+2	6	HG1	CG1	CB	CD1	
+3	4	HG2	CG2	CB	CA	
+3	4	HD1	CD1	CG1	CB	
+ILX	8
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+1	5	HB	CB	CA	CG1	CG2	
+1	5	HG1	CG1	CB	OG1	CD1	
+3	4	HG2	CG2	CB	CA	
+1	2	HOG1	OG1	CG1	CB	
+2	6	HD1	CD1	CG1	OD1	
+1	2	HOD1	OD1	CD1	CG1	
+IYR	7
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD1	CD1	CG	CE1	
+1	1	HD2	CD2	CG	CE2	
+1	1	HE2	CE2	CZ	CD2	
+1	2	HZ	OZ	CZ	CE1	
+KYN	8
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CG	CA	
+1	1	HE1	CE1	CD	CZ1	
+1	1	HZ2	CZ2	CE2	CH	
+2	3	HE2	NE2	CE2	CZ2	
+1	1	HZ1	CZ1	CH	CE1	
+1	1	HH	CH	CZ2	CZ1	
+LDO	7
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+2	6	HG	CG	CB	CD	
+2	6	HD	CD	CG	CE	
+2	6	HE	CE	CD	OZ	
+1	2	HOZ	OZ	CE	CD	
+LE1	5
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+3	4	HG2	CG2	CB	CG1	
+3	4	HG1	CG1	CB	CG2	
+1	2	HG3	SG3	CB	CG2	
+LED	6
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	5	HG	CG	CB	CD1	CD2	
+3	4	HD1	CD1	CG	CB	
+1	1	HD2	CD2	CG	OE	
+LEF	6
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	5	HG	CG	CB	CD1	CD2	
+2	6	HD1	CD1	CG	F1	
+3	4	HD2	CD2	CG	CB	
+LME	5
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+1	5	HB	CB	CG2	CA	CG1	
+3	4	HG2	CG2	CB	CA	
+2	6	HG1	CG1	CB	CD	
+LMQ	6
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+1	5	HB	CB	CA	CG2	CG1	
+3	4	HG2	CG2	CB	CA	
+2	6	HG1	CG1	CB	CD	
+2	3	HE2	NE2	CD	CG1	
+LVG	4
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+1	1	HB	CB	CA	CG	
+2	3	HG	CG	CB	CA	
+LVN	5
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+1	5	HB	CB	CA	CG1	CG2	
+1	1	HG11	CG1	CB	OG1	
+3	4	HG2	CG2	CB	CA	
+M2S	6
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+3	4	HG1	CG1	CB	CA	
+3	4	HG2	CG2	CB	CA	
+2	6	HG	CG	CB	SD	
+3	4	HE	CE	SD	CG	
+ME0	6
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+2	6	HG	CG	CB	SD	
+2	6	HE	CE	SD	OZ	
+1	2	HZ	OZ	CE	SD	
+MEG	5
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+1	5	HB	CB	CA	CG1	CG2	
+2	6	HG1	CG1	CB	CD	
+3	4	HG2	CG2	CB	CA	
+MEN	5
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD	ND	CE	CG	
+3	4	HE	CE	ND	CG	
+MEQ	6
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+2	6	HG	CG	CB	CD	
+1	1	HE2	NE2	CD	CZ	
+3	4	HZ	CZ	NE2	CD	
+MHO	5
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+2	6	HG	CG	CB	SD	
+3	4	HE	CE	SD	CG	
+MOT5	9
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD1	CD1	CG	NE1	
+1	1	HE1	NE1	CD1	CE2	
+1	1	HE3	CE3	CD2	CZ3	
+1	1	HZ2	CZ2	CE2	CH2	
+1	1	HH2	CH2	CZ2	CZ3	
+3	4	HJ3	CJ3	OZ3	CZ3	
+MP34	8
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD2	CD2	CE2	CG	
+1	1	HD1	CD1	CE1	CG	
+1	1	HE2	CE2	CD2	CZ	
+3	4	HJ	CJ	CE1	CD1	
+3	4	HH	CH	CZ	CE2	
+MPH2	8
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD2	CD2	CE2	CG	
+1	1	HE2	CE2	CD2	CZ	
+1	1	HE1	CE1	CD1	CZ	
+3	4	HH	CH	CD1	CE1	
+1	1	HZ	CZ	CE2	CE1	
+MTR5	9
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD1	CD1	CG	NE1	
+1	1	HE1	NE1	CD1	CE2	
+1	1	HE3	CE3	CD2	CZ3	
+1	1	HZ2	CZ2	CE2	CH2	
+1	1	HH2	CH2	CZ2	CZ3	
+3	4	HJ3	CJ3	CZ3	CE3	
+MTR6	9
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD1	CD1	CG	NE1	
+1	1	HE1	NE1	CD1	CE2	
+1	1	HE3	CE3	CD2	CZ3	
+1	1	HZ2	CZ2	CE2	CH2	
+1	1	HZ3	CZ3	CE3	CH2	
+3	4	HJ2	CJ2	CH2	CZ2	
+MTY	8
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD2	CD2	CG	CE2	
+1	1	HD1	CD1	CE1	CG	
+1	1	HE2	CE2	CD2	CZ	
+1	1	HZ	CZ	CE2	CE1	
+1	2	HE1	OE1	CE1	CZ	
+NAL	10
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD2	CD2	CG	CE2	
+1	1	HD1	CD1	CG	CE1	
+1	1	HE1	CE1	CD1	CZ	
+1	1	HH2	CH2	CE2	CJ2	
+1	1	HH1	CH1	CZ	CJ1	
+1	1	HJ2	CJ2	CJ1	CH2	
+1	1	HJ1	CJ1	CH1	CJ2	
+NAO1	10
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD2	CD2	CE2	CG	
+1	1	HH1	CH1	CD1	CJ1	
+1	1	HE2	CE2	CD2	CZ	
+1	1	HH2	CH2	CE1	CJ2	
+1	1	HZ	CZ	CE1	CE2	
+1	1	HJ2	CJ2	CH2	CJ1	
+1	2	HJ1	OJ1	CJ1	CH1	
+NAO2	10
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD1	CD1	CG	CE1	
+1	1	HD2	CD2	CG	CE2	
+1	1	HE1	CE1	CD1	CZ	
+1	1	HH2	CH2	CE2	CJ2	
+1	1	HH1	CH1	CZ	CJ1	
+1	1	HJ1	CJ1	CJ2	CH1	
+1	2	HJ2	OJ2	CJ2	CJ1	
+NIY	7
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD1	CD1	CG	CE1	
+1	1	HD2	CD2	CG	CE2	
+1	1	HE2	CE2	CD2	CZ	
+1	2	HH	OH	CZ	CE1	
+NLE	6
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+2	6	HG	CG	CB	CD	
+2	6	HD	CD	CE	CG	
+3	4	HE	CE	CD	CG	
+NVA	5
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+2	6	HG	CG	CB	CD	
+3	4	HD	CD	CG	CB	
+OAS	4
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	OG	
+3	4	HE	CE	CD	OG	
+OBF	4
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	5	HG	CG	CB	FG1	FG2	
+OCY	6
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	SG	
+2	6	HD	CD	SG	CE	
+2	6	HE	CE	CD	OZ	
+1	2	HZ	OZ	CE	CD	
+OLT	5
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+1	5	HB	CB	CA	OG1	CG2	
+3	4	HG2	CG2	CB	CA	
+3	4	HD1	CD1	OG1	CB	
+OMT	5
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+2	6	HG	CG	CB	SD	
+3	4	HE	CE	SD	CG	
+OMX	9
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+1	5	HB	CB	CA	OG	CG	
+1	2	HG	OG	CB	CA	
+1	1	HD1	CD1	CE1	CG	
+1	1	HD2	CD2	CG	CE2	
+1	1	HE1	CE1	CD1	CZ	
+1	1	HE2	CE2	CD2	CZ	
+1	2	HH	OH	CZ	CE1	
+OMY	8
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+1	5	HB	CB	CA	CG	OG	
+1	2	HG	OG	CB	CA	
+1	1	HD1	CD1	CE1	CG	
+1	1	HD2	CD2	CE2	CG	
+1	1	HE2	CE2	CD2	CZ	
+1	2	HH	OH	CZ	CE1	
+ONL	5
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+2	6	HG	CG	CB	CD	
+3	4	HE	CE	CD	CG	
+ORN	6
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+2	6	HG	CG	CB	CD	
+2	6	HD	CD	CG	NE	
+3	4	HE	NE	CD	CG	
+OTYR	8
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD2	CD2	CE2	CG	
+1	1	HE2	CE2	CD2	CZ	
+1	1	HE1	CE1	CD1	CZ	
+1	2	HD1	OD1	CD1	CE1	
+1	1	HZ	CZ	CE2	CE1	
+PBF	12
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD1	CD1	CE1	CG	
+1	1	HD2	CD2	CE2	CG	
+1	1	HE1	CE1	CD1	CZ	
+1	1	HE2	CE2	CD2	CZ	
+1	1	HH1	CH1	CJ	CM1	
+1	1	HH2	CH2	CJ	CM2	
+1	1	HM1	CM1	CH1	CL	
+1	1	HM2	CM2	CH2	CL	
+1	1	HL	CL	CM1	CM2	
+PF5	3
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+PFF	7
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD1	CD1	CE1	CG	
+1	1	HD2	CD2	CE2	CG	
+1	1	HE1	CE1	CD1	CZ	
+1	1	HE2	CE2	CD2	CZ	
+PHI	7
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD1	CD1	CE1	CG	
+1	1	HD2	CD2	CE2	CG	
+1	1	HE1	CE1	CD1	CZ	
+1	1	HE2	CE2	CD2	CZ	
+PPN	7
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD1	CD1	CE1	CG	
+1	1	HD2	CD2	CE2	CG	
+1	1	HE1	CE1	CD1	CZ	
+1	1	HE2	CE2	CD2	CZ	
+PTR	8
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD1	CD1	CE1	CG	
+1	1	HD2	CD2	CE2	CG	
+1	1	HE1	CE1	CD1	CZ	
+1	1	HE2	CE2	CD2	CZ	
+1	2	HO3P	O3P	P	O1P	
+PTR2	7
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD1	CD1	CE1	CG	
+1	1	HD2	CD2	CG	CE2	
+1	1	HE1	CE1	CD1	CZ	
+1	1	HE2	CE2	CZ	CD2	
+PYR2	7
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD2	CD2	CE2	CG	
+1	1	HE2	CE2	CD2	CZ	
+1	1	HE1	CE1	CZ	ND1	
+1	1	HZ	CZ	CE1	CE2	
+PYR3	7
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD1	CD1	CG	NE1	
+1	1	HD2	CD2	CE2	CG	
+1	1	HE2	CE2	CD2	CZ	
+1	1	HZ	CZ	CE2	NE1	
+PYR4	7
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD1	CD1	CE1	CG	
+1	1	HD2	CD2	CE2	CG	
+1	1	HE1	CE1	CD1	NZ	
+1	1	HE2	CE2	CD2	NZ	
+PYZ1	6
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	NG	
+1	1	HD2	CD2	NG	CE2	
+1	1	HE2	CE2	CD2	CE1	
+1	1	HE1	CE1	CE2	ND1	
+QU32	9
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD1	CD1	CE1	CG	
+1	1	HE1	CE1	CD1	CZ	
+1	1	HH2	CH2	CE2	CJ2	
+1	1	HH1	CH1	CJ1	CZ	
+1	1	HJ2	CJ2	CH2	CJ1	
+1	1	HJ1	CJ1	CH1	CJ2	
+QU33	9
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD1	CD1	CG	NE1	
+1	1	HD2	CD2	CE2	CG	
+1	1	HH2	CH2	CE2	CJ2	
+1	1	HH1	CH1	CJ1	CZ	
+1	1	HJ2	CJ2	CH2	CJ1	
+1	1	HJ1	CJ1	CH1	CJ2	
+QU34	9
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD2	CD2	CE2	CG	
+1	1	HH1	CH1	CD1	CJ1	
+1	1	HE2	CE2	CD2	NZ	
+1	1	HH2	CH2	CE1	CJ2	
+1	1	HJ1	CJ1	CH1	CJ2	
+1	1	HJ2	CJ2	CH2	CJ1	
+QU35	9
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD1	CD1	CE1	CG	
+1	1	HD2	CD2	CE2	CG	
+1	1	HE1	CE1	CD1	CZ	
+1	1	HH1	CH1	CJ1	CZ	
+1	1	HJ2	CJ2	CJ1	NH2	
+1	1	HJ1	CJ1	CH1	CJ2	
+QU36	9
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD1	CD1	CE1	CG	
+1	1	HD2	CD2	CE2	CG	
+1	1	HE1	CE1	CD1	CZ	
+1	1	HH2	CH2	CE2	NJ2	
+1	1	HH1	CH1	CJ1	CZ	
+1	1	HJ1	CJ1	CH1	NJ2	
+QX32	8
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD2	CD2	CG	NE2	
+1	1	HH1	CH1	CJ1	CE1	
+1	1	HH2	CH2	CJ2	CZ	
+1	1	HJ1	CJ1	CH1	CJ2	
+1	1	HJ2	CJ2	CJ1	CH2	
+SEP	4
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	OG	
+1	2	HOP3	O3P	P	O1P	
+SEP2	3
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	OG	
+SLZ	6
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	SG	
+2	6	HD	CD	SG	CE	
+2	6	HE	CE	CD	NZ	
+3	4	HZ	NZ	CE	CD	
+SME	5
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+2	6	HG	CG	CB	SD	
+3	4	HE	CE	SD	CG	
+STYA	10
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HG	CG	CB	CD	
+1	1	HD	CD	CG	CE	
+1	1	HZ1	CZ1	CE	CH1	
+1	1	HZ2	CZ2	CE	CH2	
+1	1	HH1	CH1	CZ1	CJ	
+1	1	HH2	CH2	CJ	CZ2	
+1	1	HJ	CJ	CH1	CH2	
+SYM	5
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CG	CA	
+1	5	HG	CG	CD1	CD2	CB	
+3	4	HD2	CD2	CG	CD1	
+TBP4	10
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD1	CD1	CE1	CG	
+1	1	HD2	CD2	CE2	CG	
+1	1	HE1	CE1	CD1	CZ	
+1	1	HE2	CE2	CD2	CZ	
+3	4	HJ1	CJ1	CH	CJ2	
+3	4	HJ2	CJ2	CH	CJ1	
+3	4	HJ3	CJ3	CH	CJ1	
+TEZA	4
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	NG	
+1	1	HE2	CE2	ND2	NE1	
+TFG2	6
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+1	1	HG2	CG2	CB	CD2	
+1	1	HD1	CD1	CE	CG1	
+1	1	HD2	CD2	CE	CG2	
+1	1	HE	CE	CD1	CD2	
+TFG3	6
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+1	1	HG1	CG1	CB	CD1	
+1	1	HG2	CG2	CB	CD2	
+1	1	HD2	CD2	CE	CG2	
+1	1	HE	CE	CD1	CD2	
+TFG4	6
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+1	1	HG1	CG1	CB	CD1	
+1	1	HG2	CG2	CB	CD2	
+1	1	HD1	CD1	CE	CG1	
+1	1	HD2	CD2	CE	CG2	
+TFLE	5
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	5	HG	CG	CB	CD1	CD2	
+3	4	HD2	CD2	CG	CB	
+TFP2	7
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD2	CD2	CE2	CG	
+1	1	HE1	CE1	CD1	CZ	
+1	1	HE2	CE2	CD2	CZ	
+1	1	HZ	CZ	CE1	CE2	
+TFP3	7
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD1	CD1	CE1	CG	
+1	1	HD2	CD2	CE2	CG	
+1	1	HE2	CE2	CD2	CZ	
+1	1	HZ	CZ	CE1	CE2	
+TFP4	7
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD1	CD1	CG	CE1	
+1	1	HD2	CD2	CG	CE2	
+1	1	HE1	CE1	CD1	CZ	
+1	1	HE2	CE2	CD2	CZ	
+TH6	6
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+1	5	HB	CB	CA	OB1	CG	
+1	2	HB1	OB1	CB	CA	
+2	6	HG	CG	CB	OD	
+1	2	HD	OD	CG	CB	
+THA3	6
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD1	CD1	CG	SE1	
+1	1	HD2	CD2	CE2	CG	
+1	1	HE2	CE2	CD2	SE1	
+THG2	5
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+1	1	HG2	CG2	CB	CD2	
+1	1	HD1	CD1	SG1	CD2	
+1	1	HD2	CD2	CG2	CD1	
+THG3	5
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+1	1	HG1	CG1	CB	SD1	
+1	1	HG2	CG2	CB	CD2	
+1	1	HD2	CD2	CG2	SD1	
+THIC	7
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+2	6	HG	CG	CB	CD	
+2	6	HD	CD	CG	NE	
+1	1	HE	NE	CD	CZ	
+2	3	HH	NH	CZ	NE	
+TIH	6
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD2	CD2	CE2	CG	
+1	1	HE2	CE2	CD2	CE1	
+1	1	HE1	CE1	CE2	SD1	
+TPO	5
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+1	5	HB	CB	CA	CG2	OG1	
+3	4	HG2	CG2	CB	CA	
+1	2	HOP3	O3P	P	O1P	
+TPO2	4
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+1	5	HB	CB	OG1	CG2	CA	
+3	4	HG2	CG2	CB	OG1	
+TRO	9
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	2	HD1	OD1	CD1	CG	
+1	1	HE1	NE1	CD1	CE2	
+1	1	HE3	CE3	CD2	CZ3	
+1	1	HZ2	CZ2	CE2	CH2	
+1	1	HZ3	CZ3	CE3	CH2	
+1	1	HH2	CH2	CZ2	CZ3	
+TRX	9
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD1	CD1	CG	NE1	
+1	1	HE1	NE1	CD1	CE2	
+1	1	HE3	CE3	CD2	CZ3	
+1	1	HZ2	CZ2	CE2	CH2	
+1	1	HZ3	CZ3	CE3	CH2	
+1	2	HH2	OH2	CH2	CZ2	
+TRZ4	5
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	NG	
+1	1	HD2	CD2	NG	NE2	
+1	1	HE1	CE1	NE2	ND1	
+TTQ	9
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD1	CD1	CG	NE1	
+1	1	HE1	NE1	CD1	CE2	
+1	1	HE3	CE3	CD2	CZ3	
+1	1	HZ3	CZ3	CE3	CH2	
+1	2	HZ2	OZ2	CZ2	CE2	
+2	3	H2	N2	CH2	CZ2	
+TY2	8
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD2	CD2	CE2	CG	
+1	1	HD1	CD1	CE1	CG	
+1	1	HE2	CE2	CD2	CZ	
+2	3	HE1	NE1	CE1	CD1	
+1	2	HZ	OZ	CZ	CE2	
+TYI	6
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD1	CD1	CG	CE1	
+1	1	HD2	CD2	CG	CE2	
+1	2	HH	OH	CZ	CE1	
+TYQ	8
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD2	CD2	CE2	CG	
+1	1	HE1	CE1	CD1	CZ	
+1	2	HD1	OD1	CD1	CG	
+2	3	HE2	NE2	CE2	CD2	
+1	2	HH	OH	CZ	CE1	
+TZA4	5
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD1	CD1	CG	SE1	
+1	1	HE2	CE2	SE1	ND2	
+UN1	5
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+2	6	HG	CG	CB	CD	
+2	6	HD	CD	CE	CG	
+VAH	6
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+1	5	HB	CB	CA	CG2	OG1	
+2	6	HG2	CG2	CB	CD	
+1	2	HG1	OG1	CB	CA	
+3	4	HD	CD	CG2	CB	
+WFP	6
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD1	CD1	CE1	CG	
+1	1	HD2	CD2	CE2	CG	
+1	1	HZ	CZ	CE1	CE2	
+YCM	5
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	SG	
+2	6	HD	CD	SG	CE	
+2	3	HZ2	NZ2	CE	CD	
+YOF	7
+1       1       HN      N       -C      CA
+1       5       HA      CA      N       C       CB
+2	6	HB	CB	CA	CG	
+1	1	HD1	CD1	CE1	CG	
+1	1	HD2	CD2	CG	CE2	
+1	1	HE2	CE2	CD2	CZ	
+1	2	HH	OH	CZ	CE1	

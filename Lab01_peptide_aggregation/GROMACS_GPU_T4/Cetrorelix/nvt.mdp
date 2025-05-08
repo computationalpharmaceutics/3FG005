@@ -1,0 +1,44 @@
+title                    = CHARMM36 NVT equilibration 
+; Run parameters
+integrator              = md        ; leap-frog integrator
+nsteps                  = 50000     ; 2 * 50000 = 100 ps
+dt                      = 0.002     ; 2 fs
+; Output control
+nstxout                 = 500       ; save coordinates every 1.0 ps
+nstvout                 = 500       ; save velocities every 1.0 ps
+nstenergy               = 500       ; save energies every 1.0 ps
+nstlog                  = 500       ; update log file every 1.0 ps
+
+; Nonbonded settings 
+cutoff-scheme            = Verlet
+nstlist                  = 10
+ns_type                  = grid
+pbc                      = xyz
+rlist                    = 1.2
+coulombtype              = PME
+rcoulomb                 = 1.2
+vdw-modifier            = Force-switch
+rvdw_switch             = 1.0
+rvdw                    = 1.2
+dispcorr                 = EnerPres  ; account for cut-off vdW scheme
+
+; Temperature coupling is on
+tcoupl                   = v-rescale 
+tc-grps                  = System
+tau_t                    = 1.0 
+ref_t                    = 320 
+
+; Pressure coupling is off
+pcoupl                  = no        ; no pressure coupling in NVT
+
+; Velocity generation
+gen_temp                 = 300
+gen_seed                 = -1
+gen_vel                  = yes
+
+; Bond parameters
+constraints             = h-bonds
+constraint_algorithm    = LINCS
+continuation             = no
+define                   = -DPOSRES
+

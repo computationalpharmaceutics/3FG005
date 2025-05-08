@@ -1,0 +1,51 @@
+title                    = CHARMM36
+integrator               = steep
+dt                       = 0.01  
+nsteps                   = 10000
+nstcomm                  = 100
+comm-grps		  = 
+nstxout                  = 0
+nstvout                  = 0
+nstfout                  = 0
+nstlog                   = 1000
+nstenergy                = 100
+nstxout-compressed       = 1000
+compressed-x-precision   = 100
+compressed-x-grps        = 
+
+
+cutoff-scheme            =   Verlet
+nstlist                  = 1
+ns_type                  = grid
+pbc                      = xyz
+rlist                    = 1.2
+coulombtype              = PME
+rcoulomb                 = 1.2
+vdw-modifier            = Force-switch
+rvdw_switch             = 1.0
+rvdw                    = 1.2
+dispcorr                 = no
+
+tcoupl                   = v-rescale 
+tc-grps                  = System 
+tau_t                    = 1.0 
+ref_t                    = 300 
+Pcoupl                   = parrinello-rahman 
+Pcoupltype               = isotropic
+tau_p                    = 1.0 ;parrinello-rahman is more stable with larger tau-p, DdJ, 20130422
+compressibility          = 4e-4  
+ref_p                    = 1.0 
+refcoord_scaling         = COM
+
+
+gen_temp                 = 300
+gen_seed                 = -1
+
+constraints             = h-bonds
+constraint_algorithm    = LINCS
+
+
+continuation             = no
+gen_vel                  = no
+define                   = -DPOSRES 
+
