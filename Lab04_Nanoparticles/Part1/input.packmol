@@ -1,0 +1,14 @@
+tolerance 2.0
+filetype pdb
+
+output fullerenes_water.pdb
+
+structure F16.pdb
+   number 30
+   inside cube 0. 0. 0. 60.
+end structure
+
+structure single_water.pdb
+  number 4000 
+  inside cube 0. 0. 0. 60.
+end structure

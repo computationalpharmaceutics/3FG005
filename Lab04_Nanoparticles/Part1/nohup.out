@@ -1,0 +1,1914 @@
+                       :-) GROMACS - gmx grompp, 2018 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg   Pieter Meulenhoff 
+   Erik Marklund      Teemu Murtola       Szilard Pall       Sander Pronk   
+   Roland Schulz     Alexey Shvetsov     Michael Shirts     Alfons Sijbers  
+   Peter Tieleman    Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2018
+Executable:   /usr/local/gmx2018/bin/gmx
+Data prefix:  /usr/local/gmx2018
+Working dir:  /nfs/home/alexei/Archive_UPD/Part1
+Command line:
+  gmx grompp -f step6.0_minimization.mdp -o step6.0_minimization.tpr -c fullerenes_water.gro -r fullerenes_water.gro -p system.top -n index.ndx
+
+
+NOTE 1 [file step6.0_minimization.mdp]:
+  Setting tcoupl from 'V-rescale' to 'no'. Temperature coupling does not
+  apply to steep.
+
+
+NOTE 2 [file step6.0_minimization.mdp]:
+  Setting pcoupl from 'Berendsen' to 'no'. Pressure coupling does not apply
+  to steep.
+
+Setting the LD random seed to -841193901
+Generated 254 of the 1081 non-bonded parameter combinations
+Excluding 1 bonded neighbours molecule type 'F16'
+Excluding 1 bonded neighbours molecule type 'W'
+Coupling 4030 copies of molecule type 'system'
+Removing all charge groups because cutoff-scheme=Verlet
+Number of degrees of freedom in T-Coupling group System is 13437.00
+
+There were 2 notes
+
+Back Off! I just backed up step6.0_minimization.tpr to ./#step6.0_minimization.tpr.1#
+
+GROMACS reminds you: "You Try to Run the Universe" (Tricky)
+
+This run will generate roughly 1 Mb of data
+                       :-) GROMACS - gmx mdrun, 2018 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg   Pieter Meulenhoff 
+   Erik Marklund      Teemu Murtola       Szilard Pall       Sander Pronk   
+   Roland Schulz     Alexey Shvetsov     Michael Shirts     Alfons Sijbers  
+   Peter Tieleman    Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2018
+Executable:   /usr/local/gmx2018/bin/gmx
+Data prefix:  /usr/local/gmx2018
+Working dir:  /nfs/home/alexei/Archive_UPD/Part1
+Command line:
+  gmx mdrun -deffnm step6.0_minimization
+
+
+Back Off! I just backed up step6.0_minimization.log to ./#step6.0_minimization.log.1#
+Reading file step6.0_minimization.tpr, VERSION 2018 (single precision)
+
+NOTE: Parallelization is limited by the small number of atoms,
+      only starting 4 thread-MPI ranks.
+      You can use the -nt and/or -ntmpi option to optimize the number of threads.
+
+
+NOTE: disabling dynamic load balancing as it is only supported with dynamics, not with integrator 'steep'.
+
+No option -multi
+No option -multi
+No option -multi
+No option -multi
+Using 4 MPI threads
+Using 8 OpenMP threads per tMPI thread
+
+On host md5 2 GPUs auto-selected for this run.
+Mapping of GPU IDs to the 4 GPU tasks in the 4 ranks on this node:
+  PP:0,PP:0,PP:1,PP:1
+
+Back Off! I just backed up step6.0_minimization.trr to ./#step6.0_minimization.trr.1#
+
+Back Off! I just backed up step6.0_minimization.edr to ./#step6.0_minimization.edr.1#
+
+Steepest Descents:
+   Tolerance (Fmax)   =  1.00000e+01
+   Number of steps    =         5000
+
+Energy minimization reached the maximum number of steps before the forces
+reached the requested precision Fmax < 10.
+
+writing lowest energy coordinates.
+
+Back Off! I just backed up step6.0_minimization.gro to ./#step6.0_minimization.gro.1#
+
+Steepest Descents did not converge to Fmax < 10 in 5001 steps.
+Potential Energy  =  6.5236325e+05
+Maximum force     =  9.4703583e+02 on atom 3785
+Norm of force     =  2.3706401e+01
+
+GROMACS reminds you: "I Wrapped a Newspaper Round My Head" (F. Zappa)
+
+                       :-) GROMACS - gmx grompp, 2018 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg   Pieter Meulenhoff 
+   Erik Marklund      Teemu Murtola       Szilard Pall       Sander Pronk   
+   Roland Schulz     Alexey Shvetsov     Michael Shirts     Alfons Sijbers  
+   Peter Tieleman    Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2018
+Executable:   /usr/local/gmx2018/bin/gmx
+Data prefix:  /usr/local/gmx2018
+Working dir:  /nfs/home/alexei/Archive_UPD/Part1
+Command line:
+  gmx grompp -f step6.1_minimization.mdp -o step6.1_minimization.tpr -c step6.0_minimization.gro -r fullerenes_water.gro -p system.top -n index.ndx
+
+
+NOTE 1 [file step6.1_minimization.mdp]:
+  Setting tcoupl from 'V-rescale' to 'no'. Temperature coupling does not
+  apply to steep.
+
+
+NOTE 2 [file step6.1_minimization.mdp]:
+  Setting pcoupl from 'Berendsen' to 'no'. Pressure coupling does not apply
+  to steep.
+
+Setting the LD random seed to 1749342753
+Generated 208 of the 1035 non-bonded parameter combinations
+Excluding 1 bonded neighbours molecule type 'F16'
+Excluding 1 bonded neighbours molecule type 'W'
+Removing all charge groups because cutoff-scheme=Verlet
+Number of degrees of freedom in T-Coupling group System is 13437.00
+
+There were 2 notes
+
+GROMACS reminds you: "People are DNA's way of making more DNA." (Edward O. Wilson)
+
+This run will generate roughly 1 Mb of data
+                       :-) GROMACS - gmx mdrun, 2018 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg   Pieter Meulenhoff 
+   Erik Marklund      Teemu Murtola       Szilard Pall       Sander Pronk   
+   Roland Schulz     Alexey Shvetsov     Michael Shirts     Alfons Sijbers  
+   Peter Tieleman    Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2018
+Executable:   /usr/local/gmx2018/bin/gmx
+Data prefix:  /usr/local/gmx2018
+Working dir:  /nfs/home/alexei/Archive_UPD/Part1
+Command line:
+  gmx mdrun -deffnm step6.1_minimization
+
+Reading file step6.1_minimization.tpr, VERSION 2018 (single precision)
+
+NOTE: Parallelization is limited by the small number of atoms,
+      only starting 4 thread-MPI ranks.
+      You can use the -nt and/or -ntmpi option to optimize the number of threads.
+
+
+NOTE: disabling dynamic load balancing as it is only supported with dynamics, not with integrator 'steep'.
+
+No option -multi
+No option -multi
+No option -multi
+Using 4 MPI threads
+No option -multi
+Using 8 OpenMP threads per tMPI thread
+
+On host md5 2 GPUs auto-selected for this run.
+Mapping of GPU IDs to the 4 GPU tasks in the 4 ranks on this node:
+  PP:0,PP:0,PP:1,PP:1
+
+Steepest Descents:
+   Tolerance (Fmax)   =  1.00000e+01
+   Number of steps    =         5000
+
+Energy minimization reached the maximum number of steps before the forces
+reached the requested precision Fmax < 10.
+
+writing lowest energy coordinates.
+
+Steepest Descents did not converge to Fmax < 10 in 5001 steps.
+Potential Energy  =  6.5392650e+05
+Maximum force     =  5.6118127e+02 on atom 4295
+Norm of force     =  1.4487958e+01
+
+GROMACS reminds you: "In the End Science Comes Down to Praying" (P. v.d. Berg)
+
+                       :-) GROMACS - gmx grompp, 2018 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg   Pieter Meulenhoff 
+   Erik Marklund      Teemu Murtola       Szilard Pall       Sander Pronk   
+   Roland Schulz     Alexey Shvetsov     Michael Shirts     Alfons Sijbers  
+   Peter Tieleman    Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2018
+Executable:   /usr/local/gmx2018/bin/gmx
+Data prefix:  /usr/local/gmx2018
+Working dir:  /nfs/home/alexei/Archive_UPD/Part1
+Command line:
+  gmx grompp -f step6.2_equilibration.mdp -o step6.2_equilibration.tpr -c step6.1_minimization.gro -r fullerenes_water.gro -p system.top -n index.ndx
+
+Setting the LD random seed to 808258084
+Generated 208 of the 1035 non-bonded parameter combinations
+Excluding 1 bonded neighbours molecule type 'F16'
+Excluding 1 bonded neighbours molecule type 'W'
+Velocities were taken from a Maxwell distribution at 300 K
+Removing all charge groups because cutoff-scheme=Verlet
+Number of degrees of freedom in T-Coupling group System is 13437.00
+
+GROMACS reminds you: "Science is the record of dead religions." (Oscar Wilde)
+
+Determining Verlet buffer for a tolerance of 0.005 kJ/mol/ps at 300 K
+Calculated rlist for 1x1 atom pair-list as 1.113 nm, buffer size 0.013 nm
+Set rlist, assuming 4x4 atom pair-list, to 1.102 nm, buffer size 0.002 nm
+Note that mdrun will redetermine rlist based on the actual pair-list setup
+This run will generate roughly 13 Mb of data
+                       :-) GROMACS - gmx mdrun, 2018 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg   Pieter Meulenhoff 
+   Erik Marklund      Teemu Murtola       Szilard Pall       Sander Pronk   
+   Roland Schulz     Alexey Shvetsov     Michael Shirts     Alfons Sijbers  
+   Peter Tieleman    Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2018
+Executable:   /usr/local/gmx2018/bin/gmx
+Data prefix:  /usr/local/gmx2018
+Working dir:  /nfs/home/alexei/Archive_UPD/Part1
+Command line:
+  gmx mdrun -deffnm step6.2_equilibration
+
+Reading file step6.2_equilibration.tpr, VERSION 2018 (single precision)
+
+NOTE: Parallelization is limited by the small number of atoms,
+      only starting 4 thread-MPI ranks.
+      You can use the -nt and/or -ntmpi option to optimize the number of threads.
+
+Changing nstlist from 20 to 100, rlist from 1.102 to 1.159
+
+No option -multi
+No option -multi
+Using 4 MPI threads
+No option -multi
+No option -multi
+Using 8 OpenMP threads per tMPI thread
+
+On host md5 2 GPUs auto-selected for this run.
+Mapping of GPU IDs to the 4 GPU tasks in the 4 ranks on this node:
+  PP:0,PP:0,PP:1,PP:1
+starting mdrun 'Martini system'
+500000 steps,   1000.0 ps.
+
+Step 0  Warning: pressure scaling more than 1%, mu: 1.23829 1.23829 1.23981
+
+Step 0  Warning: pressure scaling more than 1%, mu: 1.23829 1.23829 1.23981
+
+Step 0  Warning: pressure scaling more than 1%, mu: 1.23829 1.23829 1.23981
+
+Step 0  Warning: pressure scaling more than 1%, mu: 1.23829 1.23829 1.23981
+
+step 200 Turning on dynamic load balancing, because the performance loss due to load imbalance is 5.8 %.
+
+
+Writing final coordinates.
+
+ Dynamic load balancing report:
+ DLB was turned on during the run due to measured imbalance.
+ Average load imbalance: 4.3%.
+ The balanceable part of the MD step is 75%, load imbalance is computed from this.
+ Part of the total run time spent waiting due to load imbalance: 3.2%.
+ Steps where the load balancing was limited by -rdd, -rcon and/or -dds: X 0 %
+
+
+               Core t (s)   Wall t (s)        (%)
+       Time:     4638.905      144.966     3200.0
+                 (ns/day)    (hour/ns)
+Performance:      596.004        0.040
+
+GROMACS reminds you: "Forcefields are like dating; things go fine for a while and then sometimes it goes really bad." (Alex MacKerell)
+
+                       :-) GROMACS - gmx grompp, 2018 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg   Pieter Meulenhoff 
+   Erik Marklund      Teemu Murtola       Szilard Pall       Sander Pronk   
+   Roland Schulz     Alexey Shvetsov     Michael Shirts     Alfons Sijbers  
+   Peter Tieleman    Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2018
+Executable:   /usr/local/gmx2018/bin/gmx
+Data prefix:  /usr/local/gmx2018
+Working dir:  /nfs/home/alexei/Archive_UPD/Part1
+Command line:
+  gmx grompp -f step6.3_equilibration.mdp -o step6.3_equilibration.tpr -c step6.2_equilibration.gro -r fullerenes_water.gro -p system.top -n index.ndx
+
+Setting the LD random seed to -1243323495
+Generated 208 of the 1035 non-bonded parameter combinations
+Excluding 1 bonded neighbours molecule type 'F16'
+Excluding 1 bonded neighbours molecule type 'W'
+Removing all charge groups because cutoff-scheme=Verlet
+Number of degrees of freedom in T-Coupling group System is 13437.00
+
+GROMACS reminds you: "And after some more talk we agreed that the wisdom of rats had been grossly overrated, being in fact no greater than that of men" (Joseph Conrad)
+
+Determining Verlet buffer for a tolerance of 0.005 kJ/mol/ps at 300 K
+Calculated rlist for 1x1 atom pair-list as 1.135 nm, buffer size 0.035 nm
+Set rlist, assuming 4x4 atom pair-list, to 1.110 nm, buffer size 0.010 nm
+Note that mdrun will redetermine rlist based on the actual pair-list setup
+This run will generate roughly 5 Mb of data
+                       :-) GROMACS - gmx mdrun, 2018 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg   Pieter Meulenhoff 
+   Erik Marklund      Teemu Murtola       Szilard Pall       Sander Pronk   
+   Roland Schulz     Alexey Shvetsov     Michael Shirts     Alfons Sijbers  
+   Peter Tieleman    Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2018
+Executable:   /usr/local/gmx2018/bin/gmx
+Data prefix:  /usr/local/gmx2018
+Working dir:  /nfs/home/alexei/Archive_UPD/Part1
+Command line:
+  gmx mdrun -deffnm step6.3_equilibration
+
+Reading file step6.3_equilibration.tpr, VERSION 2018 (single precision)
+
+NOTE: Parallelization is limited by the small number of atoms,
+      only starting 4 thread-MPI ranks.
+      You can use the -nt and/or -ntmpi option to optimize the number of threads.
+
+Changing nstlist from 20 to 100, rlist from 1.11 to 1.279
+
+No option -multi
+No option -multi
+No option -multi
+No option -multi
+Using 4 MPI threads
+Using 8 OpenMP threads per tMPI thread
+
+On host md5 2 GPUs auto-selected for this run.
+Mapping of GPU IDs to the 4 GPU tasks in the 4 ranks on this node:
+  PP:0,PP:0,PP:1,PP:1
+starting mdrun 'Martini system'
+200000 steps,   1000.0 ps.
+
+step 200 Turning on dynamic load balancing, because the performance loss due to load imbalance is 8.8 %.
+
+
+Writing final coordinates.
+
+ Dynamic load balancing report:
+ DLB was turned on during the run due to measured imbalance.
+ Average load imbalance: 5.0%.
+ The balanceable part of the MD step is 76%, load imbalance is computed from this.
+ Part of the total run time spent waiting due to load imbalance: 3.8%.
+ Steps where the load balancing was limited by -rdd, -rcon and/or -dds: X 0 %
+
+
+               Core t (s)   Wall t (s)        (%)
+       Time:     1855.529       57.985     3200.0
+                 (ns/day)    (hour/ns)
+Performance:     1490.041        0.016
+
+GROMACS reminds you: "You're like them scientists on TV explaining black holes. More you talk, less I get" (Jess Walter)
+
+                       :-) GROMACS - gmx grompp, 2018 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg   Pieter Meulenhoff 
+   Erik Marklund      Teemu Murtola       Szilard Pall       Sander Pronk   
+   Roland Schulz     Alexey Shvetsov     Michael Shirts     Alfons Sijbers  
+   Peter Tieleman    Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2018
+Executable:   /usr/local/gmx2018/bin/gmx
+Data prefix:  /usr/local/gmx2018
+Working dir:  /nfs/home/alexei/Archive_UPD/Part1
+Command line:
+  gmx grompp -f step6.4_equilibration.mdp -o step6.4_equilibration.tpr -c step6.3_equilibration.gro -r fullerenes_water.gro -p system.top -n index.ndx
+
+Setting the LD random seed to 1485229508
+Generated 208 of the 1035 non-bonded parameter combinations
+Excluding 1 bonded neighbours molecule type 'F16'
+Excluding 1 bonded neighbours molecule type 'W'
+Removing all charge groups because cutoff-scheme=Verlet
+Number of degrees of freedom in T-Coupling group System is 13437.00
+
+GROMACS reminds you: "error: too many template-parameter-lists" (g++)
+
+Determining Verlet buffer for a tolerance of 0.005 kJ/mol/ps at 300 K
+Calculated rlist for 1x1 atom pair-list as 1.185 nm, buffer size 0.085 nm
+Set rlist, assuming 4x4 atom pair-list, to 1.140 nm, buffer size 0.040 nm
+Note that mdrun will redetermine rlist based on the actual pair-list setup
+This run will generate roughly 3 Mb of data
+                       :-) GROMACS - gmx mdrun, 2018 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg   Pieter Meulenhoff 
+   Erik Marklund      Teemu Murtola       Szilard Pall       Sander Pronk   
+   Roland Schulz     Alexey Shvetsov     Michael Shirts     Alfons Sijbers  
+   Peter Tieleman    Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2018
+Executable:   /usr/local/gmx2018/bin/gmx
+Data prefix:  /usr/local/gmx2018
+Working dir:  /nfs/home/alexei/Archive_UPD/Part1
+Command line:
+  gmx mdrun -deffnm step6.4_equilibration
+
+Reading file step6.4_equilibration.tpr, VERSION 2018 (single precision)
+
+NOTE: Parallelization is limited by the small number of atoms,
+      only starting 4 thread-MPI ranks.
+      You can use the -nt and/or -ntmpi option to optimize the number of threads.
+
+Changing nstlist from 20 to 50, rlist from 1.14 to 1.276
+
+No option -multi
+No option -multi
+No option -multi
+Using 4 MPI threads
+No option -multi
+Using 8 OpenMP threads per tMPI thread
+
+On host md5 2 GPUs auto-selected for this run.
+Mapping of GPU IDs to the 4 GPU tasks in the 4 ranks on this node:
+  PP:0,PP:0,PP:1,PP:1
+starting mdrun 'Martini system'
+100000 steps,   1000.0 ps.
+
+step 100 Turning on dynamic load balancing, because the performance loss due to load imbalance is 5.1 %.
+
+
+Writing final coordinates.
+
+ Dynamic load balancing report:
+ DLB was turned on during the run due to measured imbalance.
+ Average load imbalance: 5.4%.
+ The balanceable part of the MD step is 74%, load imbalance is computed from this.
+ Part of the total run time spent waiting due to load imbalance: 4.0%.
+ Steps where the load balancing was limited by -rdd, -rcon and/or -dds: X 1 %
+
+
+               Core t (s)   Wall t (s)        (%)
+       Time:      961.670       30.052     3200.0
+                 (ns/day)    (hour/ns)
+Performance:     2875.029        0.008
+
+GROMACS reminds you: "Motherhood Means Mental Freeze" (The Breeders)
+
+                       :-) GROMACS - gmx grompp, 2018 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg   Pieter Meulenhoff 
+   Erik Marklund      Teemu Murtola       Szilard Pall       Sander Pronk   
+   Roland Schulz     Alexey Shvetsov     Michael Shirts     Alfons Sijbers  
+   Peter Tieleman    Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2018
+Executable:   /usr/local/gmx2018/bin/gmx
+Data prefix:  /usr/local/gmx2018
+Working dir:  /nfs/home/alexei/Archive_UPD/Part1
+Command line:
+  gmx grompp -f step6.5_equilibration.mdp -o step6.5_equilibration.tpr -c step6.4_equilibration.gro -r fullerenes_water.gro -p system.top -n index.ndx
+
+Setting the LD random seed to 135204025
+Generated 208 of the 1035 non-bonded parameter combinations
+Excluding 1 bonded neighbours molecule type 'F16'
+Excluding 1 bonded neighbours molecule type 'W'
+Removing all charge groups because cutoff-scheme=Verlet
+Number of degrees of freedom in T-Coupling group System is 13437.00
+
+GROMACS reminds you: "Is it the invisible chemistry stuff?" (Frida Hyvonen)
+
+Determining Verlet buffer for a tolerance of 0.005 kJ/mol/ps at 300 K
+Calculated rlist for 1x1 atom pair-list as 1.243 nm, buffer size 0.143 nm
+Set rlist, assuming 4x4 atom pair-list, to 1.177 nm, buffer size 0.077 nm
+Note that mdrun will redetermine rlist based on the actual pair-list setup
+This run will generate roughly 2 Mb of data
+                       :-) GROMACS - gmx mdrun, 2018 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg   Pieter Meulenhoff 
+   Erik Marklund      Teemu Murtola       Szilard Pall       Sander Pronk   
+   Roland Schulz     Alexey Shvetsov     Michael Shirts     Alfons Sijbers  
+   Peter Tieleman    Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2018
+Executable:   /usr/local/gmx2018/bin/gmx
+Data prefix:  /usr/local/gmx2018
+Working dir:  /nfs/home/alexei/Archive_UPD/Part1
+Command line:
+  gmx mdrun -deffnm step6.5_equilibration
+
+Reading file step6.5_equilibration.tpr, VERSION 2018 (single precision)
+
+NOTE: Parallelization is limited by the small number of atoms,
+      only starting 4 thread-MPI ranks.
+      You can use the -nt and/or -ntmpi option to optimize the number of threads.
+
+Changing nstlist from 20 to 40, rlist from 1.177 to 1.326
+
+No option -multi
+No option -multi
+No option -multi
+No option -multi
+Using 4 MPI threads
+Using 8 OpenMP threads per tMPI thread
+
+On host md5 2 GPUs auto-selected for this run.
+Mapping of GPU IDs to the 4 GPU tasks in the 4 ranks on this node:
+  PP:0,PP:0,PP:1,PP:1
+starting mdrun 'Martini system'
+50000 steps,    750.0 ps.
+
+step 80 Turning on dynamic load balancing, because the performance loss due to load imbalance is 5.3 %.
+
+
+Writing final coordinates.
+
+ Dynamic load balancing report:
+ DLB was turned on during the run due to measured imbalance.
+ Average load imbalance: 10.9%.
+ The balanceable part of the MD step is 72%, load imbalance is computed from this.
+ Part of the total run time spent waiting due to load imbalance: 7.8%.
+ Steps where the load balancing was limited by -rdd, -rcon and/or -dds: Z 2 %
+
+NOTE: 7.8 % of the available CPU time was lost due to load imbalance
+      in the domain decomposition.
+
+
+               Core t (s)   Wall t (s)        (%)
+       Time:      481.821       15.057     3200.0
+                 (ns/day)    (hour/ns)
+Performance:     4303.762        0.006
+
+GROMACS reminds you: "Harvard makes mistakes too, you know. Kissinger taught there." (Woody Allen)
+
+                       :-) GROMACS - gmx grompp, 2018 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg   Pieter Meulenhoff 
+   Erik Marklund      Teemu Murtola       Szilard Pall       Sander Pronk   
+   Roland Schulz     Alexey Shvetsov     Michael Shirts     Alfons Sijbers  
+   Peter Tieleman    Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2018
+Executable:   /usr/local/gmx2018/bin/gmx
+Data prefix:  /usr/local/gmx2018
+Working dir:  /nfs/home/alexei/Archive_UPD/Part1
+Command line:
+  gmx grompp -f step6.6_equilibration.mdp -o step6.6_equilibration.tpr -c step6.5_equilibration.gro -r fullerenes_water.gro -p system.top -n index.ndx
+
+Setting the LD random seed to 1364164881
+Generated 208 of the 1035 non-bonded parameter combinations
+Excluding 1 bonded neighbours molecule type 'F16'
+Excluding 1 bonded neighbours molecule type 'W'
+Removing all charge groups because cutoff-scheme=Verlet
+Number of degrees of freedom in T-Coupling group System is 13437.00
+
+GROMACS reminds you: "You always pass failure on the way to success." (Mickey Rooney)
+
+Determining Verlet buffer for a tolerance of 0.005 kJ/mol/ps at 300 K
+Calculated rlist for 1x1 atom pair-list as 1.305 nm, buffer size 0.205 nm
+Set rlist, assuming 4x4 atom pair-list, to 1.220 nm, buffer size 0.120 nm
+Note that mdrun will redetermine rlist based on the actual pair-list setup
+This run will generate roughly 2 Mb of data
+                       :-) GROMACS - gmx mdrun, 2018 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg   Pieter Meulenhoff 
+   Erik Marklund      Teemu Murtola       Szilard Pall       Sander Pronk   
+   Roland Schulz     Alexey Shvetsov     Michael Shirts     Alfons Sijbers  
+   Peter Tieleman    Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2018
+Executable:   /usr/local/gmx2018/bin/gmx
+Data prefix:  /usr/local/gmx2018
+Working dir:  /nfs/home/alexei/Archive_UPD/Part1
+Command line:
+  gmx mdrun -deffnm step6.6_equilibration
+
+Reading file step6.6_equilibration.tpr, VERSION 2018 (single precision)
+
+NOTE: Parallelization is limited by the small number of atoms,
+      only starting 4 thread-MPI ranks.
+      You can use the -nt and/or -ntmpi option to optimize the number of threads.
+
+Changing nstlist from 20 to 25, rlist from 1.22 to 1.269
+
+No option -multi
+No option -multi
+Using 4 MPI threads
+No option -multi
+No option -multi
+Using 8 OpenMP threads per tMPI thread
+
+On host md5 2 GPUs auto-selected for this run.
+Mapping of GPU IDs to the 4 GPU tasks in the 4 ranks on this node:
+  PP:0,PP:0,PP:1,PP:1
+starting mdrun 'Martini system'
+50000 steps,   1000.0 ps.
+
+step 50 Turning on dynamic load balancing, because the performance loss due to load imbalance is 4.1 %.
+
+
+Writing final coordinates.
+
+ Dynamic load balancing report:
+ DLB was turned on during the run due to measured imbalance.
+ Average load imbalance: 5.1%.
+ The balanceable part of the MD step is 71%, load imbalance is computed from this.
+ Part of the total run time spent waiting due to load imbalance: 3.6%.
+ Steps where the load balancing was limited by -rdd, -rcon and/or -dds: Z 3 %
+
+
+               Core t (s)   Wall t (s)        (%)
+       Time:      503.560       15.736     3200.0
+                 (ns/day)    (hour/ns)
+Performance:     5490.612        0.004
+
+GROMACS reminds you: "Lottery: A tax on people who are bad at math." (Ambrose Bierce)
+
+                       :-) GROMACS - gmx grompp, 2018 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg   Pieter Meulenhoff 
+   Erik Marklund      Teemu Murtola       Szilard Pall       Sander Pronk   
+   Roland Schulz     Alexey Shvetsov     Michael Shirts     Alfons Sijbers  
+   Peter Tieleman    Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2018
+Executable:   /usr/local/gmx2018/bin/gmx
+Data prefix:  /usr/local/gmx2018
+Working dir:  /nfs/home/alexei/Archive_UPD/Part1
+Command line:
+  gmx grompp -f step7_production.mdp -o step7_production.tpr -c step6.6_equilibration.gro -p system.top -n index.ndx
+
+Setting the LD random seed to 934865920
+Generated 208 of the 1035 non-bonded parameter combinations
+Excluding 1 bonded neighbours molecule type 'F16'
+Excluding 1 bonded neighbours molecule type 'W'
+Removing all charge groups because cutoff-scheme=Verlet
+Number of degrees of freedom in T-Coupling group System is 13437.00
+
+GROMACS reminds you: "The scientific method is an integral part of human intelligence, and when it has once been set at work it can only be dismissed by dismissing the intelligence itself" (George H. Mead)
+
+Determining Verlet buffer for a tolerance of 0.005 kJ/mol/ps at 300 K
+Calculated rlist for 1x1 atom pair-list as 1.306 nm, buffer size 0.206 nm
+Set rlist, assuming 4x4 atom pair-list, to 1.220 nm, buffer size 0.120 nm
+Note that mdrun will redetermine rlist based on the actual pair-list setup
+This run will generate roughly 54 Mb of data
+                       :-) GROMACS - gmx mdrun, 2018 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg   Pieter Meulenhoff 
+   Erik Marklund      Teemu Murtola       Szilard Pall       Sander Pronk   
+   Roland Schulz     Alexey Shvetsov     Michael Shirts     Alfons Sijbers  
+   Peter Tieleman    Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2018
+Executable:   /usr/local/gmx2018/bin/gmx
+Data prefix:  /usr/local/gmx2018
+Working dir:  /nfs/home/alexei/Archive_UPD/Part1
+Command line:
+  gmx mdrun -deffnm step7_production
+
+Reading file step7_production.tpr, VERSION 2018 (single precision)
+
+NOTE: Parallelization is limited by the small number of atoms,
+      only starting 4 thread-MPI ranks.
+      You can use the -nt and/or -ntmpi option to optimize the number of threads.
+
+Changing nstlist from 20 to 25, rlist from 1.22 to 1.269
+
+No option -multi
+No option -multi
+No option -multi
+No option -multi
+Using 4 MPI threads
+Using 8 OpenMP threads per tMPI thread
+
+On host md5 2 GPUs auto-selected for this run.
+Mapping of GPU IDs to the 4 GPU tasks in the 4 ranks on this node:
+  PP:0,PP:0,PP:1,PP:1
+starting mdrun 'Martini system'
+1500000 steps,  30000.0 ps.
+
+step 50 Turning on dynamic load balancing, because the performance loss due to load imbalance is 2.6 %.
+
+
+step 1000 Turning off dynamic load balancing, because it is degrading performance.
+
+
+step 5000 Turning on dynamic load balancing, because the performance loss due to load imbalance is 4.3 %.
+
+
+step 5500 Turning off dynamic load balancing, because it is degrading performance.
+
+
+step 7500 Will no longer try dynamic load balancing, as it degraded performance.
+
+
+Writing final coordinates.
+
+ Dynamic load balancing report:
+ DLB got disabled because it was unsuitable to use.
+ Average load imbalance: 7.0%.
+ The balanceable part of the MD step is 71%, load imbalance is computed from this.
+ Part of the total run time spent waiting due to load imbalance: 4.9%.
+
+
+               Core t (s)   Wall t (s)        (%)
+       Time:    14871.367      464.730     3200.0
+                 (ns/day)    (hour/ns)
+Performance:     5577.433        0.004
+
+GROMACS reminds you: "My Head Goes Pop Pop Pop Pop Pop" (F. Black)
+
+                      :-) GROMACS - gmx grompp, 2018.8 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar    Aldert van Buuren   Rudi van Drunen     Anton Feenstra  
+  Gerrit Groenhof    Aleksei Iupinov   Christoph Junghans   Anca Hamuraru   
+ Vincent Hindriksen Dimitrios Karkoulis    Peter Kasson        Jiri Kraus    
+  Carsten Kutzner      Per Larsson      Justin A. Lemkul    Viveca Lindahl  
+  Magnus Lundborg   Pieter Meulenhoff    Erik Marklund      Teemu Murtola   
+    Szilard Pall       Sander Pronk      Roland Schulz     Alexey Shvetsov  
+   Michael Shirts     Alfons Sijbers     Peter Tieleman    Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2018.8
+Executable:   /bin/gmx
+Data prefix:  /usr
+Working dir:  /home/aleka155/Downloads/Part1
+Command line:
+  gmx grompp -f step6.0_minimization.mdp -o step6.0_minimization.tpr -c fullerenes_water.gro -r fullerenes_water.gro -p system.top -n index.ndx
+
+
+NOTE 1 [file step6.0_minimization.mdp]:
+  Setting tcoupl from 'V-rescale' to 'no'. Temperature coupling does not
+  apply to steep.
+
+
+NOTE 2 [file step6.0_minimization.mdp]:
+  Setting pcoupl from 'Berendsen' to 'no'. Pressure coupling does not apply
+  to steep.
+
+Setting the LD random seed to -1040531532
+Generated 254 of the 1081 non-bonded parameter combinations
+Excluding 1 bonded neighbours molecule type 'F16'
+Excluding 1 bonded neighbours molecule type 'W'
+Coupling 4030 copies of molecule type 'system'
+Removing all charge groups because cutoff-scheme=Verlet
+Number of degrees of freedom in T-Coupling group System is 13437.00
+
+There were 2 notes
+
+Back Off! I just backed up step6.0_minimization.tpr to ./#step6.0_minimization.tpr.1#
+
+GROMACS reminds you: "Come and play on the hospital roof, I got something that's yours" (Sherlock)
+
+This run will generate roughly 1 Mb of data
+                      :-) GROMACS - gmx mdrun, 2018.8 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar    Aldert van Buuren   Rudi van Drunen     Anton Feenstra  
+  Gerrit Groenhof    Aleksei Iupinov   Christoph Junghans   Anca Hamuraru   
+ Vincent Hindriksen Dimitrios Karkoulis    Peter Kasson        Jiri Kraus    
+  Carsten Kutzner      Per Larsson      Justin A. Lemkul    Viveca Lindahl  
+  Magnus Lundborg   Pieter Meulenhoff    Erik Marklund      Teemu Murtola   
+    Szilard Pall       Sander Pronk      Roland Schulz     Alexey Shvetsov  
+   Michael Shirts     Alfons Sijbers     Peter Tieleman    Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2018.8
+Executable:   /bin/gmx
+Data prefix:  /usr
+Working dir:  /home/aleka155/Downloads/Part1
+Command line:
+  gmx mdrun -deffnm step6.0_minimization
+
+
+Back Off! I just backed up step6.0_minimization.log to ./#step6.0_minimization.log.18#
+NOTE: Detection of GPUs failed. The API reported:
+            GROMACS cannot run tasks on a GPU.
+Compiled SIMD: SSE2, but for this host/run SSE4.1 might be better (see log).
+
+The current CPU can measure timings more accurately than the code in
+gmx mdrun was configured to use. This might affect your simulation
+speed as accurate timings are needed for load-balancing.
+Please consider rebuilding gmx mdrun with the GMX_USE_RDTSCP=ON CMake option.
+Reading file step6.0_minimization.tpr, VERSION 2018.8 (single precision)
+
+Using 1 MPI thread
+Using 8 OpenMP threads 
+
+
+Back Off! I just backed up step6.0_minimization.trr to ./#step6.0_minimization.trr.18#
+
+Back Off! I just backed up step6.0_minimization.edr to ./#step6.0_minimization.edr.18#
+
+Steepest Descents:
+   Tolerance (Fmax)   =  1.00000e+01
+   Number of steps    =         5000
+
+Energy minimization has stopped, but the forces have not converged to the
+requested precision Fmax < 10 (which may not be possible for your system). It
+stopped because the algorithm tried to make a new step whose size was too
+small, or there was no change in the energy since last step. Either way, we
+regard the minimization as converged to within the available machine
+precision, given your starting configuration and EM parameters.
+
+Double precision normally gives you higher accuracy, but this is often not
+needed for preparing to run molecular dynamics.
+
+writing lowest energy coordinates.
+
+Back Off! I just backed up step6.0_minimization.gro to ./#step6.0_minimization.gro.19#
+
+Steepest Descents converged to machine precision in 3452 steps,
+but did not reach the requested Fmax < 10.
+Potential Energy  =  6.5152138e+05
+Maximum force     =  8.4812604e+02 on atom 3071
+Norm of force     =  2.3116503e+01
+
+GROMACS reminds you: "If You Want Something Done You Have to Do It Yourself" (Highlander II)
+
+                      :-) GROMACS - gmx grompp, 2018.8 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar    Aldert van Buuren   Rudi van Drunen     Anton Feenstra  
+  Gerrit Groenhof    Aleksei Iupinov   Christoph Junghans   Anca Hamuraru   
+ Vincent Hindriksen Dimitrios Karkoulis    Peter Kasson        Jiri Kraus    
+  Carsten Kutzner      Per Larsson      Justin A. Lemkul    Viveca Lindahl  
+  Magnus Lundborg   Pieter Meulenhoff    Erik Marklund      Teemu Murtola   
+    Szilard Pall       Sander Pronk      Roland Schulz     Alexey Shvetsov  
+   Michael Shirts     Alfons Sijbers     Peter Tieleman    Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2018.8
+Executable:   /bin/gmx
+Data prefix:  /usr
+Working dir:  /home/aleka155/Downloads/Part1
+Command line:
+  gmx grompp -f step6.1_minimization.mdp -o step6.1_minimization.tpr -c step6.0_minimization.gro -r fullerenes_water.gro -p system.top -n index.ndx
+
+
+NOTE 1 [file step6.1_minimization.mdp]:
+  Setting tcoupl from 'V-rescale' to 'no'. Temperature coupling does not
+  apply to steep.
+
+
+NOTE 2 [file step6.1_minimization.mdp]:
+  Setting pcoupl from 'Berendsen' to 'no'. Pressure coupling does not apply
+  to steep.
+
+Setting the LD random seed to -1439856207
+Generated 208 of the 1035 non-bonded parameter combinations
+Excluding 1 bonded neighbours molecule type 'F16'
+Excluding 1 bonded neighbours molecule type 'W'
+Removing all charge groups because cutoff-scheme=Verlet
+Number of degrees of freedom in T-Coupling group System is 13437.00
+
+There were 2 notes
+
+GROMACS reminds you: "Got Coffee, Got Donuts, Got Wasted" (F. Black)
+
+This run will generate roughly 1 Mb of data
+                      :-) GROMACS - gmx mdrun, 2018.8 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar    Aldert van Buuren   Rudi van Drunen     Anton Feenstra  
+  Gerrit Groenhof    Aleksei Iupinov   Christoph Junghans   Anca Hamuraru   
+ Vincent Hindriksen Dimitrios Karkoulis    Peter Kasson        Jiri Kraus    
+  Carsten Kutzner      Per Larsson      Justin A. Lemkul    Viveca Lindahl  
+  Magnus Lundborg   Pieter Meulenhoff    Erik Marklund      Teemu Murtola   
+    Szilard Pall       Sander Pronk      Roland Schulz     Alexey Shvetsov  
+   Michael Shirts     Alfons Sijbers     Peter Tieleman    Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2018.8
+Executable:   /bin/gmx
+Data prefix:  /usr
+Working dir:  /home/aleka155/Downloads/Part1
+Command line:
+  gmx mdrun -deffnm step6.1_minimization
+
+NOTE: Detection of GPUs failed. The API reported:
+            GROMACS cannot run tasks on a GPU.
+Compiled SIMD: SSE2, but for this host/run SSE4.1 might be better (see log).
+
+The current CPU can measure timings more accurately than the code in
+gmx mdrun was configured to use. This might affect your simulation
+speed as accurate timings are needed for load-balancing.
+Please consider rebuilding gmx mdrun with the GMX_USE_RDTSCP=ON CMake option.
+Reading file step6.1_minimization.tpr, VERSION 2018.8 (single precision)
+
+Using 1 MPI thread
+Using 8 OpenMP threads 
+
+
+Steepest Descents:
+   Tolerance (Fmax)   =  1.00000e+01
+   Number of steps    =         5000
+
+Energy minimization reached the maximum number of steps before the forces
+reached the requested precision Fmax < 10.
+
+writing lowest energy coordinates.
+
+Back Off! I just backed up step6.1_minimization.gro to ./#step6.1_minimization.gro.1#
+
+Steepest Descents did not converge to Fmax < 10 in 5001 steps.
+Potential Energy  =  6.5319781e+05
+Maximum force     =  6.0235419e+02 on atom 1323
+Norm of force     =  1.6334830e+01
+
+GROMACS reminds you: "Youth is wasted on the young" (The Smashing Pumpkins)
+
+                      :-) GROMACS - gmx grompp, 2018.8 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar    Aldert van Buuren   Rudi van Drunen     Anton Feenstra  
+  Gerrit Groenhof    Aleksei Iupinov   Christoph Junghans   Anca Hamuraru   
+ Vincent Hindriksen Dimitrios Karkoulis    Peter Kasson        Jiri Kraus    
+  Carsten Kutzner      Per Larsson      Justin A. Lemkul    Viveca Lindahl  
+  Magnus Lundborg   Pieter Meulenhoff    Erik Marklund      Teemu Murtola   
+    Szilard Pall       Sander Pronk      Roland Schulz     Alexey Shvetsov  
+   Michael Shirts     Alfons Sijbers     Peter Tieleman    Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2018.8
+Executable:   /bin/gmx
+Data prefix:  /usr
+Working dir:  /home/aleka155/Downloads/Part1
+Command line:
+  gmx grompp -f step6.2_equilibration.mdp -o step6.2_equilibration.tpr -c step6.1_minimization.gro -r fullerenes_water.gro -p system.top -n index.ndx
+
+Setting the LD random seed to -1224363089
+Generated 208 of the 1035 non-bonded parameter combinations
+Excluding 1 bonded neighbours molecule type 'F16'
+Excluding 1 bonded neighbours molecule type 'W'
+Velocities were taken from a Maxwell distribution at 300 K
+Removing all charge groups because cutoff-scheme=Verlet
+Number of degrees of freedom in T-Coupling group System is 13437.00
+
+GROMACS reminds you: "Sometimes Life is Obscene" (Black Crowes)
+
+Determining Verlet buffer for a tolerance of 0.005 kJ/mol/ps at 300 K
+Calculated rlist for 1x1 atom pair-list as 1.113 nm, buffer size 0.013 nm
+Set rlist, assuming 4x4 atom pair-list, to 1.102 nm, buffer size 0.002 nm
+Note that mdrun will redetermine rlist based on the actual pair-list setup
+This run will generate roughly 13 Mb of data
+                      :-) GROMACS - gmx mdrun, 2018.8 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar    Aldert van Buuren   Rudi van Drunen     Anton Feenstra  
+  Gerrit Groenhof    Aleksei Iupinov   Christoph Junghans   Anca Hamuraru   
+ Vincent Hindriksen Dimitrios Karkoulis    Peter Kasson        Jiri Kraus    
+  Carsten Kutzner      Per Larsson      Justin A. Lemkul    Viveca Lindahl  
+  Magnus Lundborg   Pieter Meulenhoff    Erik Marklund      Teemu Murtola   
+    Szilard Pall       Sander Pronk      Roland Schulz     Alexey Shvetsov  
+   Michael Shirts     Alfons Sijbers     Peter Tieleman    Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2018.8
+Executable:   /bin/gmx
+Data prefix:  /usr
+Working dir:  /home/aleka155/Downloads/Part1
+Command line:
+  gmx mdrun -deffnm step6.2_equilibration
+
+NOTE: Detection of GPUs failed. The API reported:
+            GROMACS cannot run tasks on a GPU.
+Compiled SIMD: SSE2, but for this host/run SSE4.1 might be better (see log).
+
+The current CPU can measure timings more accurately than the code in
+gmx mdrun was configured to use. This might affect your simulation
+speed as accurate timings are needed for load-balancing.
+Please consider rebuilding gmx mdrun with the GMX_USE_RDTSCP=ON CMake option.
+Reading file step6.2_equilibration.tpr, VERSION 2018.8 (single precision)
+Changing nstlist from 20 to 100, rlist from 1.102 to 1.159
+
+
+Using 1 MPI thread
+Using 8 OpenMP threads 
+
+starting mdrun 'Martini system'
+500000 steps,   1000.0 ps.
+
+Step 0  Warning: pressure scaling more than 1%, mu: 1.23735 1.23735 1.23735
+
+Writing final coordinates.
+
+Back Off! I just backed up step6.2_equilibration.gro to ./#step6.2_equilibration.gro.1#
+
+               Core t (s)   Wall t (s)        (%)
+       Time:     2794.335      349.292      800.0
+                 (ns/day)    (hour/ns)
+Performance:      247.358        0.097
+
+GROMACS reminds you: "Right Between the Eyes" (F. Zappa)
+
+                      :-) GROMACS - gmx grompp, 2018.8 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar    Aldert van Buuren   Rudi van Drunen     Anton Feenstra  
+  Gerrit Groenhof    Aleksei Iupinov   Christoph Junghans   Anca Hamuraru   
+ Vincent Hindriksen Dimitrios Karkoulis    Peter Kasson        Jiri Kraus    
+  Carsten Kutzner      Per Larsson      Justin A. Lemkul    Viveca Lindahl  
+  Magnus Lundborg   Pieter Meulenhoff    Erik Marklund      Teemu Murtola   
+    Szilard Pall       Sander Pronk      Roland Schulz     Alexey Shvetsov  
+   Michael Shirts     Alfons Sijbers     Peter Tieleman    Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2018.8
+Executable:   /bin/gmx
+Data prefix:  /usr
+Working dir:  /home/aleka155/Downloads/Part1
+Command line:
+  gmx grompp -f step6.3_equilibration.mdp -o step6.3_equilibration.tpr -c step6.2_equilibration.gro -r fullerenes_water.gro -p system.top -n index.ndx
+
+Setting the LD random seed to 182375734
+Generated 208 of the 1035 non-bonded parameter combinations
+Excluding 1 bonded neighbours molecule type 'F16'
+Excluding 1 bonded neighbours molecule type 'W'
+Removing all charge groups because cutoff-scheme=Verlet
+Number of degrees of freedom in T-Coupling group System is 13437.00
+
+GROMACS reminds you: "People disagree with me. I just ignore them." (Linus Torvalds on the use of C++ in the kernel)
+
+Determining Verlet buffer for a tolerance of 0.005 kJ/mol/ps at 300 K
+Calculated rlist for 1x1 atom pair-list as 1.135 nm, buffer size 0.035 nm
+Set rlist, assuming 4x4 atom pair-list, to 1.110 nm, buffer size 0.010 nm
+Note that mdrun will redetermine rlist based on the actual pair-list setup
+This run will generate roughly 5 Mb of data
+                      :-) GROMACS - gmx mdrun, 2018.8 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar    Aldert van Buuren   Rudi van Drunen     Anton Feenstra  
+  Gerrit Groenhof    Aleksei Iupinov   Christoph Junghans   Anca Hamuraru   
+ Vincent Hindriksen Dimitrios Karkoulis    Peter Kasson        Jiri Kraus    
+  Carsten Kutzner      Per Larsson      Justin A. Lemkul    Viveca Lindahl  
+  Magnus Lundborg   Pieter Meulenhoff    Erik Marklund      Teemu Murtola   
+    Szilard Pall       Sander Pronk      Roland Schulz     Alexey Shvetsov  
+   Michael Shirts     Alfons Sijbers     Peter Tieleman    Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2018.8
+Executable:   /bin/gmx
+Data prefix:  /usr
+Working dir:  /home/aleka155/Downloads/Part1
+Command line:
+  gmx mdrun -deffnm step6.3_equilibration
+
+NOTE: Detection of GPUs failed. The API reported:
+            GROMACS cannot run tasks on a GPU.
+Compiled SIMD: SSE2, but for this host/run SSE4.1 might be better (see log).
+
+The current CPU can measure timings more accurately than the code in
+gmx mdrun was configured to use. This might affect your simulation
+speed as accurate timings are needed for load-balancing.
+Please consider rebuilding gmx mdrun with the GMX_USE_RDTSCP=ON CMake option.
+Reading file step6.3_equilibration.tpr, VERSION 2018.8 (single precision)
+Changing nstlist from 20 to 80, rlist from 1.11 to 1.229
+
+
+Using 1 MPI thread
+Using 8 OpenMP threads 
+
+starting mdrun 'Martini system'
+200000 steps,   1000.0 ps.
+
+Writing final coordinates.
+
+Back Off! I just backed up step6.3_equilibration.gro to ./#step6.3_equilibration.gro.1#
+
+               Core t (s)   Wall t (s)        (%)
+       Time:     1099.705      137.463      800.0
+                 (ns/day)    (hour/ns)
+Performance:      628.535        0.038
+
+GROMACS reminds you: "Just Give Me a Blip" (F. Black)
+
+                      :-) GROMACS - gmx grompp, 2018.8 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar    Aldert van Buuren   Rudi van Drunen     Anton Feenstra  
+  Gerrit Groenhof    Aleksei Iupinov   Christoph Junghans   Anca Hamuraru   
+ Vincent Hindriksen Dimitrios Karkoulis    Peter Kasson        Jiri Kraus    
+  Carsten Kutzner      Per Larsson      Justin A. Lemkul    Viveca Lindahl  
+  Magnus Lundborg   Pieter Meulenhoff    Erik Marklund      Teemu Murtola   
+    Szilard Pall       Sander Pronk      Roland Schulz     Alexey Shvetsov  
+   Michael Shirts     Alfons Sijbers     Peter Tieleman    Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2018.8
+Executable:   /bin/gmx
+Data prefix:  /usr
+Working dir:  /home/aleka155/Downloads/Part1
+Command line:
+  gmx grompp -f step6.4_equilibration.mdp -o step6.4_equilibration.tpr -c step6.3_equilibration.gro -r fullerenes_water.gro -p system.top -n index.ndx
+
+Setting the LD random seed to 654245908
+Generated 208 of the 1035 non-bonded parameter combinations
+Excluding 1 bonded neighbours molecule type 'F16'
+Excluding 1 bonded neighbours molecule type 'W'
+Removing all charge groups because cutoff-scheme=Verlet
+Number of degrees of freedom in T-Coupling group System is 13437.00
+
+GROMACS reminds you: "If it's a good idea, go ahead and do it. It's much easier to apologize than it is to get permission." (Grace Hopper, developer of COBOL)
+
+Determining Verlet buffer for a tolerance of 0.005 kJ/mol/ps at 300 K
+Calculated rlist for 1x1 atom pair-list as 1.185 nm, buffer size 0.085 nm
+Set rlist, assuming 4x4 atom pair-list, to 1.140 nm, buffer size 0.040 nm
+Note that mdrun will redetermine rlist based on the actual pair-list setup
+This run will generate roughly 3 Mb of data
+                      :-) GROMACS - gmx mdrun, 2018.8 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar    Aldert van Buuren   Rudi van Drunen     Anton Feenstra  
+  Gerrit Groenhof    Aleksei Iupinov   Christoph Junghans   Anca Hamuraru   
+ Vincent Hindriksen Dimitrios Karkoulis    Peter Kasson        Jiri Kraus    
+  Carsten Kutzner      Per Larsson      Justin A. Lemkul    Viveca Lindahl  
+  Magnus Lundborg   Pieter Meulenhoff    Erik Marklund      Teemu Murtola   
+    Szilard Pall       Sander Pronk      Roland Schulz     Alexey Shvetsov  
+   Michael Shirts     Alfons Sijbers     Peter Tieleman    Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2018.8
+Executable:   /bin/gmx
+Data prefix:  /usr
+Working dir:  /home/aleka155/Downloads/Part1
+Command line:
+  gmx mdrun -deffnm step6.4_equilibration
+
+NOTE: Detection of GPUs failed. The API reported:
+            GROMACS cannot run tasks on a GPU.
+Compiled SIMD: SSE2, but for this host/run SSE4.1 might be better (see log).
+
+The current CPU can measure timings more accurately than the code in
+gmx mdrun was configured to use. This might affect your simulation
+speed as accurate timings are needed for load-balancing.
+Please consider rebuilding gmx mdrun with the GMX_USE_RDTSCP=ON CMake option.
+Reading file step6.4_equilibration.tpr, VERSION 2018.8 (single precision)
+Changing nstlist from 20 to 50, rlist from 1.14 to 1.276
+
+
+Using 1 MPI thread
+Using 8 OpenMP threads 
+
+starting mdrun 'Martini system'
+100000 steps,   1000.0 ps.
+
+Writing final coordinates.
+
+Back Off! I just backed up step6.4_equilibration.gro to ./#step6.4_equilibration.gro.1#
+
+               Core t (s)   Wall t (s)        (%)
+       Time:      559.574       69.947      800.0
+                 (ns/day)    (hour/ns)
+Performance:     1235.238        0.019
+
+GROMACS reminds you: "It's easy to remember: a half a kT is equal to five fourths of a kJ/mol." (Anders Gabrielsson)
+
+                      :-) GROMACS - gmx grompp, 2018.8 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar    Aldert van Buuren   Rudi van Drunen     Anton Feenstra  
+  Gerrit Groenhof    Aleksei Iupinov   Christoph Junghans   Anca Hamuraru   
+ Vincent Hindriksen Dimitrios Karkoulis    Peter Kasson        Jiri Kraus    
+  Carsten Kutzner      Per Larsson      Justin A. Lemkul    Viveca Lindahl  
+  Magnus Lundborg   Pieter Meulenhoff    Erik Marklund      Teemu Murtola   
+    Szilard Pall       Sander Pronk      Roland Schulz     Alexey Shvetsov  
+   Michael Shirts     Alfons Sijbers     Peter Tieleman    Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2018.8
+Executable:   /bin/gmx
+Data prefix:  /usr
+Working dir:  /home/aleka155/Downloads/Part1
+Command line:
+  gmx grompp -f step6.5_equilibration.mdp -o step6.5_equilibration.tpr -c step6.4_equilibration.gro -r fullerenes_water.gro -p system.top -n index.ndx
+
+Setting the LD random seed to -941710870
+Generated 208 of the 1035 non-bonded parameter combinations
+Excluding 1 bonded neighbours molecule type 'F16'
+Excluding 1 bonded neighbours molecule type 'W'
+Removing all charge groups because cutoff-scheme=Verlet
+Number of degrees of freedom in T-Coupling group System is 13437.00
+
+GROMACS reminds you: "I think everybody should like everybody." (Andy Warhol)
+
+Determining Verlet buffer for a tolerance of 0.005 kJ/mol/ps at 300 K
+Calculated rlist for 1x1 atom pair-list as 1.243 nm, buffer size 0.143 nm
+Set rlist, assuming 4x4 atom pair-list, to 1.177 nm, buffer size 0.077 nm
+Note that mdrun will redetermine rlist based on the actual pair-list setup
+This run will generate roughly 2 Mb of data
+                      :-) GROMACS - gmx mdrun, 2018.8 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar    Aldert van Buuren   Rudi van Drunen     Anton Feenstra  
+  Gerrit Groenhof    Aleksei Iupinov   Christoph Junghans   Anca Hamuraru   
+ Vincent Hindriksen Dimitrios Karkoulis    Peter Kasson        Jiri Kraus    
+  Carsten Kutzner      Per Larsson      Justin A. Lemkul    Viveca Lindahl  
+  Magnus Lundborg   Pieter Meulenhoff    Erik Marklund      Teemu Murtola   
+    Szilard Pall       Sander Pronk      Roland Schulz     Alexey Shvetsov  
+   Michael Shirts     Alfons Sijbers     Peter Tieleman    Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2018.8
+Executable:   /bin/gmx
+Data prefix:  /usr
+Working dir:  /home/aleka155/Downloads/Part1
+Command line:
+  gmx mdrun -deffnm step6.5_equilibration
+
+NOTE: Detection of GPUs failed. The API reported:
+            GROMACS cannot run tasks on a GPU.
+Compiled SIMD: SSE2, but for this host/run SSE4.1 might be better (see log).
+
+The current CPU can measure timings more accurately than the code in
+gmx mdrun was configured to use. This might affect your simulation
+speed as accurate timings are needed for load-balancing.
+Please consider rebuilding gmx mdrun with the GMX_USE_RDTSCP=ON CMake option.
+Reading file step6.5_equilibration.tpr, VERSION 2018.8 (single precision)
+Changing nstlist from 20 to 25, rlist from 1.177 to 1.211
+
+
+Using 1 MPI thread
+Using 8 OpenMP threads 
+
+starting mdrun 'Martini system'
+50000 steps,    750.0 ps.
+
+Writing final coordinates.
+
+Back Off! I just backed up step6.5_equilibration.gro to ./#step6.5_equilibration.gro.1#
+
+               Core t (s)   Wall t (s)        (%)
+       Time:      299.940       37.492      800.0
+                 (ns/day)    (hour/ns)
+Performance:     1728.383        0.014
+
+GROMACS reminds you: "I Need a Little Poison" (Throwing Muses)
+
+                      :-) GROMACS - gmx grompp, 2018.8 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar    Aldert van Buuren   Rudi van Drunen     Anton Feenstra  
+  Gerrit Groenhof    Aleksei Iupinov   Christoph Junghans   Anca Hamuraru   
+ Vincent Hindriksen Dimitrios Karkoulis    Peter Kasson        Jiri Kraus    
+  Carsten Kutzner      Per Larsson      Justin A. Lemkul    Viveca Lindahl  
+  Magnus Lundborg   Pieter Meulenhoff    Erik Marklund      Teemu Murtola   
+    Szilard Pall       Sander Pronk      Roland Schulz     Alexey Shvetsov  
+   Michael Shirts     Alfons Sijbers     Peter Tieleman    Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2018.8
+Executable:   /bin/gmx
+Data prefix:  /usr
+Working dir:  /home/aleka155/Downloads/Part1
+Command line:
+  gmx grompp -f step6.6_equilibration.mdp -o step6.6_equilibration.tpr -c step6.5_equilibration.gro -r fullerenes_water.gro -p system.top -n index.ndx
+
+Setting the LD random seed to 1715364293
+Generated 208 of the 1035 non-bonded parameter combinations
+Excluding 1 bonded neighbours molecule type 'F16'
+Excluding 1 bonded neighbours molecule type 'W'
+Removing all charge groups because cutoff-scheme=Verlet
+Number of degrees of freedom in T-Coupling group System is 13437.00
+
+GROMACS reminds you: "All You Need is Greed" (Aztec Camera)
+
+Determining Verlet buffer for a tolerance of 0.005 kJ/mol/ps at 300 K
+Calculated rlist for 1x1 atom pair-list as 1.306 nm, buffer size 0.206 nm
+Set rlist, assuming 4x4 atom pair-list, to 1.220 nm, buffer size 0.120 nm
+Note that mdrun will redetermine rlist based on the actual pair-list setup
+This run will generate roughly 2 Mb of data
+                      :-) GROMACS - gmx mdrun, 2018.8 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar    Aldert van Buuren   Rudi van Drunen     Anton Feenstra  
+  Gerrit Groenhof    Aleksei Iupinov   Christoph Junghans   Anca Hamuraru   
+ Vincent Hindriksen Dimitrios Karkoulis    Peter Kasson        Jiri Kraus    
+  Carsten Kutzner      Per Larsson      Justin A. Lemkul    Viveca Lindahl  
+  Magnus Lundborg   Pieter Meulenhoff    Erik Marklund      Teemu Murtola   
+    Szilard Pall       Sander Pronk      Roland Schulz     Alexey Shvetsov  
+   Michael Shirts     Alfons Sijbers     Peter Tieleman    Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2018.8
+Executable:   /bin/gmx
+Data prefix:  /usr
+Working dir:  /home/aleka155/Downloads/Part1
+Command line:
+  gmx mdrun -deffnm step6.6_equilibration
+
+NOTE: Detection of GPUs failed. The API reported:
+            GROMACS cannot run tasks on a GPU.
+Compiled SIMD: SSE2, but for this host/run SSE4.1 might be better (see log).
+
+The current CPU can measure timings more accurately than the code in
+gmx mdrun was configured to use. This might affect your simulation
+speed as accurate timings are needed for load-balancing.
+Please consider rebuilding gmx mdrun with the GMX_USE_RDTSCP=ON CMake option.
+Reading file step6.6_equilibration.tpr, VERSION 2018.8 (single precision)
+Changing nstlist from 20 to 25, rlist from 1.22 to 1.269
+
+
+Using 1 MPI thread
+Using 8 OpenMP threads 
+
+starting mdrun 'Martini system'
+50000 steps,   1000.0 ps.
+
+Writing final coordinates.
+
+Back Off! I just backed up step6.6_equilibration.gro to ./#step6.6_equilibration.gro.1#
+
+               Core t (s)   Wall t (s)        (%)
+       Time:      325.783       40.723      800.0
+                 (ns/day)    (hour/ns)
+Performance:     2121.701        0.011
+
+GROMACS reminds you: "Aber wenn der Quarterback kommt, um dir die Brille abzunehmen, sag ihm: Danke, die bleibt wo sie ist" (Wir sind Helden)
+
+                      :-) GROMACS - gmx grompp, 2018.8 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar    Aldert van Buuren   Rudi van Drunen     Anton Feenstra  
+  Gerrit Groenhof    Aleksei Iupinov   Christoph Junghans   Anca Hamuraru   
+ Vincent Hindriksen Dimitrios Karkoulis    Peter Kasson        Jiri Kraus    
+  Carsten Kutzner      Per Larsson      Justin A. Lemkul    Viveca Lindahl  
+  Magnus Lundborg   Pieter Meulenhoff    Erik Marklund      Teemu Murtola   
+    Szilard Pall       Sander Pronk      Roland Schulz     Alexey Shvetsov  
+   Michael Shirts     Alfons Sijbers     Peter Tieleman    Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2018.8
+Executable:   /bin/gmx
+Data prefix:  /usr
+Working dir:  /home/aleka155/Downloads/Part1
+Command line:
+  gmx grompp -f step7_production.mdp -o step7_production.tpr -c step6.6_equilibration.gro -p system.top -n index.ndx
+
+Setting the LD random seed to 168137318
+Generated 208 of the 1035 non-bonded parameter combinations
+Excluding 1 bonded neighbours molecule type 'F16'
+Excluding 1 bonded neighbours molecule type 'W'
+Removing all charge groups because cutoff-scheme=Verlet
+Number of degrees of freedom in T-Coupling group System is 13437.00
+
+Back Off! I just backed up step7_production.tpr to ./#step7_production.tpr.1#
+
+GROMACS reminds you: "You Can Always Go On Ricky Lake" (Offspring)
+
+Determining Verlet buffer for a tolerance of 0.005 kJ/mol/ps at 300 K
+Calculated rlist for 1x1 atom pair-list as 1.305 nm, buffer size 0.205 nm
+Set rlist, assuming 4x4 atom pair-list, to 1.220 nm, buffer size 0.120 nm
+Note that mdrun will redetermine rlist based on the actual pair-list setup
+This run will generate roughly 54 Mb of data
+                      :-) GROMACS - gmx mdrun, 2018.8 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar    Aldert van Buuren   Rudi van Drunen     Anton Feenstra  
+  Gerrit Groenhof    Aleksei Iupinov   Christoph Junghans   Anca Hamuraru   
+ Vincent Hindriksen Dimitrios Karkoulis    Peter Kasson        Jiri Kraus    
+  Carsten Kutzner      Per Larsson      Justin A. Lemkul    Viveca Lindahl  
+  Magnus Lundborg   Pieter Meulenhoff    Erik Marklund      Teemu Murtola   
+    Szilard Pall       Sander Pronk      Roland Schulz     Alexey Shvetsov  
+   Michael Shirts     Alfons Sijbers     Peter Tieleman    Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2018.8
+Executable:   /bin/gmx
+Data prefix:  /usr
+Working dir:  /home/aleka155/Downloads/Part1
+Command line:
+  gmx mdrun -deffnm step7_production
+
+
+Back Off! I just backed up step7_production.log to ./#step7_production.log.1#
+NOTE: Detection of GPUs failed. The API reported:
+            GROMACS cannot run tasks on a GPU.
+Compiled SIMD: SSE2, but for this host/run SSE4.1 might be better (see log).
+
+The current CPU can measure timings more accurately than the code in
+gmx mdrun was configured to use. This might affect your simulation
+speed as accurate timings are needed for load-balancing.
+Please consider rebuilding gmx mdrun with the GMX_USE_RDTSCP=ON CMake option.
+Reading file step7_production.tpr, VERSION 2018.8 (single precision)
+Changing nstlist from 20 to 25, rlist from 1.22 to 1.269
+
+
+Using 1 MPI thread
+Using 8 OpenMP threads 
+
+
+Back Off! I just backed up step7_production.xtc to ./#step7_production.xtc.1#
+
+Back Off! I just backed up step7_production.edr to ./#step7_production.edr.1#
+starting mdrun 'Martini system'
+1500000 steps,  30000.0 ps.
+
+Writing final coordinates.
+
+Back Off! I just backed up step7_production.gro to ./#step7_production.gro.1#
+
+               Core t (s)   Wall t (s)        (%)
+       Time:     9201.042     1150.130      800.0
+                 (ns/day)    (hour/ns)
+Performance:     2253.659        0.011
+
+GROMACS reminds you: "Come on boys, Let's push it hard" (P.J. Harvey)
+

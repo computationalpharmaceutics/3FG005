@@ -1,0 +1,13 @@
+#include "toppar/martini_v2.2.itp"
+#include "toppar/martini_v2.0_lipids_all_201506.itp"
+#include "toppar/martini_v2.0_ions.itp"
+#include "F16.itp"
+
+[ system ]
+; name
+Martini system
+
+[ molecules ]
+; name        number
+F16 30 ; change to what you have in packmol
+W 4000

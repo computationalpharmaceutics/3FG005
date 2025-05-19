@@ -1,0 +1,895 @@
+                       :-) GROMACS - gmx grompp, 2018 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg   Pieter Meulenhoff 
+   Erik Marklund      Teemu Murtola       Szilard Pall       Sander Pronk   
+   Roland Schulz     Alexey Shvetsov     Michael Shirts     Alfons Sijbers  
+   Peter Tieleman    Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2018
+Executable:   /usr/local/gmx2018/bin/gmx
+Data prefix:  /usr/local/gmx2018
+Working dir:  /nfs/home/alexei/Archive_UPD/Part2
+Command line:
+  gmx grompp -f step6.0_minimization.mdp -o step6.0_minimization.tpr -c with_fuleren.gro -r with_fuleren.gro -p system.top -n index.ndx
+
+
+NOTE 1 [file step6.0_minimization.mdp]:
+  Setting tcoupl from 'V-rescale' to 'no'. Temperature coupling does not
+  apply to steep.
+
+
+NOTE 2 [file step6.0_minimization.mdp]:
+  Setting pcoupl from 'Berendsen' to 'no'. Pressure coupling does not apply
+  to steep.
+
+Setting the LD random seed to 301879088
+Generated 254 of the 1081 non-bonded parameter combinations
+Excluding 1 bonded neighbours molecule type 'DOPC'
+Excluding 1 bonded neighbours molecule type 'W'
+Excluding 1 bonded neighbours molecule type 'F16'
+Coupling 1548 copies of molecule type 'system'
+Removing all charge groups because cutoff-scheme=Verlet
+Number of degrees of freedom in T-Coupling group System is 10758.00
+
+There were 2 notes
+
+Back Off! I just backed up step6.0_minimization.tpr to ./#step6.0_minimization.tpr.2#
+
+GROMACS reminds you: "Always code as if the person who ends up maintaining your code is a violent psychopath who knows where you live." (Martin Golding)
+
+This run will generate roughly 1 Mb of data
+                       :-) GROMACS - gmx mdrun, 2018 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg   Pieter Meulenhoff 
+   Erik Marklund      Teemu Murtola       Szilard Pall       Sander Pronk   
+   Roland Schulz     Alexey Shvetsov     Michael Shirts     Alfons Sijbers  
+   Peter Tieleman    Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2018
+Executable:   /usr/local/gmx2018/bin/gmx
+Data prefix:  /usr/local/gmx2018
+Working dir:  /nfs/home/alexei/Archive_UPD/Part2
+Command line:
+  gmx mdrun -deffnm step6.0_minimization
+
+
+Back Off! I just backed up step6.0_minimization.log to ./#step6.0_minimization.log.3#
+Reading file step6.0_minimization.tpr, VERSION 2018 (single precision)
+
+NOTE: Parallelization is limited by the small number of atoms,
+      only starting 3 thread-MPI ranks.
+      You can use the -nt and/or -ntmpi option to optimize the number of threads.
+
+
+NOTE: disabling dynamic load balancing as it is only supported with dynamics, not with integrator 'steep'.
+
+No option -multi
+Using 3 MPI threads
+No option -multi
+No option -multi
+Using 8 OpenMP threads per tMPI thread
+
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2018
+Source file: src/gromacs/taskassignment/taskassignment.cpp (line 251)
+Function:    std::vector<std::vector<gmx::GpuTaskMapping> >::value_type gmx::runTaskAssignment(const std::vector<int>&, const std::vector<int>&, const gmx_hw_info_t&, const gmx::MDLogger&, const t_commrec*, const std::vector<gmx::GpuTask>&)
+MPI rank:    0 (out of 3)
+
+Inconsistency in user input:
+There were 3 GPU tasks found on node md5, but 2 GPUs were available. If the
+GPUs are equivalent, then it is usually best to have a number of tasks that is
+a multiple of the number of GPUs. You should reconsider your GPU task
+assignment, number of ranks, or your use of the -nb, -pme, and -npme options,
+perhaps after measuring the performance you can get.
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+                       :-) GROMACS - gmx grompp, 2018 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg   Pieter Meulenhoff 
+   Erik Marklund      Teemu Murtola       Szilard Pall       Sander Pronk   
+   Roland Schulz     Alexey Shvetsov     Michael Shirts     Alfons Sijbers  
+   Peter Tieleman    Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2018
+Executable:   /usr/local/gmx2018/bin/gmx
+Data prefix:  /usr/local/gmx2018
+Working dir:  /nfs/home/alexei/Archive_UPD/Part2
+Command line:
+  gmx grompp -f step6.1_minimization.mdp -o step6.1_minimization.tpr -c step6.0_minimization.gro -r with_fuleren.gro -p system.top -n index.ndx
+
+
+NOTE 1 [file step6.1_minimization.mdp]:
+  Setting tcoupl from 'V-rescale' to 'no'. Temperature coupling does not
+  apply to steep.
+
+
+NOTE 2 [file step6.1_minimization.mdp]:
+  Setting pcoupl from 'Berendsen' to 'no'. Pressure coupling does not apply
+  to steep.
+
+Setting the LD random seed to -2051679961
+Generated 208 of the 1035 non-bonded parameter combinations
+Excluding 1 bonded neighbours molecule type 'DOPC'
+Excluding 1 bonded neighbours molecule type 'W'
+Excluding 1 bonded neighbours molecule type 'F16'
+
+-------------------------------------------------------
+Program:     gmx grompp, version 2018
+Source file: src/gromacs/gmxpreprocess/grompp.cpp (line 619)
+
+Fatal error:
+number of coordinates in coordinate file (step6.0_minimization.gro, 39011)
+             does not match topology (system.top, 3587)
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+                       :-) GROMACS - gmx mdrun, 2018 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg   Pieter Meulenhoff 
+   Erik Marklund      Teemu Murtola       Szilard Pall       Sander Pronk   
+   Roland Schulz     Alexey Shvetsov     Michael Shirts     Alfons Sijbers  
+   Peter Tieleman    Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2018
+Executable:   /usr/local/gmx2018/bin/gmx
+Data prefix:  /usr/local/gmx2018
+Working dir:  /nfs/home/alexei/Archive_UPD/Part2
+Command line:
+  gmx mdrun -deffnm step6.1_minimization
+
+
+Back Off! I just backed up step6.1_minimization.log to ./#step6.1_minimization.log.3#
+Reading file step6.1_minimization.tpr, VERSION 2018 (single precision)
+
+NOTE: disabling dynamic load balancing as it is only supported with dynamics, not with integrator 'steep'.
+
+No option -multi
+No option -multi
+No option -multi
+No option -multi
+No option -multi
+No option -multi
+No option -multi
+No option -multi
+Using 8 MPI threads
+Using 6 OpenMP threads per tMPI thread
+
+On host md5 2 GPUs auto-selected for this run.
+Mapping of GPU IDs to the 8 GPU tasks in the 8 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1
+
+Back Off! I just backed up step6.1_minimization.trr to ./#step6.1_minimization.trr.3#
+
+Back Off! I just backed up step6.1_minimization.edr to ./#step6.1_minimization.edr.3#
+
+Steepest Descents:
+   Tolerance (Fmax)   =  1.00000e+01
+   Number of steps    =         5000
+
+Energy minimization reached the maximum number of steps before the forces
+reached the requested precision Fmax < 10.
+
+writing lowest energy coordinates.
+
+Back Off! I just backed up step6.1_minimization.gro to ./#step6.1_minimization.gro.3#
+
+Steepest Descents did not converge to Fmax < 10 in 5001 steps.
+Potential Energy  = -1.0183148e+06
+Maximum force     =  1.0083104e+03 on atom 16589
+Norm of force     =  6.2843088e+00
+
+GROMACS reminds you: "You Can Always Go On Ricky Lake" (Offspring)
+
+                       :-) GROMACS - gmx grompp, 2018 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg   Pieter Meulenhoff 
+   Erik Marklund      Teemu Murtola       Szilard Pall       Sander Pronk   
+   Roland Schulz     Alexey Shvetsov     Michael Shirts     Alfons Sijbers  
+   Peter Tieleman    Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2018
+Executable:   /usr/local/gmx2018/bin/gmx
+Data prefix:  /usr/local/gmx2018
+Working dir:  /nfs/home/alexei/Archive_UPD/Part2
+Command line:
+  gmx grompp -f step6.2_equilibration.mdp -o step6.2_equilibration.tpr -c step6.1_minimization.gro -r with_fuleren.gro -p system.top -n index.ndx
+
+Setting the LD random seed to -876347760
+Generated 208 of the 1035 non-bonded parameter combinations
+Excluding 1 bonded neighbours molecule type 'DOPC'
+Excluding 1 bonded neighbours molecule type 'W'
+Excluding 1 bonded neighbours molecule type 'F16'
+
+-------------------------------------------------------
+Program:     gmx grompp, version 2018
+Source file: src/gromacs/gmxpreprocess/grompp.cpp (line 619)
+
+Fatal error:
+number of coordinates in coordinate file (step6.1_minimization.gro, 39011)
+             does not match topology (system.top, 3587)
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+                       :-) GROMACS - gmx mdrun, 2018 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg   Pieter Meulenhoff 
+   Erik Marklund      Teemu Murtola       Szilard Pall       Sander Pronk   
+   Roland Schulz     Alexey Shvetsov     Michael Shirts     Alfons Sijbers  
+   Peter Tieleman    Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2018
+Executable:   /usr/local/gmx2018/bin/gmx
+Data prefix:  /usr/local/gmx2018
+Working dir:  /nfs/home/alexei/Archive_UPD/Part2
+Command line:
+  gmx mdrun -deffnm step6.2_equilibration
+
+
+Back Off! I just backed up step6.2_equilibration.log to ./#step6.2_equilibration.log.2#
+Reading file step6.2_equilibration.tpr, VERSION 2018 (single precision)
+Changing nstlist from 20 to 100, rlist from 1.1 to 1.138
+
+No option -multi
+No option -multi
+No option -multi
+No option -multi
+No option -multi
+No option -multi
+No option -multi
+No option -multi
+Using 8 MPI threads
+Using 6 OpenMP threads per tMPI thread
+
+On host md5 2 GPUs auto-selected for this run.
+Mapping of GPU IDs to the 8 GPU tasks in the 8 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1
+
+Back Off! I just backed up step6.2_equilibration.xtc to ./#step6.2_equilibration.xtc.2#
+
+Back Off! I just backed up step6.2_equilibration.edr to ./#step6.2_equilibration.edr.2#
+starting mdrun 'Martini system'
+500000 steps,   1000.0 ps.
+
+step 200 Turning on dynamic load balancing, because the performance loss due to load imbalance is 2.4 %.
+
+
+A list of missing interactions:
+            G96Angle of   9216 missing      1
+
+Molecule type 'DOPC'
+the first 10 missing interactions, except for exclusions:
+            G96Angle atoms    3    5    6      global 10983 10985 10986
+
+Back Off! I just backed up dd_dump_err_0_n1.pdb to ./#dd_dump_err_0_n1.pdb.2#
+
+Back Off! I just backed up dd_dump_err_0_n3.pdb to ./#dd_dump_err_0_n3.pdb.2#
+
+Back Off! I just backed up dd_dump_err_0_n7.pdb to ./#dd_dump_err_0_n7.pdb.2#
+
+Back Off! I just backed up dd_dump_err_0_n2.pdb to ./#dd_dump_err_0_n2.pdb.2#
+
+Back Off! I just backed up dd_dump_err_0_n6.pdb to ./#dd_dump_err_0_n6.pdb.2#
+
+Back Off! I just backed up dd_dump_err_0_n5.pdb to ./#dd_dump_err_0_n5.pdb.2#
+
+Back Off! I just backed up dd_dump_err_0_n4.pdb to ./#dd_dump_err_0_n4.pdb.2#
+
+Back Off! I just backed up dd_dump_err_0_n0.pdb to ./#dd_dump_err_0_n0.pdb.2#
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2018
+Source file: src/gromacs/domdec/domdec_topology.cpp (line 436)
+MPI rank:    0 (out of 8)
+
+Fatal error:
+1 of the 23808 bonded interactions could not be calculated because some atoms
+involved moved further apart than the multi-body cut-off distance (1.138 nm)
+or the two-body cut-off distance (1.138 nm), see option -rdd, for pairs and
+tabulated bonds also see option -ddcheck
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+                       :-) GROMACS - gmx grompp, 2018 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg   Pieter Meulenhoff 
+   Erik Marklund      Teemu Murtola       Szilard Pall       Sander Pronk   
+   Roland Schulz     Alexey Shvetsov     Michael Shirts     Alfons Sijbers  
+   Peter Tieleman    Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2018
+Executable:   /usr/local/gmx2018/bin/gmx
+Data prefix:  /usr/local/gmx2018
+Working dir:  /nfs/home/alexei/Archive_UPD/Part2
+Command line:
+  gmx grompp -f step6.3_equilibration.mdp -o step6.3_equilibration.tpr -c step6.2_equilibration.gro -r with_fuleren.gro -p system.top -n index.ndx
+
+
+-------------------------------------------------------
+Program:     gmx grompp, version 2018
+Source file: src/gromacs/commandline/cmdlineparser.cpp (line 276)
+Function:    void gmx::CommandLineParser::parse(int*, char**)
+
+Error in user input:
+Invalid command-line options
+  In command-line option -c
+    File 'step6.2_equilibration.gro' does not exist or is not accessible.
+    The file could not be opened.
+      Reason: No such file or directory
+      (call to fopen() returned error code 2)
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+                       :-) GROMACS - gmx mdrun, 2018 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg   Pieter Meulenhoff 
+   Erik Marklund      Teemu Murtola       Szilard Pall       Sander Pronk   
+   Roland Schulz     Alexey Shvetsov     Michael Shirts     Alfons Sijbers  
+   Peter Tieleman    Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2018
+Executable:   /usr/local/gmx2018/bin/gmx
+Data prefix:  /usr/local/gmx2018
+Working dir:  /nfs/home/alexei/Archive_UPD/Part2
+Command line:
+  gmx mdrun -deffnm step6.3_equilibration
+
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2018
+Source file: src/gromacs/options/options.cpp (line 189)
+Function:    void gmx::internal::OptionSectionImpl::finish()
+
+Error in user input:
+Invalid input values
+  In option s
+    Required option was not provided, and the default file 'topol' does not
+    exist or is not accessible.
+    The following extensions were tried to complete the file name:
+      .tpr
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+                       :-) GROMACS - gmx grompp, 2018 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg   Pieter Meulenhoff 
+   Erik Marklund      Teemu Murtola       Szilard Pall       Sander Pronk   
+   Roland Schulz     Alexey Shvetsov     Michael Shirts     Alfons Sijbers  
+   Peter Tieleman    Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2018
+Executable:   /usr/local/gmx2018/bin/gmx
+Data prefix:  /usr/local/gmx2018
+Working dir:  /nfs/home/alexei/Archive_UPD/Part2
+Command line:
+  gmx grompp -f step6.4_equilibration.mdp -o step6.4_equilibration.tpr -c step6.3_equilibration.gro -r with_fuleren.gro -p system.top -n index.ndx
+
+
+-------------------------------------------------------
+Program:     gmx grompp, version 2018
+Source file: src/gromacs/commandline/cmdlineparser.cpp (line 276)
+Function:    void gmx::CommandLineParser::parse(int*, char**)
+
+Error in user input:
+Invalid command-line options
+  In command-line option -c
+    File 'step6.3_equilibration.gro' does not exist or is not accessible.
+    The file could not be opened.
+      Reason: No such file or directory
+      (call to fopen() returned error code 2)
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+                       :-) GROMACS - gmx mdrun, 2018 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg   Pieter Meulenhoff 
+   Erik Marklund      Teemu Murtola       Szilard Pall       Sander Pronk   
+   Roland Schulz     Alexey Shvetsov     Michael Shirts     Alfons Sijbers  
+   Peter Tieleman    Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2018
+Executable:   /usr/local/gmx2018/bin/gmx
+Data prefix:  /usr/local/gmx2018
+Working dir:  /nfs/home/alexei/Archive_UPD/Part2
+Command line:
+  gmx mdrun -deffnm step6.4_equilibration
+
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2018
+Source file: src/gromacs/options/options.cpp (line 189)
+Function:    void gmx::internal::OptionSectionImpl::finish()
+
+Error in user input:
+Invalid input values
+  In option s
+    Required option was not provided, and the default file 'topol' does not
+    exist or is not accessible.
+    The following extensions were tried to complete the file name:
+      .tpr
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+                       :-) GROMACS - gmx grompp, 2018 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg   Pieter Meulenhoff 
+   Erik Marklund      Teemu Murtola       Szilard Pall       Sander Pronk   
+   Roland Schulz     Alexey Shvetsov     Michael Shirts     Alfons Sijbers  
+   Peter Tieleman    Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2018
+Executable:   /usr/local/gmx2018/bin/gmx
+Data prefix:  /usr/local/gmx2018
+Working dir:  /nfs/home/alexei/Archive_UPD/Part2
+Command line:
+  gmx grompp -f step6.5_equilibration.mdp -o step6.5_equilibration.tpr -c step6.4_equilibration.gro -r with_fuleren.gro -p system.top -n index.ndx
+
+
+-------------------------------------------------------
+Program:     gmx grompp, version 2018
+Source file: src/gromacs/commandline/cmdlineparser.cpp (line 276)
+Function:    void gmx::CommandLineParser::parse(int*, char**)
+
+Error in user input:
+Invalid command-line options
+  In command-line option -c
+    File 'step6.4_equilibration.gro' does not exist or is not accessible.
+    The file could not be opened.
+      Reason: No such file or directory
+      (call to fopen() returned error code 2)
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+                       :-) GROMACS - gmx mdrun, 2018 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg   Pieter Meulenhoff 
+   Erik Marklund      Teemu Murtola       Szilard Pall       Sander Pronk   
+   Roland Schulz     Alexey Shvetsov     Michael Shirts     Alfons Sijbers  
+   Peter Tieleman    Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2018
+Executable:   /usr/local/gmx2018/bin/gmx
+Data prefix:  /usr/local/gmx2018
+Working dir:  /nfs/home/alexei/Archive_UPD/Part2
+Command line:
+  gmx mdrun -deffnm step6.5_equilibration
+
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2018
+Source file: src/gromacs/options/options.cpp (line 189)
+Function:    void gmx::internal::OptionSectionImpl::finish()
+
+Error in user input:
+Invalid input values
+  In option s
+    Required option was not provided, and the default file 'topol' does not
+    exist or is not accessible.
+    The following extensions were tried to complete the file name:
+      .tpr
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+                       :-) GROMACS - gmx grompp, 2018 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg   Pieter Meulenhoff 
+   Erik Marklund      Teemu Murtola       Szilard Pall       Sander Pronk   
+   Roland Schulz     Alexey Shvetsov     Michael Shirts     Alfons Sijbers  
+   Peter Tieleman    Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2018
+Executable:   /usr/local/gmx2018/bin/gmx
+Data prefix:  /usr/local/gmx2018
+Working dir:  /nfs/home/alexei/Archive_UPD/Part2
+Command line:
+  gmx grompp -f step6.6_equilibration.mdp -o step6.6_equilibration.tpr -c step6.5_equilibration.gro -r with_fuleren.gro -p system.top -n index.ndx
+
+
+-------------------------------------------------------
+Program:     gmx grompp, version 2018
+Source file: src/gromacs/commandline/cmdlineparser.cpp (line 276)
+Function:    void gmx::CommandLineParser::parse(int*, char**)
+
+Error in user input:
+Invalid command-line options
+  In command-line option -c
+    File 'step6.5_equilibration.gro' does not exist or is not accessible.
+    The file could not be opened.
+      Reason: No such file or directory
+      (call to fopen() returned error code 2)
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+                       :-) GROMACS - gmx mdrun, 2018 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg   Pieter Meulenhoff 
+   Erik Marklund      Teemu Murtola       Szilard Pall       Sander Pronk   
+   Roland Schulz     Alexey Shvetsov     Michael Shirts     Alfons Sijbers  
+   Peter Tieleman    Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2018
+Executable:   /usr/local/gmx2018/bin/gmx
+Data prefix:  /usr/local/gmx2018
+Working dir:  /nfs/home/alexei/Archive_UPD/Part2
+Command line:
+  gmx mdrun -deffnm step6.6_equilibration
+
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2018
+Source file: src/gromacs/options/options.cpp (line 189)
+Function:    void gmx::internal::OptionSectionImpl::finish()
+
+Error in user input:
+Invalid input values
+  In option s
+    Required option was not provided, and the default file 'topol' does not
+    exist or is not accessible.
+    The following extensions were tried to complete the file name:
+      .tpr
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+                       :-) GROMACS - gmx grompp, 2018 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg   Pieter Meulenhoff 
+   Erik Marklund      Teemu Murtola       Szilard Pall       Sander Pronk   
+   Roland Schulz     Alexey Shvetsov     Michael Shirts     Alfons Sijbers  
+   Peter Tieleman    Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2018
+Executable:   /usr/local/gmx2018/bin/gmx
+Data prefix:  /usr/local/gmx2018
+Working dir:  /nfs/home/alexei/Archive_UPD/Part2
+Command line:
+  gmx grompp -f step7_production.mdp -o step7_production.tpr -c step6.6_equilibration.gro -p system.top -n index.ndx
+
+
+-------------------------------------------------------
+Program:     gmx grompp, version 2018
+Source file: src/gromacs/commandline/cmdlineparser.cpp (line 276)
+Function:    void gmx::CommandLineParser::parse(int*, char**)
+
+Error in user input:
+Invalid command-line options
+  In command-line option -c
+    File 'step6.6_equilibration.gro' does not exist or is not accessible.
+    The file could not be opened.
+      Reason: No such file or directory
+      (call to fopen() returned error code 2)
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+                       :-) GROMACS - gmx mdrun, 2018 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg   Pieter Meulenhoff 
+   Erik Marklund      Teemu Murtola       Szilard Pall       Sander Pronk   
+   Roland Schulz     Alexey Shvetsov     Michael Shirts     Alfons Sijbers  
+   Peter Tieleman    Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2018
+Executable:   /usr/local/gmx2018/bin/gmx
+Data prefix:  /usr/local/gmx2018
+Working dir:  /nfs/home/alexei/Archive_UPD/Part2
+Command line:
+  gmx mdrun -deffnm step7_production
+
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2018
+Source file: src/gromacs/options/options.cpp (line 189)
+Function:    void gmx::internal::OptionSectionImpl::finish()
+
+Error in user input:
+Invalid input values
+  In option s
+    Required option was not provided, and the default file 'topol' does not
+    exist or is not accessible.
+    The following extensions were tried to complete the file name:
+      .tpr
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------

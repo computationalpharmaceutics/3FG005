@@ -1,0 +1,13 @@
+#include "toppar/martini_v2.2.itp"
+#include "martini_v2.0_DOPC_01.itp"
+#include "F16.itp"
+
+[ system ]
+; name
+DOPC BILAYER
+
+[ molecules ]
+; name  number
+DOPC 128
+W 1395
+F16 25
