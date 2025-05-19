@@ -1,0 +1,16 @@
+#include "toppar/martini_v2.2.itp"
+#include "toppar/martini_v2.0_lipids_all_201506.itp"
+#include "toppar/martini_v2.0_ions.itp"
+#include "F16.itp"
+
+[ system ]
+; name
+Martini system
+
+[ molecules ]
+; name        number
+DOPC 1152
+W 24423
+NA 282
+CL 282
+F16 1
